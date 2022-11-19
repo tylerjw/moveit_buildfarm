@@ -16,6 +16,16 @@ jobs:
     steps:
       - name: Check out the repo
         uses: actions/checkout@v3
+      
+      - name: "Free up disk space"
+        run: |
+          sudo apt-get -qq purge build-essential "ghc*"
+          sudo apt-get clean
+          # cleanup docker images not used by us
+          docker system prune -af
+          # free up a lot of stuff from /usr/local
+          sudo rm -rf /usr/local
+          df -h
 
       - name: Cache ccache
         uses: pat-s/always-upload-cache@v3
@@ -26,15 +36,15 @@ jobs:
             ccache-${{ matrix.ros_distro }}-${{ github.sha }}
             ccache-${{ matrix.ros_distro }}
 
-      - name: Install apt dependencies
+      - name: Install dependencies
         run: |
           sudo curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key \
             -o /usr/share/keyrings/ros-archive-keyring.gpg
           echo "deb [signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] http://packages.ros.org/ros2/ubuntu $(. /etc/os-release && echo "$UBUNTU_CODENAME") main" \
             | sudo tee /etc/apt/sources.list.d/ros2.list
-
           sudo apt update
           sudo apt install -y debian-archive-keyring python3-colcon-common-extensions python3-bloom python3-rosdep python3-vcstool ccache
+          
           sudo rosdep init
           rosdep update
 
@@ -44,19 +54,18 @@ jobs:
           sudo apt update
           sudo apt install -y sbuild mmdebstrap
 
-      - name: Initialize mmdebstrap
-        run: |
           # workaround https://gitlab.mister-muffin.de/josch/mmdebstrap/commit/374ae3dc99e5d8a5a176939c3846e790e890a0e7
           sudo sed -i 's/my $groupname = getgrgid $REAL_GROUP_ID;/my $groupname = $username;/' /usr/bin/mmdebstrap
+
+      - name: Setup build environment
+        run: |
           mkdir -p ~/.cache/sbuild
           mmdebstrap --variant=buildd --include=apt,ccache --components=main,universe ${{ env.ubuntu_distro }} ~/.cache/sbuild/${{ env.ubuntu_distro }}-amd64.tar
 
-      - name: Prepare ccache
-        run: |
           ccache --zero-stats --max-size=10.0G
-          ccache -sv
           chmod a+rwX ~
           chmod -R a+rwX ~/.cache/ccache
+
           cat << "EOF" > ~/.sbuildrc
           $build_environment = { 'CCACHE_DIR' => '/build/ccache' };
           $path = '/usr/lib/ccache:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games';
@@ -65,16 +74,18 @@ jobs:
 
       - name: Checkout workspace
         run: vcs import < workspace.repos
-
+      
       - name: Run sbuild
         run: |
-          set -x
-
+          TOTAL="$(colcon list -tp | wc -l)"
+          COUNT=1
+          mkdir /home/runner/apt_repo
           for PKG_PATH in $(colcon list -tp); do
-            echo "Building $PKG_PATH"
+            [ $TOTAL -ne 1 ] && echo "::group::Building $COUNT/$TOTAL: $PKG_PATH"
             (
             cd "$PKG_PATH"
-            # debian-inc=2 in case there are packages published from the build farm already
+            
+            # debian-inc=100 in case there are packages published from the build farm already
             bloom-generate rosdebian --os-version=${{ env.ubuntu_distro }} --ros-distro=${{ matrix.ros_distro }} --debian-inc=100
 
             # https://github.com/ros-infrastructure/bloom/pull/643
@@ -82,27 +93,25 @@ jobs:
 
             # dpkg-source-opts: no need for upstream.tar.gz
             sbuild --chroot-mode=unshare --verbose --no-clean-source --no-run-lintian \
-              --extra-package=.. --dpkg-source-opts="-Zgzip -z1 --format=1.0 -sn" \
+              --dpkg-source-opts="-Zgzip -z1 --format=1.0 -sn" \
+              --build-dir=/home/runner/apt_repo --extra-package=/home/runner/apt_repo \
               --extra-repository="deb http://packages.ros.org/ros2/ubuntu ${{ env.ubuntu_distro }} main" \
               --extra-repository-key=/usr/share/keyrings/ros-archive-keyring.gpg
             )
+            sudo chown -R runner:docker /home/runner/.cache/ccache/
+            chmod -R a+rwX ~/.cache/ccache
+            ccache -sv
+            COUNT=$((COUNT+1))
+            [ $TOTAL -ne 1 ] && echo "::endgroup::" || true
           done
-          sudo chown -R runner:docker /home/runner/.cache/ccache/
 
       - name: Display ccache stats
         run: ccache -sv
-
-      - name: Create apt repo
+      
+      - name: Create apt repository
         run: |
-          # workaround single ROS package in top folder
-          DEB_PATH=.
-          [ "$PKG_PATH" = "." ] && DEB_PATH=..
-
-          mkdir apt_repo
-          vcs export --exact-with-tags > apt_repo/workspace.repos
-          find "$DEB_PATH" -name "ros-${{ matrix.ros_distro }}-*" -exec mv "{}" apt_repo/ \;
-          cd apt_repo
-
+          vcs export --exact-with-tags > /home/runner/apt_repo/workspace.repos
+          cd /home/runner/apt_repo
           apt-ftparchive packages . > Packages
           apt-ftparchive release . > Release
           echo "deb [trusted=yes] https://raw.githubusercontent.com/$GITHUB_REPOSITORY/${{ env.ubuntu_distro }}-${{ matrix.ros_distro }}/ ./" > README.md
@@ -112,5 +121,5 @@ jobs:
         env:
           REPO: self
           BRANCH: ${{ env.ubuntu_distro }}-${{ matrix.ros_distro }}
-          FOLDER: apt_repo
+          FOLDER: /home/runner/apt_repo
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
