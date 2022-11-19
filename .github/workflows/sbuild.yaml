@@ -99,6 +99,7 @@ jobs:
           [ "$PKG_PATH" = "." ] && DEB_PATH=..
 
           mkdir apt_repo
+          vcs export --exact-with-tags > apt_repo/workspace.repos
           find "$DEB_PATH" -name "ros-${{ matrix.ros_distro }}-*" -exec mv "{}" apt_repo/ \;
           cd apt_repo
 
