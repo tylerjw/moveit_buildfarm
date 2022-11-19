@@ -77,6 +77,9 @@ jobs:
       
       - name: Run sbuild
         run: |
+          # Don't build tests
+          export DEB_BUILD_OPTIONS=nocheck
+          
           TOTAL="$(colcon list -tp | wc -l)"
           COUNT=1
           mkdir /home/runner/apt_repo
@@ -84,7 +87,7 @@ jobs:
             [ $TOTAL -ne 1 ] && echo "::group::Building $COUNT/$TOTAL: $PKG_PATH"
             (
             cd "$PKG_PATH"
-            
+
             # debian-inc=100 in case there are packages published from the build farm already
             bloom-generate rosdebian --os-version=${{ env.ubuntu_distro }} --ros-distro=${{ matrix.ros_distro }} --debian-inc=100
 
