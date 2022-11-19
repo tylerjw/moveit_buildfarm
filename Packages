@@ -1,0 +1,36 @@
+Package: ros-humble-rsl-dbgsym
+Package-Type: ddeb
+Architecture: amd64
+Version: 0.2.0-100jammy
+Auto-Built-Package: debug-symbols
+Priority: optional
+Section: debug
+Source: ros-humble-rsl
+Maintainer: Tyler Weaver <maybe@tylerjw.dev>
+Installed-Size: 158
+Depends: ros-humble-rsl (= 0.2.0-100jammy)
+Filename: ./ros-humble-rsl-dbgsym_0.2.0-100jammy_amd64.ddeb
+Size: 144032
+MD5sum: b66125080d0b9084460a6f3e5ab5d6ee
+SHA1: 364fee3e5fd3a4cb12b321bb394985b27e282255
+SHA256: 0a5caa77e9604df521b1f7dbeb2fdec45614b9ceefa18e0830a3ab0c7db41c41
+SHA512: 00b158810cbe1808026f953df43ceb30d1fa4295ce0a0431571f9d25ae9722c34877f936b0e59b4ee6837020f4980e9bd8e8bfef430503c6e2bffaf30c0df15e
+Description: debug symbols for ros-humble-rsl
+Build-Ids: 761a26d9812300be99f0aded306d1fb7a84c918b
+
+Package: ros-humble-rsl
+Architecture: amd64
+Version: 0.2.0-100jammy
+Priority: optional
+Section: misc
+Maintainer: Tyler Weaver <maybe@tylerjw.dev>
+Installed-Size: 115
+Depends: libc6 (>= 2.14), libgcc-s1 (>= 3.3.1), libstdc++6 (>= 5.2), libeigen3-dev, libfmt-dev, ros-humble-rclcpp, ros-humble-tcb-span, ros-humble-tl-expected
+Filename: ./ros-humble-rsl_0.2.0-100jammy_amd64.deb
+Size: 20046
+MD5sum: 30da896d01286cdbb933655b8501a4d1
+SHA1: 60d05929184dc485f59d42d34126a6900c8db75f
+SHA256: 195a5350d38ce7585a9708d256122df10e0c82fbf4b3030d17988c83cbe1740c
+SHA512: 7320dfa1b801987e2502f2a7ed1108ad95917c417e6ee2e10f03e5bca16c528053fe909a995b375c024523eb574d8d37a6298fff1b7c99c6f6d97cf780b50f76
+Description: ROS Support Library
+

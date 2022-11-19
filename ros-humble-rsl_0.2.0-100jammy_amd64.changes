@@ -1,0 +1,55 @@
+Format: 1.8
+Date: Tue, 15 Nov 2022 00:00:00 -0000
+Source: ros-humble-rsl
+Binary: ros-humble-rsl
+Built-For-Profiles: noudeb
+Architecture: amd64
+Version: 0.2.0-100jammy
+Distribution: jammy
+Urgency: high
+Maintainer: Tyler Weaver <maybe@tylerjw.dev>
+Changed-By: Tyler Weaver <maybe@tylerjw.dev>
+Description:
+ ros-humble-rsl - ROS Support Library
+Changes:
+ ros-humble-rsl (0.2.0-100jammy) jammy; urgency=high
+ .
+   * New features
+     * rclcpp::Parameter validator functions
+     * Algorithms from parameter_traits
+     * rsl::StaticVector and rsl::StaticString
+   * Doxygen site: https://picknikrobotics.github.io/RSL/files.html
+     * Link to the docs from the README
+     * Use doxygen-awesome documentation style
+     * Deploy documentation website from CI
+     * Add Doxygen comments for rsl::Overload
+     * Add Doxygen comments for TRY
+   * Cleanups
+     * Prevent unnecessary string copy
+     * Ensure global constants do not violate the ODR
+     * Hide rsl::NoDiscard implementation details
+     * Use more [[nodiscard]]
+     * Fix to_vector for vector<bool>
+     * Ensure static container iterators are used
+     * Default to building a shared library
+     * Use generator-agnostic CMake commands
+     * Remove C compiler settings
+     * Don't require compiler extensions
+     * Use more expressive path variable
+     * Add clang-tidy integration and fix errors
+     * Address clang-tidy findings
+     * Update FindCatch2 module
+     * Update Catch2
+   * Contributors: Chris Thrasher, Tyler Weaver
+Checksums-Sha1:
+ 364fee3e5fd3a4cb12b321bb394985b27e282255 144032 ros-humble-rsl-dbgsym_0.2.0-100jammy_amd64.ddeb
+ e54f18bf4e9b2d3fc4d268426375d369d94ffe2e 15030 ros-humble-rsl_0.2.0-100jammy_amd64.buildinfo
+ 60d05929184dc485f59d42d34126a6900c8db75f 20046 ros-humble-rsl_0.2.0-100jammy_amd64.deb
+Checksums-Sha256:
+ 0a5caa77e9604df521b1f7dbeb2fdec45614b9ceefa18e0830a3ab0c7db41c41 144032 ros-humble-rsl-dbgsym_0.2.0-100jammy_amd64.ddeb
+ 0c80d0978dec6dcd0b7afd0f877fef1da48cfb7952ec25f17f2924339fa39a03 15030 ros-humble-rsl_0.2.0-100jammy_amd64.buildinfo
+ 195a5350d38ce7585a9708d256122df10e0c82fbf4b3030d17988c83cbe1740c 20046 ros-humble-rsl_0.2.0-100jammy_amd64.deb
+Files:
+ b66125080d0b9084460a6f3e5ab5d6ee 144032 debug optional ros-humble-rsl-dbgsym_0.2.0-100jammy_amd64.ddeb
+ bcf252bb560f3c7b04ad5df98c4ecbce 15030 misc optional ros-humble-rsl_0.2.0-100jammy_amd64.buildinfo
+ 30da896d01286cdbb933655b8501a4d1 20046 misc optional ros-humble-rsl_0.2.0-100jammy_amd64.deb
