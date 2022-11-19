@@ -1,0 +1,115 @@
+name: sbuild
+
+on:
+  workflow_dispatch:
+  push:
+
+jobs:
+  sbuild:
+    runs-on: ubuntu-22.04
+    strategy:
+      fail-fast: false
+      matrix:
+        ros_distro: [humble, rolling]
+    env:
+      ubuntu_distro: jammy
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v3
+
+      - name: Cache ccache
+        uses: pat-s/always-upload-cache@v3
+        with:
+          path: /home/runner/.cache/ccache
+          key: ccache-${{ matrix.ros_distro }}-${{ github.sha }}-${{ github.run_id }}
+          restore-keys: |
+            ccache-${{ matrix.ros_distro }}-${{ github.sha }}
+            ccache-${{ matrix.ros_distro }}
+
+      - name: Install apt dependencies
+        run: |
+          sudo curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key \
+            -o /usr/share/keyrings/ros-archive-keyring.gpg
+          echo "deb [signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] http://packages.ros.org/ros2/ubuntu $(. /etc/os-release && echo "$UBUNTU_CODENAME") main" \
+            | sudo tee /etc/apt/sources.list.d/ros2.list
+
+          sudo apt update
+          sudo apt install -y debian-archive-keyring python3-colcon-common-extensions python3-bloom python3-rosdep python3-vcstool ccache
+          sudo rosdep init
+          rosdep update
+
+          # use newest versions of mmdebstrap and sbuild
+          echo "deb [signed-by=/usr/share/keyrings/debian-archive-keyring.gpg] http://deb.debian.org/debian unstable main" \
+            | sudo tee /etc/apt/sources.list.d/debian.list
+          sudo apt update
+          sudo apt install -y sbuild mmdebstrap
+
+      - name: Initialize mmdebstrap
+        run: |
+          # workaround https://gitlab.mister-muffin.de/josch/mmdebstrap/commit/374ae3dc99e5d8a5a176939c3846e790e890a0e7
+          sudo sed -i 's/my $groupname = getgrgid $REAL_GROUP_ID;/my $groupname = $username;/' /usr/bin/mmdebstrap
+          mkdir -p ~/.cache/sbuild
+          mmdebstrap --variant=buildd --include=apt,ccache --components=main,universe ${{ env.ubuntu_distro }} ~/.cache/sbuild/${{ env.ubuntu_distro }}-amd64.tar
+
+      - name: Prepare ccache
+        run: |
+          ccache --zero-stats --max-size=10.0G
+          ccache -sv
+          chmod a+rwX ~
+          chmod -R a+rwX ~/.cache/ccache
+          cat << "EOF" > ~/.sbuildrc
+          $build_environment = { 'CCACHE_DIR' => '/build/ccache' };
+          $path = '/usr/lib/ccache:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games';
+          $unshare_bind_mounts = [ { directory => '/home/runner/.cache/ccache', mountpoint => '/build/ccache' } ];
+          EOF
+
+      - name: Checkout workspace
+        run: vcs import < workspace.repos
+
+      - name: Run sbuild
+        run: |
+          set -x
+
+          for PKG_PATH in $(colcon list -tp); do
+            echo "Building $PKG_PATH"
+            (
+            cd "$PKG_PATH"
+            # debian-inc=2 in case there are packages published from the build farm already
+            bloom-generate rosdebian --os-version=${{ env.ubuntu_distro }} --ros-distro=${{ matrix.ros_distro }} --debian-inc=100
+
+            # https://github.com/ros-infrastructure/bloom/pull/643
+            echo 11 > debian/compat
+
+            # dpkg-source-opts: no need for upstream.tar.gz
+            sbuild --chroot-mode=unshare --verbose --no-clean-source --no-run-lintian \
+              --extra-package=.. --dpkg-source-opts="-Zgzip -z1 --format=1.0 -sn" \
+              --extra-repository="deb http://packages.ros.org/ros2/ubuntu ${{ env.ubuntu_distro }} main" \
+              --extra-repository-key=/usr/share/keyrings/ros-archive-keyring.gpg
+            )
+          done
+          sudo chown -R runner:docker /home/runner/.cache/ccache/
+
+      - name: Display ccache stats
+        run: ccache -sv
+
+      - name: Create apt repo
+        run: |
+          # workaround single ROS package in top folder
+          DEB_PATH=.
+          [ "$PKG_PATH" = "." ] && DEB_PATH=..
+
+          mkdir apt_repo
+          find "$DEB_PATH" -name "ros-${{ matrix.ros_distro }}-*" -exec mv "{}" apt_repo/ \;
+          cd apt_repo
+
+          apt-ftparchive packages . > Packages
+          apt-ftparchive release . > Release
+          echo "deb [trusted=yes] https://raw.githubusercontent.com/$GITHUB_REPOSITORY/${{ env.ubuntu_distro }}-${{ matrix.ros_distro }}/ ./" > README.md
+
+      - name: Deploy
+        uses: s0/git-publish-subdir-action@develop
+        env:
+          REPO: self
+          BRANCH: ${{ env.ubuntu_distro }}-${{ matrix.ros_distro }}
+          FOLDER: apt_repo
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

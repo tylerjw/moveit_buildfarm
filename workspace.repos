@@ -1,0 +1,20 @@
+repositories:
+  moveit:
+    type: git
+    url: https://github.com/ros-planning/moveit2.git
+  moveit_msgs:
+    type: git
+    url: https://github.com/ros-planning/moveit_msgs.git
+    version: ros2
+  moveit_resources:
+    type: git
+    url: https://github.com/ros-planning/moveit_resources.git
+    version: ros2
+  generate_parameter_library:
+    type: git
+    url: https://github.com/PickNikRobotics/generate_parameter_library.git
+    version: main
+  rsl:
+    type: git
+    url: https://github.com/PickNikRobotics/RSL.git
+    version: main
