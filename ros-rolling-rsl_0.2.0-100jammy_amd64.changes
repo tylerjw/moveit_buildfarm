@@ -1,0 +1,55 @@
+Format: 1.8
+Date: Tue, 15 Nov 2022 00:00:00 -0000
+Source: ros-rolling-rsl
+Binary: ros-rolling-rsl
+Built-For-Profiles: noudeb
+Architecture: amd64
+Version: 0.2.0-100jammy
+Distribution: jammy
+Urgency: high
+Maintainer: Tyler Weaver <maybe@tylerjw.dev>
+Changed-By: Tyler Weaver <maybe@tylerjw.dev>
+Description:
+ ros-rolling-rsl - ROS Support Library
+Changes:
+ ros-rolling-rsl (0.2.0-100jammy) jammy; urgency=high
+ .
+   * New features
+     * rclcpp::Parameter validator functions
+     * Algorithms from parameter_traits
+     * rsl::StaticVector and rsl::StaticString
+   * Doxygen site: https://picknikrobotics.github.io/RSL/files.html
+     * Link to the docs from the README
+     * Use doxygen-awesome documentation style
+     * Deploy documentation website from CI
+     * Add Doxygen comments for rsl::Overload
+     * Add Doxygen comments for TRY
+   * Cleanups
+     * Prevent unnecessary string copy
+     * Ensure global constants do not violate the ODR
+     * Hide rsl::NoDiscard implementation details
+     * Use more [[nodiscard]]
+     * Fix to_vector for vector<bool>
+     * Ensure static container iterators are used
+     * Default to building a shared library
+     * Use generator-agnostic CMake commands
+     * Remove C compiler settings
+     * Don't require compiler extensions
+     * Use more expressive path variable
+     * Add clang-tidy integration and fix errors
+     * Address clang-tidy findings
+     * Update FindCatch2 module
+     * Update Catch2
+   * Contributors: Chris Thrasher, Tyler Weaver
+Checksums-Sha1:
+ 647bc2ad329da5478c57700ba84e4fe498a4bd57 144026 ros-rolling-rsl-dbgsym_0.2.0-100jammy_amd64.ddeb
+ da96cc2a832c29c803411d4ffacf852461a79d03 15259 ros-rolling-rsl_0.2.0-100jammy_amd64.buildinfo
+ 1e95f7b2ef8adc789ab1ddfa10d0cb8447f586f7 20102 ros-rolling-rsl_0.2.0-100jammy_amd64.deb
+Checksums-Sha256:
+ c387b9afadb6701e3dbaab7bb73af841034f58f18b53e5a5c71d54e4f242edf1 144026 ros-rolling-rsl-dbgsym_0.2.0-100jammy_amd64.ddeb
+ 1a1a4a3f032623b3a3a78a9a5487c291380005ba6dcb007bae194058426439cc 15259 ros-rolling-rsl_0.2.0-100jammy_amd64.buildinfo
+ f408c171aeb535fdd2055bb5f2d78d0c9c53396a75e39ff97ae7784686c7bc74 20102 ros-rolling-rsl_0.2.0-100jammy_amd64.deb
+Files:
+ b74f44b8d55d6972011097341a9bedeb 144026 debug optional ros-rolling-rsl-dbgsym_0.2.0-100jammy_amd64.ddeb
+ a5a0be3f37eb0c2662aeddb9179cd4ab 15259 misc optional ros-rolling-rsl_0.2.0-100jammy_amd64.buildinfo
+ 3cf88ec0598fc3cdd0e2c930d2181154 20102 misc optional ros-rolling-rsl_0.2.0-100jammy_amd64.deb
