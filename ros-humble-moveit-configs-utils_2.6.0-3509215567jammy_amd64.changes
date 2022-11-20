@@ -1,0 +1,30 @@
+Format: 1.8
+Date: Thu, 10 Nov 2022 00:00:00 -0000
+Source: ros-humble-moveit-configs-utils
+Binary: ros-humble-moveit-configs-utils
+Built-For-Profiles: noudeb
+Architecture: amd64
+Version: 2.6.0-3509215567jammy
+Distribution: jammy
+Urgency: high
+Maintainer: MoveIt Release Team <moveit_releasers@googlegroups.com>
+Changed-By: MoveIt Release Team <moveit_releasers@googlegroups.com>
+Description:
+ ros-humble-moveit-configs-utils - Python library for loading moveit config parameters in launch fil
+Changes:
+ ros-humble-moveit-configs-utils (2.6.0-3509215567jammy) jammy; urgency=high
+ .
+   * Do not add Pilz parameters to MoveIt Configs Utils if Pilz is not used (#1583 <https://github.com/ros-planning/moveit2/issues/1583>)
+   * Use MoveItConfigsBuilder in Pilz test launch file (#1571 <https://github.com/ros-planning/moveit2/issues/1571>)
+   * Only require Cartesian limits if Pilz is used (#1519 <https://github.com/ros-planning/moveit2/issues/1519>)
+   * Typo fix (#1518 <https://github.com/ros-planning/moveit2/issues/1518>)
+   * Contributors: Abishalini Sivaraman, Stephanie Eng
+Checksums-Sha1:
+ 7f911fc84b9f81cb21a8e06ea22df69d6bd1691c 9806 ros-humble-moveit-configs-utils_2.6.0-3509215567jammy_amd64.buildinfo
+ b5e3dd2482a95fc28240b31211fcbfe0f022e526 20300 ros-humble-moveit-configs-utils_2.6.0-3509215567jammy_amd64.deb
+Checksums-Sha256:
+ e5106e314e29f7b90786c29f3e87cecc6dddaa167eca4c0128192a03c8f24f1d 9806 ros-humble-moveit-configs-utils_2.6.0-3509215567jammy_amd64.buildinfo
+ ccedb1d7aedfa0d301a10f2d3b8b5d1b14a161ee426dcb98ce87fc3926118a2a 20300 ros-humble-moveit-configs-utils_2.6.0-3509215567jammy_amd64.deb
+Files:
+ 8192b8749a5e871fbe73edb05243afc3 9806 misc optional ros-humble-moveit-configs-utils_2.6.0-3509215567jammy_amd64.buildinfo
+ 5983ba5a7813e282580457c745777f1f 20300 misc optional ros-humble-moveit-configs-utils_2.6.0-3509215567jammy_amd64.deb

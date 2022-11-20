@@ -1,0 +1,30 @@
+Format: 1.8
+Date: Thu, 10 Nov 2022 00:00:00 -0000
+Source: ros-humble-moveit-setup-assistant
+Binary: ros-humble-moveit-setup-assistant
+Built-For-Profiles: noudeb
+Architecture: amd64
+Version: 2.6.0-3509215567jammy
+Distribution: jammy
+Urgency: high
+Maintainer: Henning Kayser <henningkayser@picknik.ai>
+Changed-By: Henning Kayser <henningkayser@picknik.ai>
+Description:
+ ros-humble-moveit-setup-assistant - Generates a configuration package that makes it easy to use MoveI
+Changes:
+ ros-humble-moveit-setup-assistant (2.6.0-3509215567jammy) jammy; urgency=high
+ .
+   * Improve CMake usage (#1550 <https://github.com/ros-planning/moveit2/issues/1550>)
+   * Contributors: Sebastian Jahr
+Checksums-Sha1:
+ 3903b58e1d9d51d95160a9bf928355aa6959ef21 7372600 ros-humble-moveit-setup-assistant-dbgsym_2.6.0-3509215567jammy_amd64.ddeb
+ 6f5141bd7c4cec4512eef976272c4571e0d056cf 33921 ros-humble-moveit-setup-assistant_2.6.0-3509215567jammy_amd64.buildinfo
+ cb1f179797a39940bc8edc14942454ccff029ed0 291562 ros-humble-moveit-setup-assistant_2.6.0-3509215567jammy_amd64.deb
+Checksums-Sha256:
+ be9ee40889959b84b8d7ce2f4233a98550e41175855b3a396ae34e7ecfb2e4a1 7372600 ros-humble-moveit-setup-assistant-dbgsym_2.6.0-3509215567jammy_amd64.ddeb
+ 38f1192c86f21368e90e36097b27e93ef9b5a89e65ba336fd74daf99747b77a3 33921 ros-humble-moveit-setup-assistant_2.6.0-3509215567jammy_amd64.buildinfo
+ 175af0b28724ee98981ce56d2c9cf45fcde1bc85bcb005014c27d39cb0c9b27a 291562 ros-humble-moveit-setup-assistant_2.6.0-3509215567jammy_amd64.deb
+Files:
+ 998325a627a05c08d4e7063da1830b5b 7372600 debug optional ros-humble-moveit-setup-assistant-dbgsym_2.6.0-3509215567jammy_amd64.ddeb
+ 10c7cc886556a430f90ba7c66e11577a 33921 misc optional ros-humble-moveit-setup-assistant_2.6.0-3509215567jammy_amd64.buildinfo
+ b880f6110dda043f45379166ad45e730 291562 misc optional ros-humble-moveit-setup-assistant_2.6.0-3509215567jammy_amd64.deb

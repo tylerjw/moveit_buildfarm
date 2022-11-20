@@ -1,0 +1,27 @@
+Format: 1.8
+Date: Thu, 10 Nov 2022 00:00:00 -0000
+Source: ros-humble-moveit-resources-prbt-support
+Binary: ros-humble-moveit-resources-prbt-support
+Built-For-Profiles: noudeb
+Architecture: amd64
+Version: 2.6.0-3509215567jammy
+Distribution: jammy
+Urgency: high
+Maintainer: Alexander Gutenkunst <a.gutenkunst@pilz.de>
+Changed-By: Alexander Gutenkunst <a.gutenkunst@pilz.de>
+Description:
+ ros-humble-moveit-resources-prbt-support - Mechanical, kinematic and visual description of the Pilz light we
+Changes:
+ ros-humble-moveit-resources-prbt-support (2.6.0-3509215567jammy) jammy; urgency=high
+ .
+   * Improve CMake usage (#1550 <https://github.com/ros-planning/moveit2/issues/1550>)
+   * Contributors: Sebastian Jahr
+Checksums-Sha1:
+ 6e5de291b22a448d6cf33b398539ca4dac5b93e7 9135 ros-humble-moveit-resources-prbt-support_2.6.0-3509215567jammy_amd64.buildinfo
+ e7f305c4cd79fa08f6754b0761f3e621d5890313 790306 ros-humble-moveit-resources-prbt-support_2.6.0-3509215567jammy_amd64.deb
+Checksums-Sha256:
+ 66f2a9d500fb5fa8fdc13c1476f3caff70ac97dbd5b224d2ef6f3c0ac3046169 9135 ros-humble-moveit-resources-prbt-support_2.6.0-3509215567jammy_amd64.buildinfo
+ f2269e4cf4db351819d9d1ec6ce71ce00e623d7f3adaed6bfff3aa9cf187c66f 790306 ros-humble-moveit-resources-prbt-support_2.6.0-3509215567jammy_amd64.deb
+Files:
+ 0f4738663ac55e24b70f06f27acbd22e 9135 misc optional ros-humble-moveit-resources-prbt-support_2.6.0-3509215567jammy_amd64.buildinfo
+ 038d1f3b8352cfc194e2fa3c111ad56b 790306 misc optional ros-humble-moveit-resources-prbt-support_2.6.0-3509215567jammy_amd64.deb
