@@ -1,0 +1,30 @@
+Format: 1.8
+Date: Tue, 15 Nov 2022 00:00:00 -0000
+Source: ros-humble-generate-parameter-library-example
+Binary: ros-humble-generate-parameter-library-example
+Built-For-Profiles: noudeb
+Architecture: amd64
+Version: 0.3.0-100jammy
+Distribution: jammy
+Urgency: high
+Maintainer: Paul Gesel <paul.gesel@picknik.ai>
+Changed-By: Paul Gesel <paul.gesel@picknik.ai>
+Description:
+ ros-humble-generate-parameter-library-example - Example usage of generate_parameter_library.
+Changes:
+ ros-humble-generate-parameter-library-example (0.3.0-100jammy) jammy; urgency=high
+ .
+   * Migrate from parameter_traits to RSL (take 2) (#91 <https://github.com/PickNikRobotics/generate_parameter_library/issues/91>)
+   * Contributors: Tyler Weaver
+Checksums-Sha1:
+ c6c6d53627e4b03f5299ff42ca053190c2ea3f12 1144366 ros-humble-generate-parameter-library-example-dbgsym_0.3.0-100jammy_amd64.ddeb
+ 7d36bed9861d0cd9974011d0de01d1087cf8cccf 17110 ros-humble-generate-parameter-library-example_0.3.0-100jammy_amd64.buildinfo
+ 9e811547dd1be26ea0718c688df19b56f9bd0bf8 85260 ros-humble-generate-parameter-library-example_0.3.0-100jammy_amd64.deb
+Checksums-Sha256:
+ cc73fc0aded5597347ccdb6efd93e5423d1777921d174b28a42c3ea29c9a0d3a 1144366 ros-humble-generate-parameter-library-example-dbgsym_0.3.0-100jammy_amd64.ddeb
+ b55232a8a88ba01ccfdeffdc7931a04eb75d1a0a9b68146c603d35bafa8babd4 17110 ros-humble-generate-parameter-library-example_0.3.0-100jammy_amd64.buildinfo
+ 545a72d7c4fa5e1e505823b11d23fe9b6e76409c9e3e03f30058dc48bac1b13f 85260 ros-humble-generate-parameter-library-example_0.3.0-100jammy_amd64.deb
+Files:
+ ecb6048b17e695ea60215b4b2d92fb19 1144366 debug optional ros-humble-generate-parameter-library-example-dbgsym_0.3.0-100jammy_amd64.ddeb
+ 87a6134a0bd7e0fe00b01941eac12dcb 17110 misc optional ros-humble-generate-parameter-library-example_0.3.0-100jammy_amd64.buildinfo
+ 7994d7ace42c34671fb9dc292234c53b 85260 misc optional ros-humble-generate-parameter-library-example_0.3.0-100jammy_amd64.deb

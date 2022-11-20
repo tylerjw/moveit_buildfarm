@@ -2,4 +2,4 @@ repositories:
   actions_buildfarm:
     type: git
     url: https://github.com/tylerjw/actions_buildfarm
-    version: 060b879bb3f379a57ad15c9ae0d6e6901e5b7109
+    version: 0476b0a6daa1becc4893904c7351720d1f41ab17

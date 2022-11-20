@@ -1,0 +1,38 @@
+Format: 1.8
+Date: Thu, 10 Nov 2022 00:00:00 -0000
+Source: ros-humble-moveit-ros-warehouse
+Binary: ros-humble-moveit-ros-warehouse
+Built-For-Profiles: noudeb
+Architecture: amd64
+Version: 2.6.0-100jammy
+Distribution: jammy
+Urgency: high
+Maintainer: Henning Kayser <henningkayser@picknik.ai>
+Changed-By: Henning Kayser <henningkayser@picknik.ai>
+Description:
+ ros-humble-moveit-ros-warehouse - Components of MoveIt connecting to MongoDB
+Changes:
+ ros-humble-moveit-ros-warehouse (2.6.0-100jammy) jammy; urgency=high
+ .
+   * Restructure moveit warehouse package (#1551 <https://github.com/ros-planning/moveit2/issues/1551>)
+     * Restructure warhouse package to match other packages, remove manifest.xml
+     * Cleanup CMakeLists.txt file
+     * Remove dublicate install command
+     * Export ${PROJECT_NAME}Targets
+   * Merge PR #1553 <https://github.com/ros-planning/moveit2/issues/1553>: Improve cmake files
+   * Use standard exported targets: export_${PROJECT_NAME} -> ${PROJECT_NAME}Targets
+   * Improve CMake usage (#1550 <https://github.com/ros-planning/moveit2/issues/1550>)
+   * Remove __has_include statements (#1481 <https://github.com/ros-planning/moveit2/issues/1481>)
+   * Contributors: Robert Haschke, Sebastian Jahr, Vatan Aksoy Tezer
+Checksums-Sha1:
+ a945af2c5ebed3d126ee92c0ecd0837d6232845d 18343404 ros-humble-moveit-ros-warehouse-dbgsym_2.6.0-100jammy_amd64.ddeb
+ 0627adebeb61f708c5621d1e4e468c1d6715f2ba 27433 ros-humble-moveit-ros-warehouse_2.6.0-100jammy_amd64.buildinfo
+ e56d90db390435b293154b38942140f1ae2b8a46 423012 ros-humble-moveit-ros-warehouse_2.6.0-100jammy_amd64.deb
+Checksums-Sha256:
+ 39724683462725d4f5d4d8f318779a3dda1f68152f6168561640a7103e880e74 18343404 ros-humble-moveit-ros-warehouse-dbgsym_2.6.0-100jammy_amd64.ddeb
+ fd73f9108dbc4658590cada16d376504968555009aacd5f08e8a982a5b4ed3dd 27433 ros-humble-moveit-ros-warehouse_2.6.0-100jammy_amd64.buildinfo
+ 2b7e0ba2b9d9a10dafe00fa4cd54acb5ec34d32d4cb04cc58174bcebee195bc1 423012 ros-humble-moveit-ros-warehouse_2.6.0-100jammy_amd64.deb
+Files:
+ fe238cd6ac153c7af6d59775cf98bbac 18343404 debug optional ros-humble-moveit-ros-warehouse-dbgsym_2.6.0-100jammy_amd64.ddeb
+ dd6ea31222a4a6ab91ff74f71c4addb5 27433 misc optional ros-humble-moveit-ros-warehouse_2.6.0-100jammy_amd64.buildinfo
+ d86f3fdd6ec01ce13246dda44505edcc 423012 misc optional ros-humble-moveit-ros-warehouse_2.6.0-100jammy_amd64.deb

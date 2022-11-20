@@ -1,0 +1,74 @@
+Format: 1.8
+Date: Thu, 10 Nov 2022 00:00:00 -0000
+Source: ros-humble-moveit-servo
+Binary: ros-humble-moveit-servo
+Built-For-Profiles: noudeb
+Architecture: amd64
+Version: 2.6.0-100jammy
+Distribution: jammy
+Urgency: high
+Maintainer: Blake Anderson <blakeanderson@utexas.edu>
+Changed-By: Blake Anderson <blakeanderson@utexas.edu>
+Description:
+ ros-humble-moveit-servo - Provides real-time manipulator Cartesian and joint servoing.
+Changes:
+ ros-humble-moveit-servo (2.6.0-100jammy) jammy; urgency=high
+ .
+   * Fix dead tutorial link (#1701 <https://github.com/ros-planning/moveit2/issues/1701>)
+     When we refactored the tutorials site it looks like we killed some links. Do we not have a CI job to catch dead links?
+   * [Servo] CI simplification (#1556 <https://github.com/ros-planning/moveit2/issues/1556>)
+     This reverts commit 3322f19056d10d5e5c95c0276e383b048a840573.
+   * [Servo] Remove the option for "stop distance"-based collision checking (#1574 <https://github.com/ros-planning/moveit2/issues/1574>)
+   * Merge PR #1553 <https://github.com/ros-planning/moveit2/issues/1553>: Improve cmake files
+   * Use standard exported targets: export_${PROJECT_NAME} -> ${PROJECT_NAME}Targets
+   * Improve CMake usage (#1550 <https://github.com/ros-planning/moveit2/issues/1550>)
+   * [Servo] Use a WallRate so the clock is monotonically increasing (#1543 <https://github.com/ros-planning/moveit2/issues/1543>)
+     * [Servo] Use a WallRate so the clock is monotonically increasing
+     * Re-enable a commented integration test
+   * Disable flaky test_servo_singularity + test_rdf_integration (#1530 <https://github.com/ros-planning/moveit2/issues/1530>)
+   * Enforce singularity threshold when moving away from a singularity (#620 <https://github.com/ros-planning/moveit2/issues/620>)
+     * Enforce singularity threshold behavior even when moving away from a singularity
+     - Prevent uncontrolled behavior when servo starts close to a singularity and then servos away from it
+     - Scale velocity at a different rate when approaching/leaving singularity
+     - Add status code to distinguish between velocity scaling when moving towards/away from the singularity
+     * Work on expanding servo singularity tests
+     * Pre-commit
+     * removed duplicate input checking
+     * added 2 other tests
+     * undid changes to singularity test
+     * Update moveit_ros/moveit_servo/src/servo_calcs.cpp with Nathan's suggestion
+     Co-authored-by: Nathan Brooks <mailto:nbbrooks@gmail.com>
+     * readability changes and additional servo parameter check
+     * updating to newest design
+     * added warning message
+     * added missing semicolon
+     * made optional parameter nicer
+     * Remove outdated warning
+     Co-authored-by: AndyZe <mailto:andyz@utexas.edu>
+     * Removing inaccurate comment
+     Co-authored-by: AndyZe <mailto:andyz@utexas.edu>
+     * making Andy's suggested changes, added some comments and defaults, moved code block next to relevant singularity code
+     * removed part of comment that does not apply any more
+     * Mention "deprecation" in the warning
+     Co-authored-by: Henry Moore <mailto:henrygerardmoore@gmail.com>
+     Co-authored-by: Henry Moore <mailto:44307180+henrygerardmoore@users.noreply.github.com>
+     Co-authored-by: AndyZe <mailto:zelenak@picknik.ai>
+     Co-authored-by: AndyZe <mailto:andyz@utexas.edu>
+   * Remove __has_include statements (#1481 <https://github.com/ros-planning/moveit2/issues/1481>)
+   * Servo: check for and enable a realtime kernel (#1464 <https://github.com/ros-planning/moveit2/issues/1464>)
+     * Check for and enable a realtime kernel
+     * Set thread priority to 40. Link against controller_mgr.
+     * Do it from the right thread
+   * Contributors: AndyZe, Nathan Brooks, Robert Haschke, Sebastian Jahr, Vatan Aksoy Tezer
+Checksums-Sha1:
+ c883ff45e8c8759d6e2694905dde5c3b6f088812 33214572 ros-humble-moveit-servo-dbgsym_2.6.0-100jammy_amd64.ddeb
+ 3333fb51a5a6b3774fdaf48078e810325fc59d4c 33400 ros-humble-moveit-servo_2.6.0-100jammy_amd64.buildinfo
+ 026d8c8c02c06d6ebf7f847ab73dd7ecd2c49247 682766 ros-humble-moveit-servo_2.6.0-100jammy_amd64.deb
+Checksums-Sha256:
+ ba03f365b415bc8d38dae5b2e5ada83c4a22ff389d9f7da6787f4d72767201de 33214572 ros-humble-moveit-servo-dbgsym_2.6.0-100jammy_amd64.ddeb
+ da7154d5eab5debf5ff06acba818ce1e35893574635ee7419ba6c31b22a8cfbc 33400 ros-humble-moveit-servo_2.6.0-100jammy_amd64.buildinfo
+ 7da7d4fc1e6c8192f0ec3f76b1136fbf6474e72716fb583c4f3fdbfb7d36ea1c 682766 ros-humble-moveit-servo_2.6.0-100jammy_amd64.deb
+Files:
+ 65e18e20954f5e0ce8ad462c1df6d2ed 33214572 debug optional ros-humble-moveit-servo-dbgsym_2.6.0-100jammy_amd64.ddeb
+ 3cc92d0b30d0c19bba87ed790b86bb56 33400 misc optional ros-humble-moveit-servo_2.6.0-100jammy_amd64.buildinfo
+ 683cf96771ae7c3c10464b76d42c18bb 682766 misc optional ros-humble-moveit-servo_2.6.0-100jammy_amd64.deb

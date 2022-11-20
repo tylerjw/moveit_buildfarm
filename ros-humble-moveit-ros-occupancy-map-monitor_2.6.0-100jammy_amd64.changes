@@ -1,0 +1,32 @@
+Format: 1.8
+Date: Thu, 10 Nov 2022 00:00:00 -0000
+Source: ros-humble-moveit-ros-occupancy-map-monitor
+Binary: ros-humble-moveit-ros-occupancy-map-monitor
+Built-For-Profiles: noudeb
+Architecture: amd64
+Version: 2.6.0-100jammy
+Distribution: jammy
+Urgency: high
+Maintainer: Henning Kayser <henningkayser@picknik.ai>
+Changed-By: Henning Kayser <henningkayser@picknik.ai>
+Description:
+ ros-humble-moveit-ros-occupancy-map-monitor - Components of MoveIt connecting to occupancy map
+Changes:
+ ros-humble-moveit-ros-occupancy-map-monitor (2.6.0-100jammy) jammy; urgency=high
+ .
+   * Merge PR #1553 <https://github.com/ros-planning/moveit2/issues/1553>: Improve cmake files
+   * Use standard exported targets: export_${PROJECT_NAME} -> ${PROJECT_NAME}Targets
+   * Improve CMake usage (#1550 <https://github.com/ros-planning/moveit2/issues/1550>)
+   * Contributors: Robert Haschke, Sebastian Jahr
+Checksums-Sha1:
+ e0a03ecf408d2293226828b9f270a43caa765023 4622534 ros-humble-moveit-ros-occupancy-map-monitor-dbgsym_2.6.0-100jammy_amd64.ddeb
+ ecb699271f64daeb4b86ef48b70626f65396db1e 26794 ros-humble-moveit-ros-occupancy-map-monitor_2.6.0-100jammy_amd64.buildinfo
+ ef5377e3a00f89cf67e051d973fafb68230f7d9b 241974 ros-humble-moveit-ros-occupancy-map-monitor_2.6.0-100jammy_amd64.deb
+Checksums-Sha256:
+ 4b28c012ba1694cba274cf804c6705f6d5ef35b5d36f0698a23cea3f9c6bb9ed 4622534 ros-humble-moveit-ros-occupancy-map-monitor-dbgsym_2.6.0-100jammy_amd64.ddeb
+ 4d8ab60991e87372a2aef15d55a89ee039951621650b808688e82f5670e9f6d8 26794 ros-humble-moveit-ros-occupancy-map-monitor_2.6.0-100jammy_amd64.buildinfo
+ b158c4f5115370c544573d6b737627ae3d728795b598997e58625e3f8460433b 241974 ros-humble-moveit-ros-occupancy-map-monitor_2.6.0-100jammy_amd64.deb
+Files:
+ 37bface7b5d192802200d68ce9b26e6f 4622534 debug optional ros-humble-moveit-ros-occupancy-map-monitor-dbgsym_2.6.0-100jammy_amd64.ddeb
+ 8b41d44b3e92128f800b8391e91ddeff 26794 misc optional ros-humble-moveit-ros-occupancy-map-monitor_2.6.0-100jammy_amd64.buildinfo
+ 97e04794cf079f12b01603fa07b03c7a 241974 misc optional ros-humble-moveit-ros-occupancy-map-monitor_2.6.0-100jammy_amd64.deb

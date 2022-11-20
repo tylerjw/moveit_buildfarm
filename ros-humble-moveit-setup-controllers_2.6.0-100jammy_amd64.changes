@@ -1,0 +1,40 @@
+Format: 1.8
+Date: Thu, 10 Nov 2022 00:00:00 -0000
+Source: ros-humble-moveit-setup-controllers
+Binary: ros-humble-moveit-setup-controllers
+Built-For-Profiles: noudeb
+Architecture: amd64
+Version: 2.6.0-100jammy
+Distribution: jammy
+Urgency: high
+Maintainer: David V. Lu!! <davidvlu@gmail.com>
+Changed-By: David V. Lu!! <davidvlu@gmail.com>
+Description:
+ ros-humble-moveit-setup-controllers - MoveIt Setup Steps for ROS 2 Control
+Changes:
+ ros-humble-moveit-setup-controllers (2.6.0-100jammy) jammy; urgency=high
+ .
+   * Merge PR #1553 <https://github.com/ros-planning/moveit2/issues/1553>: Improve cmake files
+   * Cleanup cmake files
+     - Replace ament_export_libraries() -> ament_export_targets(HAS_LIBRARY_TARGET)
+     - Replace ament_export_include_directories() -> INCLUDES DESTINATION include
+     See https://docs.ros.org/en/foxy/How-To-Guides/Ament-CMake-Documentation.html#building-a-library
+   * Use standard exported targets: export_${PROJECT_NAME} -> ${PROJECT_NAME}Targets
+   * Improve CMake usage (#1550 <https://github.com/ros-planning/moveit2/issues/1550>)
+   * MSA: write the default controller namespace (#1515 <https://github.com/ros-planning/moveit2/issues/1515>)
+     * Write the default controller namespace
+     * Check for a sane controller type
+     * Revert the check for FollowJointTrajectory type
+   * Contributors: AndyZe, Robert Haschke, Sebastian Jahr
+Checksums-Sha1:
+ b5db129215f59231d453f0dfb95aea3289df18ec 11079950 ros-humble-moveit-setup-controllers-dbgsym_2.6.0-100jammy_amd64.ddeb
+ 1b26a804c6d7618421e982425453b75cf2803541 33842 ros-humble-moveit-setup-controllers_2.6.0-100jammy_amd64.buildinfo
+ f2030edf0a1c12643fd7fde41c1fe43fbb0a2f5c 159138 ros-humble-moveit-setup-controllers_2.6.0-100jammy_amd64.deb
+Checksums-Sha256:
+ 793e61e45e937868f80f16001886913834012b9f3e3f6382ed8ce32e38793896 11079950 ros-humble-moveit-setup-controllers-dbgsym_2.6.0-100jammy_amd64.ddeb
+ e6729c3cfbd7d8328b252b6859f05f286b0282ae5f5c9f270aa3720d96cd9a1c 33842 ros-humble-moveit-setup-controllers_2.6.0-100jammy_amd64.buildinfo
+ 5fa7cbb5a976a9fbd53ef50c3f7b24a976f4dbfd1c829f4e8475dddc7bf9235a 159138 ros-humble-moveit-setup-controllers_2.6.0-100jammy_amd64.deb
+Files:
+ af4dc106e3923849dabc9447a7e8f24c 11079950 debug optional ros-humble-moveit-setup-controllers-dbgsym_2.6.0-100jammy_amd64.ddeb
+ 172112f40106a6931b8164dbc8093aab 33842 misc optional ros-humble-moveit-setup-controllers_2.6.0-100jammy_amd64.buildinfo
+ e3456da788cba1167fec81fd4093db36 159138 misc optional ros-humble-moveit-setup-controllers_2.6.0-100jammy_amd64.deb

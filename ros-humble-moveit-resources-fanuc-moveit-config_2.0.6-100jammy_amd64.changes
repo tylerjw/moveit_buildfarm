@@ -1,0 +1,28 @@
+Format: 1.8
+Date: Mon, 18 Jul 2022 00:00:00 -0000
+Source: ros-humble-moveit-resources-fanuc-moveit-config
+Binary: ros-humble-moveit-resources-fanuc-moveit-config
+Built-For-Profiles: noudeb
+Architecture: amd64
+Version: 2.0.6-100jammy
+Distribution: jammy
+Urgency: high
+Maintainer: Dave Coleman <dave@dav.ee>
+Changed-By: Dave Coleman <dave@dav.ee>
+Description:
+ ros-humble-moveit-resources-fanuc-moveit-config - MoveIt Resources for testing: Fanuc M-10iA.
+Changes:
+ ros-humble-moveit-resources-fanuc-moveit-config (2.0.6-100jammy) jammy; urgency=high
+ .
+   * fake_components -> mock_components (#147 <https://github.com/ros-planning/moveit_resources/issues/147>)
+   * Rename cartesian_limits.yaml (#146 <https://github.com/ros-planning/moveit_resources/issues/146>)
+   * Contributors: AndyZe, Tyler Weaver
+Checksums-Sha1:
+ 6b4bb98041856c61960baa0959b1c6e9bf245435 9153 ros-humble-moveit-resources-fanuc-moveit-config_2.0.6-100jammy_amd64.buildinfo
+ 95d3d00c54e54d7122bc5884b5a9dfa93530af93 14932 ros-humble-moveit-resources-fanuc-moveit-config_2.0.6-100jammy_amd64.deb
+Checksums-Sha256:
+ ad12721080274efd0890821a337f05f03ec08c4f9591a460e661152ed3d5ee87 9153 ros-humble-moveit-resources-fanuc-moveit-config_2.0.6-100jammy_amd64.buildinfo
+ 9d889da9f0fec756e9b979d560e4680c97cfa146bdc80b1cbefa2d4ba9285980 14932 ros-humble-moveit-resources-fanuc-moveit-config_2.0.6-100jammy_amd64.deb
+Files:
+ e902e40ca95ec61e50d45b606b124109 9153 misc optional ros-humble-moveit-resources-fanuc-moveit-config_2.0.6-100jammy_amd64.buildinfo
+ a1de6b905038353ddbe2a07fc7ec9ca5 14932 misc optional ros-humble-moveit-resources-fanuc-moveit-config_2.0.6-100jammy_amd64.deb

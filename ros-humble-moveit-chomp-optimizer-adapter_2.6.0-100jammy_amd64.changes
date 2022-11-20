@@ -1,0 +1,58 @@
+Format: 1.8
+Date: Thu, 10 Nov 2022 00:00:00 -0000
+Source: ros-humble-moveit-chomp-optimizer-adapter
+Binary: ros-humble-moveit-chomp-optimizer-adapter
+Built-For-Profiles: noudeb
+Architecture: amd64
+Version: 2.6.0-100jammy
+Distribution: jammy
+Urgency: high
+Maintainer: Raghavender Sahdev <raghavendersahdev@gmail.com>
+Changed-By: Raghavender Sahdev <raghavendersahdev@gmail.com>
+Description:
+ ros-humble-moveit-chomp-optimizer-adapter - MoveIt planning request adapter utilizing chomp for solution opti
+Changes:
+ ros-humble-moveit-chomp-optimizer-adapter (2.6.0-100jammy) jammy; urgency=high
+ .
+   * Short-circuit planning adapters (#1694 <https://github.com/ros-planning/moveit2/issues/1694>)
+     * Revert "Planning request adapters: short-circuit if failure, return code rather than bool (#1605 <https://github.com/ros-planning/moveit2/issues/1605>)"
+     This reverts commit 66a64b4a72b6ddef1af2329f20ed8162554d5bcb.
+     * Add debug message in call stack of planning_request_adapters
+     * Short-circuit planning request adapters
+     * Replace if-elseif cascade with switch
+     * Cleanup translation of MoveItErrorCode to string
+     - Move default code to moveit_core/utils
+     - Override defaults in existing getActionResultString()
+     - Provide translations for all error codes defined in moveit_msgs
+     * Fix comment according to review
+     * Add braces
+     Co-authored-by: Henning Kayser <mailto:henningkayser@picknik.ai>
+     * Add braces
+     Co-authored-by: Henning Kayser <mailto:henningkayser@picknik.ai>
+     Co-authored-by: Henning Kayser <mailto:henningkayser@picknik.ai>
+     Co-authored-by: AndyZe <mailto:andyz@utexas.edu>
+   * Planning request adapters: short-circuit if failure, return code rather than bool (#1605 <https://github.com/ros-planning/moveit2/issues/1605>)
+     * Return code rather than bool
+     * Remove all debug prints
+     * Small fixup
+     * Minor cleanup of comment and error handling
+     * void return from PlannerFn
+     * Control reaches end of non-void function
+     * Use a MoveItErrorCode cast
+     * More efficient callAdapter()
+     * More MoveItErrorCode
+     * CI fixup attempt
+   * Improve CMake usage (#1550 <https://github.com/ros-planning/moveit2/issues/1550>)
+   * Contributors: AndyZe, Robert Haschke, Sebastian Jahr
+Checksums-Sha1:
+ ee25aa053a2e4f9c64f4a9ea448bf9058f793c24 2016356 ros-humble-moveit-chomp-optimizer-adapter-dbgsym_2.6.0-100jammy_amd64.ddeb
+ 3377c3e1015455cdf8ad58ecacbdb45715f0f68e 26971 ros-humble-moveit-chomp-optimizer-adapter_2.6.0-100jammy_amd64.buildinfo
+ 41843f722e04f8d733e8dc18568ce7f8cebcc09b 27774 ros-humble-moveit-chomp-optimizer-adapter_2.6.0-100jammy_amd64.deb
+Checksums-Sha256:
+ 2fa95fbdadf5d03fc79a0282102409a81d869cec293e2d22b15c22b30b2d08c9 2016356 ros-humble-moveit-chomp-optimizer-adapter-dbgsym_2.6.0-100jammy_amd64.ddeb
+ 3201ba4c006e85f2241ebb677868a5c9443c5859b666a46acf49937f4e68f095 26971 ros-humble-moveit-chomp-optimizer-adapter_2.6.0-100jammy_amd64.buildinfo
+ 664661776c07249c3a6e6d34955a435efd77dfd995e50f7104396b140fa88691 27774 ros-humble-moveit-chomp-optimizer-adapter_2.6.0-100jammy_amd64.deb
+Files:
+ 4b1308efaea745ebdf2001acac4d570b 2016356 debug optional ros-humble-moveit-chomp-optimizer-adapter-dbgsym_2.6.0-100jammy_amd64.ddeb
+ 8b32591bbd1dd942405719b51b1e5ad4 26971 misc optional ros-humble-moveit-chomp-optimizer-adapter_2.6.0-100jammy_amd64.buildinfo
+ 631a3aef2cdd88e8496e30d1729190ec 27774 misc optional ros-humble-moveit-chomp-optimizer-adapter_2.6.0-100jammy_amd64.deb

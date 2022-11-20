@@ -1,0 +1,28 @@
+Format: 1.8
+Date: Thu, 10 Nov 2022 00:00:00 -0000
+Source: ros-humble-moveit-resources-prbt-moveit-config
+Binary: ros-humble-moveit-resources-prbt-moveit-config
+Built-For-Profiles: noudeb
+Architecture: amd64
+Version: 2.6.0-100jammy
+Distribution: jammy
+Urgency: high
+Maintainer: Alexander Gutenkunst <a.gutenkunst@pilz.de>
+Changed-By: Alexander Gutenkunst <a.gutenkunst@pilz.de>
+Description:
+ ros-humble-moveit-resources-prbt-moveit-config - MoveIt Resources for testing: Pilz PRBT 6 A project-internal conf
+Changes:
+ ros-humble-moveit-resources-prbt-moveit-config (2.6.0-100jammy) jammy; urgency=high
+ .
+   * Use generate_parameter_library to load kinematics parameters (#1568 <https://github.com/ros-planning/moveit2/issues/1568>)
+   * Improve CMake usage (#1550 <https://github.com/ros-planning/moveit2/issues/1550>)
+   * Contributors: Abishalini Sivaraman, Sebastian Jahr
+Checksums-Sha1:
+ cae2d40bee97e252106675e4f7801b30397d89ed 9146 ros-humble-moveit-resources-prbt-moveit-config_2.6.0-100jammy_amd64.buildinfo
+ 1c020159293c5ce9e0dfe039f76b9fd078dd5479 14044 ros-humble-moveit-resources-prbt-moveit-config_2.6.0-100jammy_amd64.deb
+Checksums-Sha256:
+ 5ba0f5c65e4580806afbfb053f9fbf3545f0e8c70b7259f2bbbbbb3fb2049ad2 9146 ros-humble-moveit-resources-prbt-moveit-config_2.6.0-100jammy_amd64.buildinfo
+ 0f56c7bdfd7fedcf596ddd7d48e7ea76a11ff636338fa1ae4d39c1d65be9cd63 14044 ros-humble-moveit-resources-prbt-moveit-config_2.6.0-100jammy_amd64.deb
+Files:
+ c6bbc10337dda56b5b4ee933fbd297ec 9146 misc optional ros-humble-moveit-resources-prbt-moveit-config_2.6.0-100jammy_amd64.buildinfo
+ 1633158c1049517f54f8f957f92d5fac 14044 misc optional ros-humble-moveit-resources-prbt-moveit-config_2.6.0-100jammy_amd64.deb

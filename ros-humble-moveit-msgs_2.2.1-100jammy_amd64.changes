@@ -1,0 +1,33 @@
+Format: 1.8
+Date: Tue, 25 Oct 2022 00:00:00 -0000
+Source: ros-humble-moveit-msgs
+Binary: ros-humble-moveit-msgs
+Built-For-Profiles: noudeb
+Architecture: amd64
+Version: 2.2.1-100jammy
+Distribution: jammy
+Urgency: high
+Maintainer: Dave Coleman <dave@dav.ee>
+Changed-By: Dave Coleman <dave@dav.ee>
+Description:
+ ros-humble-moveit-msgs - Messages, services and actions used by MoveIt
+Changes:
+ ros-humble-moveit-msgs (2.2.1-100jammy) jammy; urgency=high
+ .
+   * Add more MoveItErrorCodes to match all OMPL codes (#146 <https://github.com/ros-planning/moveit_msgs/issues/146>)
+   * Factor of 2 in OMPL orientation constraints, to match kinematic_constraints (#145 <https://github.com/ros-planning/moveit_msgs/issues/145>)
+   * Note on constraint tolerances (#141 <https://github.com/ros-planning/moveit_msgs/issues/141>)
+   * Humble CI and prerelease (#139 <https://github.com/ros-planning/moveit_msgs/issues/139>)
+   * Contributors: AndyZe, Vatan Aksoy Tezer
+Checksums-Sha1:
+ 35e427333a6d04644b96a72d1272fe5746d7dfb1 12253064 ros-humble-moveit-msgs-dbgsym_2.2.1-100jammy_amd64.ddeb
+ 495e5713538afbc13355a053dd7ec061d71e25cb 13140 ros-humble-moveit-msgs_2.2.1-100jammy_amd64.buildinfo
+ e9a5dd2a9a1df2a5e30c13e4dc10fda21945ccf6 1038724 ros-humble-moveit-msgs_2.2.1-100jammy_amd64.deb
+Checksums-Sha256:
+ 96288b7ad1dabf36421ed0794f10d1e70be155f2a2c7911f82dd9dd80139b908 12253064 ros-humble-moveit-msgs-dbgsym_2.2.1-100jammy_amd64.ddeb
+ b3d28f37b6a82a677308063f3f471ba36b685cf682e597114863cc239cb9da7b 13140 ros-humble-moveit-msgs_2.2.1-100jammy_amd64.buildinfo
+ 7a010c0dee5e652009e75f7fedf40bbc3d0353c5e84cfb395e342bc638ebc606 1038724 ros-humble-moveit-msgs_2.2.1-100jammy_amd64.deb
+Files:
+ 86537ca63edbbbf8deb0c0cb62c4bffa 12253064 debug optional ros-humble-moveit-msgs-dbgsym_2.2.1-100jammy_amd64.ddeb
+ 8b4872a98b98044ad63d74bd6a717af8 13140 misc optional ros-humble-moveit-msgs_2.2.1-100jammy_amd64.buildinfo
+ c1802af947c4add80f250b4233cd830d 1038724 misc optional ros-humble-moveit-msgs_2.2.1-100jammy_amd64.deb

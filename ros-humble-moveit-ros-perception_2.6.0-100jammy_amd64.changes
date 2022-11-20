@@ -1,0 +1,33 @@
+Format: 1.8
+Date: Thu, 10 Nov 2022 00:00:00 -0000
+Source: ros-humble-moveit-ros-perception
+Binary: ros-humble-moveit-ros-perception
+Built-For-Profiles: noudeb
+Architecture: amd64
+Version: 2.6.0-100jammy
+Distribution: jammy
+Urgency: high
+Maintainer: Henning Kayser <henningkayser@picknik.ai>
+Changed-By: Henning Kayser <henningkayser@picknik.ai>
+Description:
+ ros-humble-moveit-ros-perception - Components of MoveIt connecting to perception
+Changes:
+ ros-humble-moveit-ros-perception (2.6.0-100jammy) jammy; urgency=high
+ .
+   * Merge PR #1553 <https://github.com/ros-planning/moveit2/issues/1553>: Improve cmake files
+   * Use standard exported targets: export_${PROJECT_NAME} -> ${PROJECT_NAME}Targets
+   * Improve CMake usage (#1550 <https://github.com/ros-planning/moveit2/issues/1550>)
+   * Remove __has_include statements (#1481 <https://github.com/ros-planning/moveit2/issues/1481>)
+   * Contributors: Robert Haschke, Sebastian Jahr, Vatan Aksoy Tezer
+Checksums-Sha1:
+ 7cf390ba8f20751c4afa53cc8b68fac15a693f72 9516996 ros-humble-moveit-ros-perception-dbgsym_2.6.0-100jammy_amd64.ddeb
+ be1329c49657686ae222a2bf98a196b4ef264ce1 38611 ros-humble-moveit-ros-perception_2.6.0-100jammy_amd64.buildinfo
+ 6abd641c7f22eb6ca2bb6049b95c94b324871883 333070 ros-humble-moveit-ros-perception_2.6.0-100jammy_amd64.deb
+Checksums-Sha256:
+ 953165dcfaa56f65ee57180a9a12be8029327115cb0d7ae48bffb25d6c9f43bd 9516996 ros-humble-moveit-ros-perception-dbgsym_2.6.0-100jammy_amd64.ddeb
+ 89fa2436634ef4541ce41f953c4470cd30bf84b828ff64e3d8d1bafdd8f8f511 38611 ros-humble-moveit-ros-perception_2.6.0-100jammy_amd64.buildinfo
+ 3aed7c7b65ed0ede4d2a47aabc955491f8dc4ef932c36fdc0015256908874d02 333070 ros-humble-moveit-ros-perception_2.6.0-100jammy_amd64.deb
+Files:
+ 6a131e65f56071e01ada0570ab9854b7 9516996 debug optional ros-humble-moveit-ros-perception-dbgsym_2.6.0-100jammy_amd64.ddeb
+ ceb83f3bd13b0a6ec2b1c95582285e3b 38611 misc optional ros-humble-moveit-ros-perception_2.6.0-100jammy_amd64.buildinfo
+ e25150861bfe7e6c934e83e6ac29e3ab 333070 misc optional ros-humble-moveit-ros-perception_2.6.0-100jammy_amd64.deb
