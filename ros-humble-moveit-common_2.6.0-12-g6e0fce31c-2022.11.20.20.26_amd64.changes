@@ -1,0 +1,27 @@
+Format: 1.8
+Date: Thu, 10 Nov 2022 00:00:00 -0000
+Source: ros-humble-moveit-common
+Binary: ros-humble-moveit-common
+Built-For-Profiles: noudeb
+Architecture: amd64
+Version: 2.6.0-12-g6e0fce31c-2022.11.20.20.26
+Distribution: jammy
+Urgency: high
+Maintainer: Henning Kayser <henningkayser@picknik.ai>
+Changed-By: Henning Kayser <henningkayser@picknik.ai>
+Description:
+ ros-humble-moveit-common - Common support functionality used throughout MoveIt
+Changes:
+ ros-humble-moveit-common (2.6.0-12-g6e0fce31c-2022.11.20.20.26) jammy; urgency=high
+ .
+   * Improve CMake usage (#1550 <https://github.com/ros-planning/moveit2/issues/1550>)
+   * Contributors: Sebastian Jahr
+Checksums-Sha1:
+ 7c394a98c978386f0f056921136907786fb99063 10988 ros-humble-moveit-common_2.6.0-12-g6e0fce31c-2022.11.20.20.26_amd64.buildinfo
+ 20cb221293ae4e8bc2a4a9a06d811f36a7b7f3db 7836 ros-humble-moveit-common_2.6.0-12-g6e0fce31c-2022.11.20.20.26_amd64.deb
+Checksums-Sha256:
+ 6fd3dc69bb66b23c381ed2efa8ef4156de933f240f5882881c8de7e1d390bbff 10988 ros-humble-moveit-common_2.6.0-12-g6e0fce31c-2022.11.20.20.26_amd64.buildinfo
+ d27b68d984656928f527dfd07217fe16da8e38ff23f212f4f16189cd58bcd666 7836 ros-humble-moveit-common_2.6.0-12-g6e0fce31c-2022.11.20.20.26_amd64.deb
+Files:
+ f9d6c23208fcc1690c671836f80468af 10988 misc optional ros-humble-moveit-common_2.6.0-12-g6e0fce31c-2022.11.20.20.26_amd64.buildinfo
+ 0b262928d917a1e02ad12f3ecd5e9e6a 7836 misc optional ros-humble-moveit-common_2.6.0-12-g6e0fce31c-2022.11.20.20.26_amd64.deb

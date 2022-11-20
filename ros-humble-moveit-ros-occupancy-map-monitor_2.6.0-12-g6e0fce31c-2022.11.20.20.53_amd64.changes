@@ -1,0 +1,32 @@
+Format: 1.8
+Date: Thu, 10 Nov 2022 00:00:00 -0000
+Source: ros-humble-moveit-ros-occupancy-map-monitor
+Binary: ros-humble-moveit-ros-occupancy-map-monitor
+Built-For-Profiles: noudeb
+Architecture: amd64
+Version: 2.6.0-12-g6e0fce31c-2022.11.20.20.53
+Distribution: jammy
+Urgency: high
+Maintainer: Henning Kayser <henningkayser@picknik.ai>
+Changed-By: Henning Kayser <henningkayser@picknik.ai>
+Description:
+ ros-humble-moveit-ros-occupancy-map-monitor - Components of MoveIt connecting to occupancy map
+Changes:
+ ros-humble-moveit-ros-occupancy-map-monitor (2.6.0-12-g6e0fce31c-2022.11.20.20.53) jammy; urgency=high
+ .
+   * Merge PR #1553 <https://github.com/ros-planning/moveit2/issues/1553>: Improve cmake files
+   * Use standard exported targets: export_${PROJECT_NAME} -> ${PROJECT_NAME}Targets
+   * Improve CMake usage (#1550 <https://github.com/ros-planning/moveit2/issues/1550>)
+   * Contributors: Robert Haschke, Sebastian Jahr
+Checksums-Sha1:
+ c3d17be6e6eae0739aae3495b2812d1e51444cd8 4622388 ros-humble-moveit-ros-occupancy-map-monitor-dbgsym_2.6.0-12-g6e0fce31c-2022.11.20.20.53_amd64.ddeb
+ bea310a0efec745b371a85852b20d118f922a14b 27014 ros-humble-moveit-ros-occupancy-map-monitor_2.6.0-12-g6e0fce31c-2022.11.20.20.53_amd64.buildinfo
+ 07d5cb2438de713b97105bba5356a78d3ade965d 242020 ros-humble-moveit-ros-occupancy-map-monitor_2.6.0-12-g6e0fce31c-2022.11.20.20.53_amd64.deb
+Checksums-Sha256:
+ 8d6d699cf3eedf605e09e6f51c299fb1eecb0ebd2e4b361a605e1d74f8b8abcc 4622388 ros-humble-moveit-ros-occupancy-map-monitor-dbgsym_2.6.0-12-g6e0fce31c-2022.11.20.20.53_amd64.ddeb
+ 2af1822934e66cafa92d8a350e024c7ffcf48c5b59da01f60ccb1aa45b8499a5 27014 ros-humble-moveit-ros-occupancy-map-monitor_2.6.0-12-g6e0fce31c-2022.11.20.20.53_amd64.buildinfo
+ 0f3c21d7b599769ae665f5b9d1683a0fc37de4d6932ee35236beb09f8cfbd68c 242020 ros-humble-moveit-ros-occupancy-map-monitor_2.6.0-12-g6e0fce31c-2022.11.20.20.53_amd64.deb
+Files:
+ 4ad6ca875eb5848bc4934a5d6cd6eb54 4622388 debug optional ros-humble-moveit-ros-occupancy-map-monitor-dbgsym_2.6.0-12-g6e0fce31c-2022.11.20.20.53_amd64.ddeb
+ 32903ba43ef69dc65fcde031ffcaca2f 27014 misc optional ros-humble-moveit-ros-occupancy-map-monitor_2.6.0-12-g6e0fce31c-2022.11.20.20.53_amd64.buildinfo
+ 4b279726859053d816a26155d976755e 242020 misc optional ros-humble-moveit-ros-occupancy-map-monitor_2.6.0-12-g6e0fce31c-2022.11.20.20.53_amd64.deb

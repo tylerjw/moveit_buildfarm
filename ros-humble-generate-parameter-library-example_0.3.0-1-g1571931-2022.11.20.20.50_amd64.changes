@@ -1,0 +1,30 @@
+Format: 1.8
+Date: Tue, 15 Nov 2022 00:00:00 -0000
+Source: ros-humble-generate-parameter-library-example
+Binary: ros-humble-generate-parameter-library-example
+Built-For-Profiles: noudeb
+Architecture: amd64
+Version: 0.3.0-1-g1571931-2022.11.20.20.50
+Distribution: jammy
+Urgency: high
+Maintainer: Paul Gesel <paul.gesel@picknik.ai>
+Changed-By: Paul Gesel <paul.gesel@picknik.ai>
+Description:
+ ros-humble-generate-parameter-library-example - Example usage of generate_parameter_library.
+Changes:
+ ros-humble-generate-parameter-library-example (0.3.0-1-g1571931-2022.11.20.20.50) jammy; urgency=high
+ .
+   * Migrate from parameter_traits to RSL (take 2) (#91 <https://github.com/PickNikRobotics/generate_parameter_library/issues/91>)
+   * Contributors: Tyler Weaver
+Checksums-Sha1:
+ 5fee7e3ad078ac198a38cb25b54eeb76562c2ec9 1144414 ros-humble-generate-parameter-library-example-dbgsym_0.3.0-1-g1571931-2022.11.20.20.50_amd64.ddeb
+ ed038e94b9b5df98149049092670946f33e9e742 17330 ros-humble-generate-parameter-library-example_0.3.0-1-g1571931-2022.11.20.20.50_amd64.buildinfo
+ 55112c0e46a6005b9e4504bd4b27e992ce57339f 85306 ros-humble-generate-parameter-library-example_0.3.0-1-g1571931-2022.11.20.20.50_amd64.deb
+Checksums-Sha256:
+ 26afa752b09e8839f2691a3014ca7ad69de86b86b2263121aba1b965c2610d56 1144414 ros-humble-generate-parameter-library-example-dbgsym_0.3.0-1-g1571931-2022.11.20.20.50_amd64.ddeb
+ 4812694640de7ecafca4f097131013af973d14997b9281e1b4b832b4e406a239 17330 ros-humble-generate-parameter-library-example_0.3.0-1-g1571931-2022.11.20.20.50_amd64.buildinfo
+ 3f78d0604cb7bdb4893ea696f578c7f3370b5f3b5214b04f3e0c434e869ebdbe 85306 ros-humble-generate-parameter-library-example_0.3.0-1-g1571931-2022.11.20.20.50_amd64.deb
+Files:
+ eaa7ebb990ffa8912c9938301e6239b3 1144414 debug optional ros-humble-generate-parameter-library-example-dbgsym_0.3.0-1-g1571931-2022.11.20.20.50_amd64.ddeb
+ 60432bbfd2be5d3ca7cc3c458c27dee3 17330 misc optional ros-humble-generate-parameter-library-example_0.3.0-1-g1571931-2022.11.20.20.50_amd64.buildinfo
+ 97c2683291fd278f62d02a2d9ba0aebf 85306 misc optional ros-humble-generate-parameter-library-example_0.3.0-1-g1571931-2022.11.20.20.50_amd64.deb

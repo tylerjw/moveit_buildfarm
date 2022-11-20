@@ -1,0 +1,37 @@
+Format: 1.8
+Date: Thu, 10 Nov 2022 00:00:00 -0000
+Source: ros-humble-moveit-ros-benchmarks
+Binary: ros-humble-moveit-ros-benchmarks
+Built-For-Profiles: noudeb
+Architecture: amd64
+Version: 2.6.0-12-g6e0fce31c-2022.11.20.21.28
+Distribution: jammy
+Urgency: high
+Maintainer: Henning Kayser <henningkayser@picknik.ai>
+Changed-By: Henning Kayser <henningkayser@picknik.ai>
+Description:
+ ros-humble-moveit-ros-benchmarks - Enhanced tools for benchmarks in MoveIt
+Changes:
+ ros-humble-moveit-ros-benchmarks (2.6.0-12-g6e0fce31c-2022.11.20.21.28) jammy; urgency=high
+ .
+   * Remove unused benchmark_execution.cpp file (#1535 <https://github.com/ros-planning/moveit2/issues/1535>)
+   * Merge PR #1553 <https://github.com/ros-planning/moveit2/issues/1553>: Improve cmake files
+   * Use standard exported targets: export_${PROJECT_NAME} -> ${PROJECT_NAME}Targets
+   * Improve CMake usage (#1550 <https://github.com/ros-planning/moveit2/issues/1550>)
+   * Free functions for calculating properties of trajectories (#1503 <https://github.com/ros-planning/moveit2/issues/1503>)
+     Co-authored-by: Sebastian Jahr <mailto:sebastian.jahr@picknik.ai>
+     Co-authored-by: Sebastian Jahr <mailto:sebastian.jahr@picknik.ai>
+   * Remove __has_include statements (#1481 <https://github.com/ros-planning/moveit2/issues/1481>)
+   * Contributors: Robert Haschke, Sebastian Jahr, Tyler Weaver, Vatan Aksoy Tezer
+Checksums-Sha1:
+ 7570f2b48e535a335a79017854729f32064bebb0 8040578 ros-humble-moveit-ros-benchmarks-dbgsym_2.6.0-12-g6e0fce31c-2022.11.20.21.28_amd64.ddeb
+ 4e1cb6abf85526fd9f4715b9962cfdca66be440a 27856 ros-humble-moveit-ros-benchmarks_2.6.0-12-g6e0fce31c-2022.11.20.21.28_amd64.buildinfo
+ f19e06958e9fc3fb6581f4843dc6397be44ac930 209282 ros-humble-moveit-ros-benchmarks_2.6.0-12-g6e0fce31c-2022.11.20.21.28_amd64.deb
+Checksums-Sha256:
+ 1c22e555565efd2b9657c507c994cb988ef57c6791b50f703630b53b537c870a 8040578 ros-humble-moveit-ros-benchmarks-dbgsym_2.6.0-12-g6e0fce31c-2022.11.20.21.28_amd64.ddeb
+ 384c707002caf94f7a494f6bab1ff437d49752ae48f9f33e3484b2e3fc8672fb 27856 ros-humble-moveit-ros-benchmarks_2.6.0-12-g6e0fce31c-2022.11.20.21.28_amd64.buildinfo
+ 213766aed2402cfb0534eec035ad9c6db014fb09e476a65c89688d0859aa0711 209282 ros-humble-moveit-ros-benchmarks_2.6.0-12-g6e0fce31c-2022.11.20.21.28_amd64.deb
+Files:
+ c542af4bd2115a025a531f84ad9afecd 8040578 debug optional ros-humble-moveit-ros-benchmarks-dbgsym_2.6.0-12-g6e0fce31c-2022.11.20.21.28_amd64.ddeb
+ 362c1ccd1492fbc19f18b355d3ad9af7 27856 misc optional ros-humble-moveit-ros-benchmarks_2.6.0-12-g6e0fce31c-2022.11.20.21.28_amd64.buildinfo
+ a9551f411285eb1ca33507c18132d816 209282 misc optional ros-humble-moveit-ros-benchmarks_2.6.0-12-g6e0fce31c-2022.11.20.21.28_amd64.deb

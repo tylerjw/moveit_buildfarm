@@ -1,0 +1,27 @@
+Format: 1.8
+Date: Thu, 10 Nov 2022 00:00:00 -0000
+Source: ros-humble-moveit-plugins
+Binary: ros-humble-moveit-plugins
+Built-For-Profiles: noudeb
+Architecture: amd64
+Version: 2.6.0-12-g6e0fce31c-2022.11.20.21.01
+Distribution: jammy
+Urgency: high
+Maintainer: Henning Kayser <henningkayser@picknik.ai>
+Changed-By: Henning Kayser <henningkayser@picknik.ai>
+Description:
+ ros-humble-moveit-plugins - Metapackage for MoveIt plugins.
+Changes:
+ ros-humble-moveit-plugins (2.6.0-12-g6e0fce31c-2022.11.20.21.01) jammy; urgency=high
+ .
+   * Improve CMake usage (#1550 <https://github.com/ros-planning/moveit2/issues/1550>)
+   * Contributors: Sebastian Jahr
+Checksums-Sha1:
+ a9fcb4ab059cd37dafe717def890218ad28f98d9 10800 ros-humble-moveit-plugins_2.6.0-12-g6e0fce31c-2022.11.20.21.01_amd64.buildinfo
+ 5a01f45e81399780c44dfd9568427c3c352d07a6 6342 ros-humble-moveit-plugins_2.6.0-12-g6e0fce31c-2022.11.20.21.01_amd64.deb
+Checksums-Sha256:
+ c598b38a387278d589b88242d84eb18041a3e3ca9766948e26202e99208738ee 10800 ros-humble-moveit-plugins_2.6.0-12-g6e0fce31c-2022.11.20.21.01_amd64.buildinfo
+ 281504e98bd1dbc2644b7e6cbd62303c69f26167fa8d59c0a1a5884e66d96da2 6342 ros-humble-moveit-plugins_2.6.0-12-g6e0fce31c-2022.11.20.21.01_amd64.deb
+Files:
+ 4bbebeef33361568428f41eec68e6020 10800 misc optional ros-humble-moveit-plugins_2.6.0-12-g6e0fce31c-2022.11.20.21.01_amd64.buildinfo
+ 27478d33997a3c1f4ddf84fa39b2a7ef 6342 misc optional ros-humble-moveit-plugins_2.6.0-12-g6e0fce31c-2022.11.20.21.01_amd64.deb

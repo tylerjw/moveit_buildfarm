@@ -1,0 +1,30 @@
+Format: 1.8
+Date: Thu, 10 Nov 2022 00:00:00 -0000
+Source: ros-humble-moveit-setup-assistant
+Binary: ros-humble-moveit-setup-assistant
+Built-For-Profiles: noudeb
+Architecture: amd64
+Version: 2.6.0-12-g6e0fce31c-2022.11.20.22.21
+Distribution: jammy
+Urgency: high
+Maintainer: Henning Kayser <henningkayser@picknik.ai>
+Changed-By: Henning Kayser <henningkayser@picknik.ai>
+Description:
+ ros-humble-moveit-setup-assistant - Generates a configuration package that makes it easy to use MoveI
+Changes:
+ ros-humble-moveit-setup-assistant (2.6.0-12-g6e0fce31c-2022.11.20.22.21) jammy; urgency=high
+ .
+   * Improve CMake usage (#1550 <https://github.com/ros-planning/moveit2/issues/1550>)
+   * Contributors: Sebastian Jahr
+Checksums-Sha1:
+ 8a8e9f79b098c72ea32414c0042563b6b00fe202 7372590 ros-humble-moveit-setup-assistant-dbgsym_2.6.0-12-g6e0fce31c-2022.11.20.22.21_amd64.ddeb
+ b145dc256c476523e2936478ac412f621cf5a538 34293 ros-humble-moveit-setup-assistant_2.6.0-12-g6e0fce31c-2022.11.20.22.21_amd64.buildinfo
+ c25d25ace6c34ae880108596201add7bb543cea1 291594 ros-humble-moveit-setup-assistant_2.6.0-12-g6e0fce31c-2022.11.20.22.21_amd64.deb
+Checksums-Sha256:
+ 8f9545a6e264bf7d6cc615d07d2b40d0421547719872f8efc83025d9ea1b4ddb 7372590 ros-humble-moveit-setup-assistant-dbgsym_2.6.0-12-g6e0fce31c-2022.11.20.22.21_amd64.ddeb
+ f8d6172838111581e3df3ffe54bed4832964864a0b5b6b7bc880b77d7a5269b4 34293 ros-humble-moveit-setup-assistant_2.6.0-12-g6e0fce31c-2022.11.20.22.21_amd64.buildinfo
+ 50549438fd2ab1a9516c096bfc3b7450d87786ac6d8fcc50843e54f5dc8ab682 291594 ros-humble-moveit-setup-assistant_2.6.0-12-g6e0fce31c-2022.11.20.22.21_amd64.deb
+Files:
+ 42d9fbe23ba3263b441549fc25c76cc1 7372590 debug optional ros-humble-moveit-setup-assistant-dbgsym_2.6.0-12-g6e0fce31c-2022.11.20.22.21_amd64.ddeb
+ 4760b5f5bc68f57d020e6cc26eb14fca 34293 misc optional ros-humble-moveit-setup-assistant_2.6.0-12-g6e0fce31c-2022.11.20.22.21_amd64.buildinfo
+ 831639b3781d8c24bd74a775dbf1d82f 291594 misc optional ros-humble-moveit-setup-assistant_2.6.0-12-g6e0fce31c-2022.11.20.22.21_amd64.deb

@@ -1,0 +1,39 @@
+Format: 1.8
+Date: Thu, 10 Nov 2022 00:00:00 -0000
+Source: ros-humble-pilz-industrial-motion-planner
+Binary: ros-humble-pilz-industrial-motion-planner
+Built-For-Profiles: noudeb
+Architecture: amd64
+Version: 2.6.0-12-g6e0fce31c-2022.11.20.22.01
+Distribution: jammy
+Urgency: high
+Maintainer: Christian Henkel <c.henkel@pilz.de>
+Changed-By: Christian Henkel <c.henkel@pilz.de>
+Description:
+ ros-humble-pilz-industrial-motion-planner - MoveIt plugin to generate industrial trajectories PTP, LIN, CIRC
+Changes:
+ ros-humble-pilz-industrial-motion-planner (2.6.0-12-g6e0fce31c-2022.11.20.22.01) jammy; urgency=high
+ .
+   * Use generate_parameter_library to load pilz cartesian limit parameters (#1577 <https://github.com/ros-planning/moveit2/issues/1577>)
+   * Add joint acceleration validator methods to Pilz limits container (#1638 <https://github.com/ros-planning/moveit2/issues/1638>)
+   * Use MoveItConfigsBuilder in Pilz test launch file (#1571 <https://github.com/ros-planning/moveit2/issues/1571>)
+   * Improve CMake usage (#1550 <https://github.com/ros-planning/moveit2/issues/1550>)
+   * Add planner configurations to CHOMP and PILZ (#1522 <https://github.com/ros-planning/moveit2/issues/1522>)
+   * Use pragma once as header include guard (#1525 <https://github.com/ros-planning/moveit2/issues/1525>)
+   * Removed plan_with_sensing (#1142 <https://github.com/ros-planning/moveit2/issues/1142>)
+   * Remove __has_include statements (#1481 <https://github.com/ros-planning/moveit2/issues/1481>)
+   * Merge https://github.com/ros-planning/moveit/commit/a63580edd05b01d9480c333645036e5b2b222da9
+   * Add missing header for std::unique_ptr (#3180 <https://github.com/ros-planning/moveit2/issues/3180>)
+   * Contributors: Abishalini Sivaraman, J. Javan, Jochen Sprickerhof, Sebastian Castro, Sebastian Jahr, Stephanie Eng, Vatan Aksoy Tezer, abishalini
+Checksums-Sha1:
+ 766c43f1a08260418ddf8df91aefb9fabfa1c76d 24804120 ros-humble-pilz-industrial-motion-planner-dbgsym_2.6.0-12-g6e0fce31c-2022.11.20.22.01_amd64.ddeb
+ a34ec64cde80308f58bc317ab6f29c231bc274d4 36485 ros-humble-pilz-industrial-motion-planner_2.6.0-12-g6e0fce31c-2022.11.20.22.01_amd64.buildinfo
+ 2d9593812901d5791dd9d6c75054f19f622aa0a5 350700 ros-humble-pilz-industrial-motion-planner_2.6.0-12-g6e0fce31c-2022.11.20.22.01_amd64.deb
+Checksums-Sha256:
+ 371b1d1f5d7b0329c32cdbe79cfe7460402feeb2511a9d350c825d3909f12cbd 24804120 ros-humble-pilz-industrial-motion-planner-dbgsym_2.6.0-12-g6e0fce31c-2022.11.20.22.01_amd64.ddeb
+ 1983f6fb1b1fc96dbeb2c79a5a51eb4c0ac65634e6b36c0c245707a7b9c34770 36485 ros-humble-pilz-industrial-motion-planner_2.6.0-12-g6e0fce31c-2022.11.20.22.01_amd64.buildinfo
+ e7aeeaad4e571dfc6fbf390b669c95fcb19dd3b63fad89fd70aa8a0715eb1c3e 350700 ros-humble-pilz-industrial-motion-planner_2.6.0-12-g6e0fce31c-2022.11.20.22.01_amd64.deb
+Files:
+ b9b99ef6d060a257c7de77e7865620f2 24804120 debug optional ros-humble-pilz-industrial-motion-planner-dbgsym_2.6.0-12-g6e0fce31c-2022.11.20.22.01_amd64.ddeb
+ 1c9ca534aada4e410a5c289396e59316 36485 misc optional ros-humble-pilz-industrial-motion-planner_2.6.0-12-g6e0fce31c-2022.11.20.22.01_amd64.buildinfo
+ c0035e4afc8321111e90f16fe12e5dff 350700 misc optional ros-humble-pilz-industrial-motion-planner_2.6.0-12-g6e0fce31c-2022.11.20.22.01_amd64.deb

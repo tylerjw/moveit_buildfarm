@@ -1,0 +1,33 @@
+Format: 1.8
+Date: Thu, 10 Nov 2022 00:00:00 -0000
+Source: ros-humble-moveit-ros-perception
+Binary: ros-humble-moveit-ros-perception
+Built-For-Profiles: noudeb
+Architecture: amd64
+Version: 2.6.0-12-g6e0fce31c-2022.11.20.21.19
+Distribution: jammy
+Urgency: high
+Maintainer: Henning Kayser <henningkayser@picknik.ai>
+Changed-By: Henning Kayser <henningkayser@picknik.ai>
+Description:
+ ros-humble-moveit-ros-perception - Components of MoveIt connecting to perception
+Changes:
+ ros-humble-moveit-ros-perception (2.6.0-12-g6e0fce31c-2022.11.20.21.19) jammy; urgency=high
+ .
+   * Merge PR #1553 <https://github.com/ros-planning/moveit2/issues/1553>: Improve cmake files
+   * Use standard exported targets: export_${PROJECT_NAME} -> ${PROJECT_NAME}Targets
+   * Improve CMake usage (#1550 <https://github.com/ros-planning/moveit2/issues/1550>)
+   * Remove __has_include statements (#1481 <https://github.com/ros-planning/moveit2/issues/1481>)
+   * Contributors: Robert Haschke, Sebastian Jahr, Vatan Aksoy Tezer
+Checksums-Sha1:
+ 331a8383ef963a6e3a257b84a3b1c470c349ea60 9516724 ros-humble-moveit-ros-perception-dbgsym_2.6.0-12-g6e0fce31c-2022.11.20.21.19_amd64.ddeb
+ 0879f4cbbdc6e200526e104fb60c9e44a24196be 38951 ros-humble-moveit-ros-perception_2.6.0-12-g6e0fce31c-2022.11.20.21.19_amd64.buildinfo
+ fe47d5b8394c4ecf2e3fecde76397dcd430b17b0 332982 ros-humble-moveit-ros-perception_2.6.0-12-g6e0fce31c-2022.11.20.21.19_amd64.deb
+Checksums-Sha256:
+ 0aefe39ded372d0f1bf600f77244e385cb51d9595e199645ff07ea0aa8a57c18 9516724 ros-humble-moveit-ros-perception-dbgsym_2.6.0-12-g6e0fce31c-2022.11.20.21.19_amd64.ddeb
+ 3c45ae908bd8c50abe8f5328386fe8e5015352a423b904b4551ee672d09d0e3d 38951 ros-humble-moveit-ros-perception_2.6.0-12-g6e0fce31c-2022.11.20.21.19_amd64.buildinfo
+ a7cb320a8682d39f2dc7cd9bf88cd4a42d6241d8d4965a5c5974dee2df05454c 332982 ros-humble-moveit-ros-perception_2.6.0-12-g6e0fce31c-2022.11.20.21.19_amd64.deb
+Files:
+ a3e063d55b0e29efaa95dda5c72db71a 9516724 debug optional ros-humble-moveit-ros-perception-dbgsym_2.6.0-12-g6e0fce31c-2022.11.20.21.19_amd64.ddeb
+ 4c68ed638dd1e278eafc64b41f6cea6d 38951 misc optional ros-humble-moveit-ros-perception_2.6.0-12-g6e0fce31c-2022.11.20.21.19_amd64.buildinfo
+ 9c8c51cd00fe33f8c5cae3a70533a355 332982 misc optional ros-humble-moveit-ros-perception_2.6.0-12-g6e0fce31c-2022.11.20.21.19_amd64.deb

@@ -1,0 +1,27 @@
+Format: 1.8
+Date: Thu, 10 Nov 2022 00:00:00 -0000
+Source: ros-humble-moveit-ros
+Binary: ros-humble-moveit-ros
+Built-For-Profiles: noudeb
+Architecture: amd64
+Version: 2.6.0-12-g6e0fce31c-2022.11.20.21.57
+Distribution: jammy
+Urgency: high
+Maintainer: Michael Görner <me@v4hn.de>
+Changed-By: Michael Görner <me@v4hn.de>
+Description:
+ ros-humble-moveit-ros - Components of MoveIt that use ROS
+Changes:
+ ros-humble-moveit-ros (2.6.0-12-g6e0fce31c-2022.11.20.21.57) jammy; urgency=high
+ .
+   * Improve CMake usage (#1550 <https://github.com/ros-planning/moveit2/issues/1550>)
+   * Contributors: Sebastian Jahr
+Checksums-Sha1:
+ 6e4e542d736dd324832f6a0c456bd4b917f85525 10772 ros-humble-moveit-ros_2.6.0-12-g6e0fce31c-2022.11.20.21.57_amd64.buildinfo
+ 65204e50fd913cd531d118130019cc8246b706d5 6866 ros-humble-moveit-ros_2.6.0-12-g6e0fce31c-2022.11.20.21.57_amd64.deb
+Checksums-Sha256:
+ f7616c060661fc35f0278a4e016cae4418d5371a8637f39994a1aa504096c272 10772 ros-humble-moveit-ros_2.6.0-12-g6e0fce31c-2022.11.20.21.57_amd64.buildinfo
+ 63dcaf810ee7fcc0db15a02da511debc6102d8339d5e5ef890167d6f36dd59ad 6866 ros-humble-moveit-ros_2.6.0-12-g6e0fce31c-2022.11.20.21.57_amd64.deb
+Files:
+ 273ac6336fc68b79ca9ee126aceee1fc 10772 misc optional ros-humble-moveit-ros_2.6.0-12-g6e0fce31c-2022.11.20.21.57_amd64.buildinfo
+ 85d6a057345bb1bb215b48d32313fba8 6866 misc optional ros-humble-moveit-ros_2.6.0-12-g6e0fce31c-2022.11.20.21.57_amd64.deb

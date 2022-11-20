@@ -1,0 +1,33 @@
+Format: 1.8
+Date: Tue, 25 Oct 2022 00:00:00 -0000
+Source: ros-humble-moveit-msgs
+Binary: ros-humble-moveit-msgs
+Built-For-Profiles: noudeb
+Architecture: amd64
+Version: 2.2.1-2022.11.20.20.27
+Distribution: jammy
+Urgency: high
+Maintainer: Dave Coleman <dave@dav.ee>
+Changed-By: Dave Coleman <dave@dav.ee>
+Description:
+ ros-humble-moveit-msgs - Messages, services and actions used by MoveIt
+Changes:
+ ros-humble-moveit-msgs (2.2.1-2022.11.20.20.27) jammy; urgency=high
+ .
+   * Add more MoveItErrorCodes to match all OMPL codes (#146 <https://github.com/ros-planning/moveit_msgs/issues/146>)
+   * Factor of 2 in OMPL orientation constraints, to match kinematic_constraints (#145 <https://github.com/ros-planning/moveit_msgs/issues/145>)
+   * Note on constraint tolerances (#141 <https://github.com/ros-planning/moveit_msgs/issues/141>)
+   * Humble CI and prerelease (#139 <https://github.com/ros-planning/moveit_msgs/issues/139>)
+   * Contributors: AndyZe, Vatan Aksoy Tezer
+Checksums-Sha1:
+ 5e4d85132d52727f074ed5e8dd8f2f90f10fa1c2 12155986 ros-humble-moveit-msgs-dbgsym_2.2.1-2022.11.20.20.27_amd64.ddeb
+ ba954ea772a89a2494851a4aaa12eb4436675ca0 13196 ros-humble-moveit-msgs_2.2.1-2022.11.20.20.27_amd64.buildinfo
+ b3dc11a6e491e4d299075f1b7a777fd211f8135c 1038664 ros-humble-moveit-msgs_2.2.1-2022.11.20.20.27_amd64.deb
+Checksums-Sha256:
+ 225208d5979f0d76eff0f283b63ee6bf88d63140713b96688ad20fbd71d92f17 12155986 ros-humble-moveit-msgs-dbgsym_2.2.1-2022.11.20.20.27_amd64.ddeb
+ d94133d5f42dc6f16246b169037d11189329a57fe3e831743d19e443266f0959 13196 ros-humble-moveit-msgs_2.2.1-2022.11.20.20.27_amd64.buildinfo
+ 5c72cb69a9539db371a6cfe8c5c8cf6575199bf3a8e063f2e915db7c1517a044 1038664 ros-humble-moveit-msgs_2.2.1-2022.11.20.20.27_amd64.deb
+Files:
+ c2c397704c4cfed2dd65dc700905d33a 12155986 debug optional ros-humble-moveit-msgs-dbgsym_2.2.1-2022.11.20.20.27_amd64.ddeb
+ 9f387eee8df437a4b009739ca392371e 13196 misc optional ros-humble-moveit-msgs_2.2.1-2022.11.20.20.27_amd64.buildinfo
+ 84b31b17d2cebbdc215f349cdb2b6f32 1038664 misc optional ros-humble-moveit-msgs_2.2.1-2022.11.20.20.27_amd64.deb

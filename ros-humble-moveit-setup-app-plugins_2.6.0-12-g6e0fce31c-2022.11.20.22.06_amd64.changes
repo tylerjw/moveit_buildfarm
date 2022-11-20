@@ -1,0 +1,36 @@
+Format: 1.8
+Date: Thu, 10 Nov 2022 00:00:00 -0000
+Source: ros-humble-moveit-setup-app-plugins
+Binary: ros-humble-moveit-setup-app-plugins
+Built-For-Profiles: noudeb
+Architecture: amd64
+Version: 2.6.0-12-g6e0fce31c-2022.11.20.22.06
+Distribution: jammy
+Urgency: high
+Maintainer: David V. Lu!! <davidvlu@gmail.com>
+Changed-By: David V. Lu!! <davidvlu@gmail.com>
+Description:
+ ros-humble-moveit-setup-app-plugins - Various specialty plugins for MoveIt Setup Assistant
+Changes:
+ ros-humble-moveit-setup-app-plugins (2.6.0-12-g6e0fce31c-2022.11.20.22.06) jammy; urgency=high
+ .
+   * Merge PR #1553 <https://github.com/ros-planning/moveit2/issues/1553>: Improve cmake files
+   * Cleanup cmake files
+     - Replace ament_export_libraries() -> ament_export_targets(HAS_LIBRARY_TARGET)
+     - Replace ament_export_include_directories() -> INCLUDES DESTINATION include
+     See https://docs.ros.org/en/foxy/How-To-Guides/Ament-CMake-Documentation.html#building-a-library
+   * Use standard exported targets: export_${PROJECT_NAME} -> ${PROJECT_NAME}Targets
+   * Improve CMake usage (#1550 <https://github.com/ros-planning/moveit2/issues/1550>)
+   * Contributors: Robert Haschke, Sebastian Jahr
+Checksums-Sha1:
+ 5e5e3d55ae34cac2738aec555a57aa79b354f6ee 2872304 ros-humble-moveit-setup-app-plugins-dbgsym_2.6.0-12-g6e0fce31c-2022.11.20.22.06_amd64.ddeb
+ 75d1fd71603e355c3326f0ac75af854676a1bb0c 32935 ros-humble-moveit-setup-app-plugins_2.6.0-12-g6e0fce31c-2022.11.20.22.06_amd64.buildinfo
+ 52a4a7bbb2f733125960c14efb7cb59509f42ad4 68484 ros-humble-moveit-setup-app-plugins_2.6.0-12-g6e0fce31c-2022.11.20.22.06_amd64.deb
+Checksums-Sha256:
+ d45687b6209e1439ddf33c2f0d5f655882a5cd7f2061058639e11360068fd573 2872304 ros-humble-moveit-setup-app-plugins-dbgsym_2.6.0-12-g6e0fce31c-2022.11.20.22.06_amd64.ddeb
+ 7733e975156bfff1c9319eae1f05f89436251ad6e78b74465267ebc4dad2bf19 32935 ros-humble-moveit-setup-app-plugins_2.6.0-12-g6e0fce31c-2022.11.20.22.06_amd64.buildinfo
+ 92ce4786a7e60e9b51acee07fd0a80449c00f395d6cd11bc8fac830df700bedd 68484 ros-humble-moveit-setup-app-plugins_2.6.0-12-g6e0fce31c-2022.11.20.22.06_amd64.deb
+Files:
+ 87ade8a8223788f24e2738707441ec7c 2872304 debug optional ros-humble-moveit-setup-app-plugins-dbgsym_2.6.0-12-g6e0fce31c-2022.11.20.22.06_amd64.ddeb
+ 8087509df07b6c186a348414b8dec467 32935 misc optional ros-humble-moveit-setup-app-plugins_2.6.0-12-g6e0fce31c-2022.11.20.22.06_amd64.buildinfo
+ 693561e22c13b18ee041ea6273651ca8 68484 misc optional ros-humble-moveit-setup-app-plugins_2.6.0-12-g6e0fce31c-2022.11.20.22.06_amd64.deb

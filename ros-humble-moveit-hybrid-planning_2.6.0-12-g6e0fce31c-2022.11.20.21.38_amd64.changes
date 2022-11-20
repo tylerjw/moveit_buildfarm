@@ -1,0 +1,73 @@
+Format: 1.8
+Date: Thu, 10 Nov 2022 00:00:00 -0000
+Source: ros-humble-moveit-hybrid-planning
+Binary: ros-humble-moveit-hybrid-planning
+Built-For-Profiles: noudeb
+Architecture: amd64
+Version: 2.6.0-12-g6e0fce31c-2022.11.20.21.38
+Distribution: jammy
+Urgency: high
+Maintainer: MoveIt Release Team <moveit_releasers@googlegroups.com>
+Changed-By: MoveIt Release Team <moveit_releasers@googlegroups.com>
+Description:
+ ros-humble-moveit-hybrid-planning - Hybrid planning components of MoveIt 2
+Changes:
+ ros-humble-moveit-hybrid-planning (2.6.0-12-g6e0fce31c-2022.11.20.21.38) jammy; urgency=high
+ .
+   * Parallel planning pipelines (#1420 <https://github.com/ros-planning/moveit2/issues/1420>)
+     * Add setTrajectoryConstraints() to PlanningComponent
+     * Add planning time to PlanningComponent::PlanSolution
+     * Replace PlanSolution with MotionPlanResponse
+     * Address review
+     * Add MultiPipelinePlanRequestParameters
+     Add plan(const MultiPipelinePlanRequestParameters& parameters)
+     Add mutex to avoid segfaults
+     Add optional stop_criterion_callback and solution_selection_callback
+     Remove stop_criterion_callback
+     Make default solution_selection_callback = nullptr
+     Remove parameter handling copy&paste code in favor of a template
+     Add TODO to refactor pushBack() method into insert()
+     Fix selection criteria and add RCLCPP_INFO output
+     Changes due to rebase and formatting
+     Fix race condition and segfault when no solution is found
+     Satisfy clang tidy
+     Remove mutex and thread safety TODOs
+     Add stopping functionality to parallel planning
+     Remove unnecessary TODOs
+     * Fix unused plan solution with failure
+     * Add sanity check for number of parallel planning problems
+     * Check stopping criterion when new solution is generated + make thread safe
+     * Add terminatePlanningPipeline() to MoveItCpp interface
+     * Format!
+     * Bug fixes
+     * Move getShortestSolution callback into own function
+     * No east const
+     * Remove PlanSolutions and make planner_id accessible
+     * Make solution executable
+     * Rename update_last_solution to store_solution
+     * Alphabetize includes and include plan_solutions.hpp instead of .h
+     * Address review
+     * Add missing header
+     * Apply suggestions from code review
+     Co-authored-by: AndyZe <andyz@utexas.edu>
+     Co-authored-by: AndyZe <andyz@utexas.edu>
+   * Merge PR #1553 <https://github.com/ros-planning/moveit2/issues/1553>: Improve cmake files
+   * Cleanup cmake files
+     - Replace ament_export_libraries() -> ament_export_targets(HAS_LIBRARY_TARGET)
+     - Replace ament_export_include_directories() -> INCLUDES DESTINATION include
+     See https://docs.ros.org/en/foxy/How-To-Guides/Ament-CMake-Documentation.html#building-a-library
+   * Use standard exported targets: export_${PROJECT_NAME} -> ${PROJECT_NAME}Targets
+   * Improve CMake usage (#1550 <https://github.com/ros-planning/moveit2/issues/1550>)
+   * Contributors: Robert Haschke, Sebastian Jahr
+Checksums-Sha1:
+ 5b8d5905ae088ba1b6c85708c6279c1c5d3197dc 24740070 ros-humble-moveit-hybrid-planning-dbgsym_2.6.0-12-g6e0fce31c-2022.11.20.21.38_amd64.ddeb
+ 37d97829d2ff7936b4bb2d08e7aa3dd8e1d3f84f 29924 ros-humble-moveit-hybrid-planning_2.6.0-12-g6e0fce31c-2022.11.20.21.38_amd64.buildinfo
+ 463e55b52273653635427572edfeb464aa45796e 624536 ros-humble-moveit-hybrid-planning_2.6.0-12-g6e0fce31c-2022.11.20.21.38_amd64.deb
+Checksums-Sha256:
+ 539b8692f32f3e434f3780277ff4b8ca3c02fde91beb468618d550fe21c46b44 24740070 ros-humble-moveit-hybrid-planning-dbgsym_2.6.0-12-g6e0fce31c-2022.11.20.21.38_amd64.ddeb
+ 9ea2bb046f5191f39c0ae9035b7c8b8df4719726f2496a5d38ed9f19b79674f9 29924 ros-humble-moveit-hybrid-planning_2.6.0-12-g6e0fce31c-2022.11.20.21.38_amd64.buildinfo
+ 513e7aeed32f2d4ce54cd683bb80718348c8763b817a16baecaf1bab494666a0 624536 ros-humble-moveit-hybrid-planning_2.6.0-12-g6e0fce31c-2022.11.20.21.38_amd64.deb
+Files:
+ 3c67ea2cd94a90bf34d63a67c05184aa 24740070 debug optional ros-humble-moveit-hybrid-planning-dbgsym_2.6.0-12-g6e0fce31c-2022.11.20.21.38_amd64.ddeb
+ 5dfbcc1a5d9ebabc33b23fd0da803560 29924 misc optional ros-humble-moveit-hybrid-planning_2.6.0-12-g6e0fce31c-2022.11.20.21.38_amd64.buildinfo
+ a873a6d440a3dc1d3ba28c7bcf93b0fb 624536 misc optional ros-humble-moveit-hybrid-planning_2.6.0-12-g6e0fce31c-2022.11.20.21.38_amd64.deb

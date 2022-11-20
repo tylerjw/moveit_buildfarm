@@ -1,0 +1,55 @@
+Format: 1.8
+Date: Tue, 15 Nov 2022 00:00:00 -0000
+Source: ros-humble-rsl
+Binary: ros-humble-rsl
+Built-For-Profiles: noudeb
+Architecture: amd64
+Version: 0.2.0-4-g45a0b09-2022.11.20.20.34
+Distribution: jammy
+Urgency: high
+Maintainer: Tyler Weaver <maybe@tylerjw.dev>
+Changed-By: Tyler Weaver <maybe@tylerjw.dev>
+Description:
+ ros-humble-rsl - ROS Support Library
+Changes:
+ ros-humble-rsl (0.2.0-4-g45a0b09-2022.11.20.20.34) jammy; urgency=high
+ .
+   * New features
+     * rclcpp::Parameter validator functions
+     * Algorithms from parameter_traits
+     * rsl::StaticVector and rsl::StaticString
+   * Doxygen site: https://picknikrobotics.github.io/RSL/files.html
+     * Link to the docs from the README
+     * Use doxygen-awesome documentation style
+     * Deploy documentation website from CI
+     * Add Doxygen comments for rsl::Overload
+     * Add Doxygen comments for TRY
+   * Cleanups
+     * Prevent unnecessary string copy
+     * Ensure global constants do not violate the ODR
+     * Hide rsl::NoDiscard implementation details
+     * Use more [[nodiscard]]
+     * Fix to_vector for vector<bool>
+     * Ensure static container iterators are used
+     * Default to building a shared library
+     * Use generator-agnostic CMake commands
+     * Remove C compiler settings
+     * Don't require compiler extensions
+     * Use more expressive path variable
+     * Add clang-tidy integration and fix errors
+     * Address clang-tidy findings
+     * Update FindCatch2 module
+     * Update Catch2
+   * Contributors: Chris Thrasher, Tyler Weaver
+Checksums-Sha1:
+ d48220e637f6f60b2ad480e80d015e82ff82955e 144044 ros-humble-rsl-dbgsym_0.2.0-4-g45a0b09-2022.11.20.20.34_amd64.ddeb
+ 342167b6984c2547e9bdb48d824c57357f94e519 15174 ros-humble-rsl_0.2.0-4-g45a0b09-2022.11.20.20.34_amd64.buildinfo
+ fc8ca2ae3e1accb06780ede99b9567720baeac8b 20092 ros-humble-rsl_0.2.0-4-g45a0b09-2022.11.20.20.34_amd64.deb
+Checksums-Sha256:
+ 944e0fd14b7c6f55bed64db67887a60e13f1882427db86ccbee94b6708868f9a 144044 ros-humble-rsl-dbgsym_0.2.0-4-g45a0b09-2022.11.20.20.34_amd64.ddeb
+ 95ac8e32f8514d598c2c7b2fa6c598f4ed753fa752ce3b9e425f2a7181941bef 15174 ros-humble-rsl_0.2.0-4-g45a0b09-2022.11.20.20.34_amd64.buildinfo
+ 94fbef1a1ced534857395a670cf790789815c6c7623ec817eff7055da2703b15 20092 ros-humble-rsl_0.2.0-4-g45a0b09-2022.11.20.20.34_amd64.deb
+Files:
+ 4ab2707b5290190436cb05edd5fc093f 144044 debug optional ros-humble-rsl-dbgsym_0.2.0-4-g45a0b09-2022.11.20.20.34_amd64.ddeb
+ 4face62432db23a036976a9f012fca88 15174 misc optional ros-humble-rsl_0.2.0-4-g45a0b09-2022.11.20.20.34_amd64.buildinfo
+ 46fb7667fa49d5157869d814429bd023 20092 misc optional ros-humble-rsl_0.2.0-4-g45a0b09-2022.11.20.20.34_amd64.deb

@@ -1,0 +1,28 @@
+Format: 1.8
+Date: Tue, 15 Nov 2022 00:00:00 -0000
+Source: ros-humble-generate-parameter-library-py
+Binary: ros-humble-generate-parameter-library-py
+Built-For-Profiles: noudeb
+Architecture: amd64
+Version: 0.3.0-1-g1571931-2022.11.20.20.25
+Distribution: jammy
+Urgency: high
+Maintainer: Paul Gesel <paul.gesel@picknik.ai>
+Changed-By: Paul Gesel <paul.gesel@picknik.ai>
+Description:
+ ros-humble-generate-parameter-library-py - Python to generate ROS parameter library.
+Changes:
+ ros-humble-generate-parameter-library-py (0.3.0-1-g1571931-2022.11.20.20.25) jammy; urgency=high
+ .
+   * Migrate from parameter_traits to RSL (take 2) (#91 <https://github.com/PickNikRobotics/generate_parameter_library/issues/91>)
+   * Add missing dependency on PyYAML (#89 <https://github.com/PickNikRobotics/generate_parameter_library/issues/89>)
+   * Contributors: Scott K Logan, Tyler Weaver
+Checksums-Sha1:
+ 85e18f7987caac76b4fa71188ed9504f96b01b5b 7888 ros-humble-generate-parameter-library-py_0.3.0-1-g1571931-2022.11.20.20.25_amd64.buildinfo
+ 7641e22f4da2e8794cea8eafa69c72e3da560644 23788 ros-humble-generate-parameter-library-py_0.3.0-1-g1571931-2022.11.20.20.25_amd64.deb
+Checksums-Sha256:
+ fc83707e8730b0d35475f06006cbff5ec7b3b46a8d824d795aed5899a443c3a8 7888 ros-humble-generate-parameter-library-py_0.3.0-1-g1571931-2022.11.20.20.25_amd64.buildinfo
+ 4e1714545268b7ec5d129f1fbe45ad7f31e60c9f4abc8dbb50383d80b97ea2ea 23788 ros-humble-generate-parameter-library-py_0.3.0-1-g1571931-2022.11.20.20.25_amd64.deb
+Files:
+ a07128bc26fbcd2692fb0928eb3779a4 7888 misc optional ros-humble-generate-parameter-library-py_0.3.0-1-g1571931-2022.11.20.20.25_amd64.buildinfo
+ 76dcde41072f16ab746d6157ea035f39 23788 misc optional ros-humble-generate-parameter-library-py_0.3.0-1-g1571931-2022.11.20.20.25_amd64.deb

@@ -1,0 +1,27 @@
+Format: 1.8
+Date: Tue, 15 Nov 2022 00:00:00 -0000
+Source: ros-humble-parameter-traits
+Binary: ros-humble-parameter-traits
+Built-For-Profiles: noudeb
+Architecture: amd64
+Version: 0.3.0-1-g1571931-2022.11.20.20.36
+Distribution: jammy
+Urgency: high
+Maintainer: Tyler Weaver <maybe@tylerjw.dev>
+Changed-By: Tyler Weaver <maybe@tylerjw.dev>
+Description:
+ ros-humble-parameter-traits - Functions and types for rclcpp::Parameter
+Changes:
+ ros-humble-parameter-traits (0.3.0-1-g1571931-2022.11.20.20.36) jammy; urgency=high
+ .
+   * Migrate from parameter_traits to RSL (take 2) (#91 <https://github.com/PickNikRobotics/generate_parameter_library/issues/91>)
+   * Contributors: Tyler Weaver
+Checksums-Sha1:
+ cc39c1b47daed5544f5a1f4a206da9cdec3a40c0 15690 ros-humble-parameter-traits_0.3.0-1-g1571931-2022.11.20.20.36_amd64.buildinfo
+ 27c809d7dd884607dcad2db2d1fdc826df91e52c 9494 ros-humble-parameter-traits_0.3.0-1-g1571931-2022.11.20.20.36_amd64.deb
+Checksums-Sha256:
+ c5cd27c9a09fc393376bf32104cf493add36285d6cc6f52d8403d0d8be860054 15690 ros-humble-parameter-traits_0.3.0-1-g1571931-2022.11.20.20.36_amd64.buildinfo
+ 1aa2009ae7e7aa2538a691fd988944688dab98dca88e96f85c31332935b14198 9494 ros-humble-parameter-traits_0.3.0-1-g1571931-2022.11.20.20.36_amd64.deb
+Files:
+ 578cebfe4ce526566ddb1976bbc36f62 15690 misc optional ros-humble-parameter-traits_0.3.0-1-g1571931-2022.11.20.20.36_amd64.buildinfo
+ 2a2bc65332d009eed3da51fb6867d493 9494 misc optional ros-humble-parameter-traits_0.3.0-1-g1571931-2022.11.20.20.36_amd64.deb
