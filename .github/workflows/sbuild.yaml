@@ -72,22 +72,26 @@ jobs:
           $unshare_bind_mounts = [ { directory => '/home/runner/.cache/ccache', mountpoint => '/build/ccache' } ];
           EOF
 
+          # make output directory
+          mkdir /home/runner/apt_repo
+          
       - name: Checkout workspace
-        run: vcs import < workspace.repos
+        run: |
+          mkdir src
+          vcs import src < workspace.repos
       
       - name: Run sbuild
         run: |
           # Don't build tests
           export DEB_BUILD_OPTIONS=nocheck
-          
+
           TOTAL="$(colcon list -tp | wc -l)"
           COUNT=1
-          mkdir /home/runner/apt_repo
+          
           for PKG_PATH in $(colcon list -tp); do
             [ $TOTAL -ne 1 ] && echo "::group::Building $COUNT/$TOTAL: $PKG_PATH"
             (
             cd "$PKG_PATH"
-
             # debian-inc=100 in case there are packages published from the build farm already
             bloom-generate rosdebian --os-version=${{ env.ubuntu_distro }} --ros-distro=${{ matrix.ros_distro }} --debian-inc=100
 
@@ -113,7 +117,7 @@ jobs:
       
       - name: Create apt repository
         run: |
-          vcs export --exact-with-tags > /home/runner/apt_repo/workspace.repos
+          vcs export src --exact-with-tags > /home/runner/apt_repo/workspace.repos
           cd /home/runner/apt_repo
           apt-ftparchive packages . > Packages
           apt-ftparchive release . > Release
