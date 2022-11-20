@@ -82,10 +82,10 @@ jobs:
             [ $TOTAL -ne 1 ] && echo "::group::Building $COUNT/$TOTAL: $PKG_PATH"
             (
             cd "$PKG_PATH"
-            bloom-generate rosdebian \
-              --os-version=${{ env.ubuntu_distro }} \
-              --ros-distro=${{ matrix.ros_distro }} \
-              --debian-inc=${{ github.run_id }}
+            bloom-generate rosdebian --os-version=${{ env.ubuntu_distro }} --ros-distro=${{ matrix.ros_distro }}
+
+            # Set the version
+            sed -i "1 s/([^)]*)/($(git describe --tag)-$(date +%Y.%m.%d.%H.%M))/" debian/changelog
 
             # https://github.com/ros-infrastructure/bloom/pull/643
             echo 11 > debian/compat
