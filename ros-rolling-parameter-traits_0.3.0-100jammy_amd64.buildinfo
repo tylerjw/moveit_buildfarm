@@ -11,8 +11,8 @@ Checksums-Sha256:
  c7bff6529d04ba1b503fb61a83a68f75290f2e92aa7f6acaa65ad3970ad5cb1a 9480 ros-rolling-parameter-traits_0.3.0-100jammy_amd64.deb
 Build-Origin: Ubuntu
 Build-Architecture: amd64
-Build-Date: Sat, 19 Nov 2022 23:26:51 +0000
-Build-Path: /build/ros-rolling-parameter-traits-uAxvXq/ros-rolling-parameter-traits-0.3.0
+Build-Date: Sun, 20 Nov 2022 06:26:34 +0000
+Build-Path: /build/ros-rolling-parameter-traits-PTBnZp/ros-rolling-parameter-traits-0.3.0
 Build-Tainted-By:
  merged-usr-via-aliased-dirs
 Installed-Build-Depends:

@@ -18,11 +18,11 @@ Changes:
    * Rename cartesian_limits.yaml (#146 <https://github.com/ros-planning/moveit_resources/issues/146>)
    * Contributors: AndyZe, Tyler Weaver
 Checksums-Sha1:
- a8ff210ad6bf454b24a50a7b7964cf1329a35645 9178 ros-rolling-moveit-resources-panda-moveit-config_2.0.6-100jammy_amd64.buildinfo
+ e6c81c064343c4249d156d558f43a28de924e537 9178 ros-rolling-moveit-resources-panda-moveit-config_2.0.6-100jammy_amd64.buildinfo
  0f2ee5e95209ff817138cad67aa14639da5ce6e0 18644 ros-rolling-moveit-resources-panda-moveit-config_2.0.6-100jammy_amd64.deb
 Checksums-Sha256:
- c18e2327114be22900c948b2109cdd7f5a4fd6a9b8fb7e3c429408499d6d666d 9178 ros-rolling-moveit-resources-panda-moveit-config_2.0.6-100jammy_amd64.buildinfo
+ 4b67ba9d8309771dc3b810a62dc67f3b597af65d23bf59a56a18fc3f7b760c27 9178 ros-rolling-moveit-resources-panda-moveit-config_2.0.6-100jammy_amd64.buildinfo
  a485de01d016b5adb24d6bff620576e5d69b90ae272207ac1c5a74197b3aec64 18644 ros-rolling-moveit-resources-panda-moveit-config_2.0.6-100jammy_amd64.deb
 Files:
- 84f2963d0e063a165a1594b96a64945b 9178 misc optional ros-rolling-moveit-resources-panda-moveit-config_2.0.6-100jammy_amd64.buildinfo
+ 98e0ee64573da9b44b54e2a4bc8dbd34 9178 misc optional ros-rolling-moveit-resources-panda-moveit-config_2.0.6-100jammy_amd64.buildinfo
  a59564de464595429902cfbd3bbfea9c 18644 misc optional ros-rolling-moveit-resources-panda-moveit-config_2.0.6-100jammy_amd64.deb

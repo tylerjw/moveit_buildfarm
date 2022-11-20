@@ -11,8 +11,8 @@ Checksums-Sha256:
  fd59e3b710821a68afeb8c75a87df16b9742eccc12f7d54d1bdebbbbd6088453 128026 ros-rolling-moveit-resources-fanuc-description_2.0.6-100jammy_amd64.deb
 Build-Origin: Ubuntu
 Build-Architecture: amd64
-Build-Date: Sat, 19 Nov 2022 23:20:57 +0000
-Build-Path: /build/ros-rolling-moveit-resources-fanuc-description-t6D7oF/ros-rolling-moveit-resources-fanuc-description-2.0.6
+Build-Date: Sun, 20 Nov 2022 06:21:07 +0000
+Build-Path: /build/ros-rolling-moveit-resources-fanuc-description-CCzGjY/ros-rolling-moveit-resources-fanuc-description-2.0.6
 Build-Tainted-By:
  merged-usr-via-aliased-dirs
 Installed-Build-Depends:
