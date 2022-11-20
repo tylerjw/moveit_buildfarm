@@ -14,11 +14,11 @@ Description:
 Changes:
  ros-rolling-moveit-resources-pr2-description (2.0.6-100jammy) jammy; urgency=high
 Checksums-Sha1:
- 62bee4165380592e0bdc5cbb3f5c0bd6a914b9c0 9159 ros-rolling-moveit-resources-pr2-description_2.0.6-100jammy_amd64.buildinfo
+ f95e5af7be87bdb95bc894948501a2a57d82769a 9159 ros-rolling-moveit-resources-pr2-description_2.0.6-100jammy_amd64.buildinfo
  061ed0b38ec72e00f4a7580b40ac767f790cbd7b 24387108 ros-rolling-moveit-resources-pr2-description_2.0.6-100jammy_amd64.deb
 Checksums-Sha256:
- 2aa2dac12f69049f6fe5c6c6f9b97f10500f5016a14967174e54aec2b1fdc703 9159 ros-rolling-moveit-resources-pr2-description_2.0.6-100jammy_amd64.buildinfo
+ 4e08cc372bb3f2301c2554661b9dc72517a54372ebb66a7ffd73f3d1db309d67 9159 ros-rolling-moveit-resources-pr2-description_2.0.6-100jammy_amd64.buildinfo
  88284e092803d627f559b91f437fac3d60040d9b69c396428515597399eaba1c 24387108 ros-rolling-moveit-resources-pr2-description_2.0.6-100jammy_amd64.deb
 Files:
- 2d05146e3ecfaefd3adffa3463bbc007 9159 misc optional ros-rolling-moveit-resources-pr2-description_2.0.6-100jammy_amd64.buildinfo
+ 9e1b2a67b312c186f71ffa59243c4724 9159 misc optional ros-rolling-moveit-resources-pr2-description_2.0.6-100jammy_amd64.buildinfo
  75f77917e79081b19a075af11b76487a 24387108 misc optional ros-rolling-moveit-resources-pr2-description_2.0.6-100jammy_amd64.deb

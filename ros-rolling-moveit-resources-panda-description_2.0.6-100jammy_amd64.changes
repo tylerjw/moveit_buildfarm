@@ -14,11 +14,11 @@ Description:
 Changes:
  ros-rolling-moveit-resources-panda-description (2.0.6-100jammy) jammy; urgency=high
 Checksums-Sha1:
- 61b2496448501c19ea476b5e3430b9e1777ea3b1 9170 ros-rolling-moveit-resources-panda-description_2.0.6-100jammy_amd64.buildinfo
+ 7fa40713d074fdb68bd6cad03d8e3e4ae153888e 9170 ros-rolling-moveit-resources-panda-description_2.0.6-100jammy_amd64.buildinfo
  babc31ef11d4c853dd70b7d629920bed3cc0dfee 3135482 ros-rolling-moveit-resources-panda-description_2.0.6-100jammy_amd64.deb
 Checksums-Sha256:
- c2e9c43202a2ff9e4443781762af40ad039431205cf0cfadddfbd32a3cefdee2 9170 ros-rolling-moveit-resources-panda-description_2.0.6-100jammy_amd64.buildinfo
+ 9f9af11cfab0e87ede15119c0918cd866947bfbfeae0d4c624231dee4bb7bb3e 9170 ros-rolling-moveit-resources-panda-description_2.0.6-100jammy_amd64.buildinfo
  71364d51737671c5136ae4e9338a65457f38088f61694d8557f05f997d97d57b 3135482 ros-rolling-moveit-resources-panda-description_2.0.6-100jammy_amd64.deb
 Files:
- 5648777357c33da8c062155c0ed094ad 9170 misc optional ros-rolling-moveit-resources-panda-description_2.0.6-100jammy_amd64.buildinfo
+ 047a2e013fb87cf73abd416bd99307fe 9170 misc optional ros-rolling-moveit-resources-panda-description_2.0.6-100jammy_amd64.buildinfo
  ecaa8d07f279c8022af82eaa7c38e53a 3135482 misc optional ros-rolling-moveit-resources-panda-description_2.0.6-100jammy_amd64.deb

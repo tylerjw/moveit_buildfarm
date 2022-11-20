@@ -11,8 +11,8 @@ Checksums-Sha256:
  71364d51737671c5136ae4e9338a65457f38088f61694d8557f05f997d97d57b 3135482 ros-rolling-moveit-resources-panda-description_2.0.6-100jammy_amd64.deb
 Build-Origin: Ubuntu
 Build-Architecture: amd64
-Build-Date: Sun, 20 Nov 2022 06:21:47 +0000
-Build-Path: /build/ros-rolling-moveit-resources-panda-description-y9tP7z/ros-rolling-moveit-resources-panda-description-2.0.6
+Build-Date: Sun, 20 Nov 2022 08:08:26 +0000
+Build-Path: /build/ros-rolling-moveit-resources-panda-description-KEt1fF/ros-rolling-moveit-resources-panda-description-2.0.6
 Build-Tainted-By:
  merged-usr-via-aliased-dirs
 Installed-Build-Depends:

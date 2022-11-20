@@ -18,11 +18,11 @@ Changes:
    * Uncomment moveit_ros_perception dependency (#1463 <https://github.com/ros-planning/moveit2/issues/1463>)
    * Contributors: AndyZe, Sebastian Jahr
 Checksums-Sha1:
- b260d7f2fdb33ad7cf291b0ff0c8843bc20d0e55 10743 ros-rolling-moveit-runtime_2.6.0-100jammy_amd64.buildinfo
+ 2eb5782aebbf0fb59cfa7ee93cd3e27c21543efd 10743 ros-rolling-moveit-runtime_2.6.0-100jammy_amd64.buildinfo
  e68eda74a63a8af28f031ba78368202faa921585 6370 ros-rolling-moveit-runtime_2.6.0-100jammy_amd64.deb
 Checksums-Sha256:
- 2afc3d9420ea3f855de00f0edca6f711f8f4651e44a43358c2914c7f66561805 10743 ros-rolling-moveit-runtime_2.6.0-100jammy_amd64.buildinfo
+ 2df494db8be63914f20e4e51e3cfdb1c767cb71f1fdbfadb42fd3f7d5120e588 10743 ros-rolling-moveit-runtime_2.6.0-100jammy_amd64.buildinfo
  96e0472afde51e0f5c3bc9bd268d8b570938ba07744d3b62d6d6fb6eb7d45a2e 6370 ros-rolling-moveit-runtime_2.6.0-100jammy_amd64.deb
 Files:
- 7e1f102dcdae7c8be9059083a23b920f 10743 misc optional ros-rolling-moveit-runtime_2.6.0-100jammy_amd64.buildinfo
+ 1ffce9f2d67977fc85cb35951de98a5d 10743 misc optional ros-rolling-moveit-runtime_2.6.0-100jammy_amd64.buildinfo
  fec57940032f001a398c09ba93b1620b 6370 misc optional ros-rolling-moveit-runtime_2.6.0-100jammy_amd64.deb

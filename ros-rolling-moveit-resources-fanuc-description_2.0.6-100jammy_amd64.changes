@@ -14,11 +14,11 @@ Description:
 Changes:
  ros-rolling-moveit-resources-fanuc-description (2.0.6-100jammy) jammy; urgency=high
 Checksums-Sha1:
- 0b23f63b75c821ec6f877caa6c1212e5d372e18f 9167 ros-rolling-moveit-resources-fanuc-description_2.0.6-100jammy_amd64.buildinfo
+ bf24bb5c26c17fa8a734d1f5958cfd6c5c0fdd2e 9167 ros-rolling-moveit-resources-fanuc-description_2.0.6-100jammy_amd64.buildinfo
  0d9adada0f13fcd4a31f2e860128f6a9cdc31f25 128026 ros-rolling-moveit-resources-fanuc-description_2.0.6-100jammy_amd64.deb
 Checksums-Sha256:
- 405827d64c3347b61968a97ac5cba3cdda2e27a542109c583a40e3488ce938bc 9167 ros-rolling-moveit-resources-fanuc-description_2.0.6-100jammy_amd64.buildinfo
+ 0f2773b21ddf8751c08e72c1cd1a299e1e43d6e3d58718865e6c476f86153aeb 9167 ros-rolling-moveit-resources-fanuc-description_2.0.6-100jammy_amd64.buildinfo
  fd59e3b710821a68afeb8c75a87df16b9742eccc12f7d54d1bdebbbbd6088453 128026 ros-rolling-moveit-resources-fanuc-description_2.0.6-100jammy_amd64.deb
 Files:
- 3dc4541c77a6a525d14a3320e257cfe5 9167 misc optional ros-rolling-moveit-resources-fanuc-description_2.0.6-100jammy_amd64.buildinfo
+ 1e4d8145f1c8879f85ca0d33cda625c5 9167 misc optional ros-rolling-moveit-resources-fanuc-description_2.0.6-100jammy_amd64.buildinfo
  cce43074089bb44a0d58ba459823ec08 128026 misc optional ros-rolling-moveit-resources-fanuc-description_2.0.6-100jammy_amd64.deb
