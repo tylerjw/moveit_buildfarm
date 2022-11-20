@@ -1,0 +1,149 @@
+Format: 1.8
+Date: Thu, 10 Nov 2022 00:00:00 -0000
+Source: ros-rolling-moveit-core
+Binary: ros-rolling-moveit-core
+Built-For-Profiles: noudeb
+Architecture: amd64
+Version: 2.6.0-3509215567jammy
+Distribution: jammy
+Urgency: high
+Maintainer: Henning Kayser <henningkayser@picknik.ai>
+Changed-By: Henning Kayser <henningkayser@picknik.ai>
+Description:
+ ros-rolling-moveit-core - Core libraries used by MoveIt
+Changes:
+ ros-rolling-moveit-core (2.6.0-3509215567jammy) jammy; urgency=high
+ .
+   * Short-circuit planning adapters (#1694 <https://github.com/ros-planning/moveit2/issues/1694>)
+     * Revert "Planning request adapters: short-circuit if failure, return code rather than bool (#1605 <https://github.com/ros-planning/moveit2/issues/1605>)"
+     This reverts commit 66a64b4a72b6ddef1af2329f20ed8162554d5bcb.
+     * Add debug message in call stack of planning_request_adapters
+     * Short-circuit planning request adapters
+     * Replace if-elseif cascade with switch
+     * Cleanup translation of MoveItErrorCode to string
+     - Move default code to moveit_core/utils
+     - Override defaults in existing getActionResultString()
+     - Provide translations for all error codes defined in moveit_msgs
+     * Fix comment according to review
+     * Add braces
+     Co-authored-by: Henning Kayser <mailto:henningkayser@picknik.ai>
+     * Add braces
+     Co-authored-by: Henning Kayser <mailto:henningkayser@picknik.ai>
+     Co-authored-by: Henning Kayser <mailto:henningkayser@picknik.ai>
+     Co-authored-by: AndyZe <mailto:andyz@utexas.edu>
+   * Parallel planning pipelines (#1420 <https://github.com/ros-planning/moveit2/issues/1420>)
+     * Add setTrajectoryConstraints() to PlanningComponent
+     * Add planning time to PlanningComponent::PlanSolution
+     * Replace PlanSolution with MotionPlanResponse
+     * Address review
+     * Add MultiPipelinePlanRequestParameters
+     Add plan(const MultiPipelinePlanRequestParameters& parameters)
+     Add mutex to avoid segfaults
+     Add optional stop_criterion_callback and solution_selection_callback
+     Remove stop_criterion_callback
+     Make default solution_selection_callback = nullptr
+     Remove parameter handling copy&paste code in favor of a template
+     Add TODO to refactor pushBack() method into insert()
+     Fix selection criteria and add RCLCPP_INFO output
+     Changes due to rebase and formatting
+     Fix race condition and segfault when no solution is found
+     Satisfy clang tidy
+     Remove mutex and thread safety TODOs
+     Add stopping functionality to parallel planning
+     Remove unnecessary TODOs
+     * Fix unused plan solution with failure
+     * Add sanity check for number of parallel planning problems
+     * Check stopping criterion when new solution is generated + make thread safe
+     * Add terminatePlanningPipeline() to MoveItCpp interface
+     * Format!
+     * Bug fixes
+     * Move getShortestSolution callback into own function
+     * No east const
+     * Remove PlanSolutions and make planner_id accessible
+     * Make solution executable
+     * Rename update_last_solution to store_solution
+     * Alphabetize includes and include plan_solutions.hpp instead of .h
+     * Address review
+     * Add missing header
+     * Apply suggestions from code review
+     Co-authored-by: AndyZe <andyz@utexas.edu>
+     Co-authored-by: AndyZe <andyz@utexas.edu>
+   * Deprecate lookupParam function (#1681 <https://github.com/ros-planning/moveit2/issues/1681>)
+   * Add new error types (moveit_msgs #146 <https://github.com/ros-planning/moveit2/issues/146>) (#1683 <https://github.com/ros-planning/moveit2/issues/1683>)
+     * Add new error types (moveit_msgs #146 <https://github.com/ros-planning/moveit2/issues/146>)
+     * Add default case
+     * Small change to the default case
+     Co-authored-by: Tyler Weaver <mailto:maybe@tylerjw.dev>
+     Co-authored-by: Tyler Weaver <mailto:maybe@tylerjw.dev>
+   * Planning request adapters: short-circuit if failure, return code rather than bool (#1605 <https://github.com/ros-planning/moveit2/issues/1605>)
+     * Return code rather than bool
+     * Remove all debug prints
+     * Small fixup
+     * Minor cleanup of comment and error handling
+     * void return from PlannerFn
+     * Control reaches end of non-void function
+     * Use a MoveItErrorCode cast
+     * More efficient callAdapter()
+     * More MoveItErrorCode
+     * CI fixup attempt
+   * Improve Cartesian interpolation (#1547 <https://github.com/ros-planning/moveit2/issues/1547>)
+     * Generalize computeCartesianPath() to consider a link_offset
+     which allows performing a circular motion about a non-link origin.
+     * Augment reference to argument global_reference_frame
+     Co-authored-by: AndyZe <mailto:andyz@utexas.edu>
+   * Remove unused clock from RobotTrajectory (#1639 <https://github.com/ros-planning/moveit2/issues/1639>)
+   * Added brace intialization in moveit_core/collision_detection_fcl & moveit_core/collision_detection_field (#1622 <https://github.com/ros-planning/moveit2/issues/1622>)
+   * added brace intialization (#1615 <https://github.com/ros-planning/moveit2/issues/1615>)
+   * Merge PR #1553 <https://github.com/ros-planning/moveit2/issues/1553>: Improve cmake files
+   * Use standard exported targets: export_${PROJECT_NAME} -> ${PROJECT_NAME}Targets
+   * moveit_core/collision_detection: fix include order
+     moveit_planning_scene's include directories have to be appended
+     to the include directories found by ament_target_dependencies().
+   * Add missing srdfdom dependency
+   * Improve CMake usage (#1550 <https://github.com/ros-planning/moveit2/issues/1550>)
+   * size_t bijection index type (#1544 <https://github.com/ros-planning/moveit2/issues/1544>)
+   * Free functions for calculating properties of trajectories (#1503 <https://github.com/ros-planning/moveit2/issues/1503>)
+     Co-authored-by: Sebastian Jahr <mailto:sebastian.jahr@picknik.ai>
+     Co-authored-by: Sebastian Jahr <mailto:sebastian.jahr@picknik.ai>
+   * Const ptr to jmg arg for cost function (#1537 <https://github.com/ros-planning/moveit2/issues/1537>)
+   * Add planner configurations to CHOMP and PILZ (#1522 <https://github.com/ros-planning/moveit2/issues/1522>)
+   * Add error_code_to_string function (#1523 <https://github.com/ros-planning/moveit2/issues/1523>)
+   * Use pragma once as header include guard (#1525 <https://github.com/ros-planning/moveit2/issues/1525>)
+   * Unified code comment style (#1053 <https://github.com/ros-planning/moveit2/issues/1053>)
+     * Changes the comment style from /**/ to //
+     Co-authored-by: JafarAbdi <mailto:cafer.abdi@gmail.com>
+     Co-authored-by: Henning Kayser <mailto:henningkayser@picknik.ai>
+   * Remove sensor manager (#1172 <https://github.com/ros-planning/moveit2/issues/1172>)
+   * Fixed fabs() use in quaternion interpolation (#1479 <https://github.com/ros-planning/moveit2/issues/1479>)
+     * Interpolate using Eigen::Quaternion::slerp() to (hopefully) save us further headaches and take advantage of Eigen probably having a better implementation than us.
+     * Created a test case that fails for the old version, but passes for the new.
+     Co-authored-by: AndyZe <zelenak@picknik.ai>
+   * Fixes for using generate_state_database (#1412 <https://github.com/ros-planning/moveit2/issues/1412>)
+   * fix path to constraints parameters
+   * Remove __has_include statements (#1481 <https://github.com/ros-planning/moveit2/issues/1481>)
+   * Merge https://github.com/ros-planning/moveit/commit/a63580edd05b01d9480c333645036e5b2b222da9
+   * Remove ConstraintSampler::project() (#3170 <https://github.com/ros-planning/moveit2/issues/3170>)
+     * Remove unused ompl_interface::ValidConstrainedSampler
+     Last usage was removed in f2f6097ab7e272568d6ab258a53be3c7ca67cf3b.
+     * Remove ConstraintSampler::project()
+     sample() and project() only differ in whether they perform random sampling
+     of the reference joint pose or not. Both of them are sampling.
+     This was highly confusing, as from project() one wouldn't expect sampling.
+   * Add and fix dual arm test (#3119 <https://github.com/ros-planning/moveit2/issues/3119>)
+     * Add dual arm test
+     * Fix and simplify UnionConstraintSampler: update joint transforms
+     Co-authored-by: Cristian Beltran <mailto:cristianbehe@gmail.com>
+     Co-authored-by: Robert Haschke <mailto:rhaschke@techfak.uni-bielefeld.de>
+   * Contributors: Abhijeet Das Gupta, Abishalini Sivaraman, Alaa, AndyZe, Henning Kayser, J. Javan, Michael Marron, Robert Haschke, Sebastian Jahr, Tyler Weaver, Vatan Aksoy Tezer, abishalini, cambel, werner291
+Checksums-Sha1:
+ 07dabaabd432cc8629c367f644d1958829f7e425 69017692 ros-rolling-moveit-core-dbgsym_2.6.0-3509215567jammy_amd64.ddeb
+ 6e54d14b32c000f36516b4b9e13e7686997d81fb 31185 ros-rolling-moveit-core_2.6.0-3509215567jammy_amd64.buildinfo
+ ed7c3e5475776d698c22f7dbabad14c084391104 1152778 ros-rolling-moveit-core_2.6.0-3509215567jammy_amd64.deb
+Checksums-Sha256:
+ 8e3e10120d481d5c3bdf7cff0764fa533551b8eb21996ebd612cd5271305e1cc 69017692 ros-rolling-moveit-core-dbgsym_2.6.0-3509215567jammy_amd64.ddeb
+ c52c13a5e508bf854b8daa5a936cd28879c1e8d65295e8e40b21ac52ba14a8c1 31185 ros-rolling-moveit-core_2.6.0-3509215567jammy_amd64.buildinfo
+ cf644ffb21ee478af121b9ce2abfdd99379708c7b671554efcc2f0fdc716890f 1152778 ros-rolling-moveit-core_2.6.0-3509215567jammy_amd64.deb
+Files:
+ eec164f091537c95b2b9fb8060527ea4 69017692 debug optional ros-rolling-moveit-core-dbgsym_2.6.0-3509215567jammy_amd64.ddeb
+ 5e5b62d73657a60fe2cf3411cb99b5c9 31185 misc optional ros-rolling-moveit-core_2.6.0-3509215567jammy_amd64.buildinfo
+ 438c235d409970ebaad7c2e2ae6512a1 1152778 misc optional ros-rolling-moveit-core_2.6.0-3509215567jammy_amd64.deb

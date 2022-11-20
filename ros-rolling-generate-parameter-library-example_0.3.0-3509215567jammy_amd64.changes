@@ -1,0 +1,30 @@
+Format: 1.8
+Date: Tue, 15 Nov 2022 00:00:00 -0000
+Source: ros-rolling-generate-parameter-library-example
+Binary: ros-rolling-generate-parameter-library-example
+Built-For-Profiles: noudeb
+Architecture: amd64
+Version: 0.3.0-3509215567jammy
+Distribution: jammy
+Urgency: high
+Maintainer: Paul Gesel <paul.gesel@picknik.ai>
+Changed-By: Paul Gesel <paul.gesel@picknik.ai>
+Description:
+ ros-rolling-generate-parameter-library-example - Example usage of generate_parameter_library.
+Changes:
+ ros-rolling-generate-parameter-library-example (0.3.0-3509215567jammy) jammy; urgency=high
+ .
+   * Migrate from parameter_traits to RSL (take 2) (#91 <https://github.com/PickNikRobotics/generate_parameter_library/issues/91>)
+   * Contributors: Tyler Weaver
+Checksums-Sha1:
+ 2c90ac56308601c15519a38488aed646d9bae1ff 1163838 ros-rolling-generate-parameter-library-example-dbgsym_0.3.0-3509215567jammy_amd64.ddeb
+ 523bb9f9c7055a94b92d8cad06cc4d499823e918 17447 ros-rolling-generate-parameter-library-example_0.3.0-3509215567jammy_amd64.buildinfo
+ 664ebc94473ed626a5063403b6ee8cfe81e3c93f 85436 ros-rolling-generate-parameter-library-example_0.3.0-3509215567jammy_amd64.deb
+Checksums-Sha256:
+ 09fc56e753ef5f0b132ed957a7e423167eac55871af41d78c425298720e5fa4d 1163838 ros-rolling-generate-parameter-library-example-dbgsym_0.3.0-3509215567jammy_amd64.ddeb
+ fba0f911900bb80d077cd3d42a10b2ca89c2b457598ad4813d88377391247043 17447 ros-rolling-generate-parameter-library-example_0.3.0-3509215567jammy_amd64.buildinfo
+ 3c839d131105cd91ca35f35c1dc4e6cae1e5a590c9feaa105b6f6b330e57ee01 85436 ros-rolling-generate-parameter-library-example_0.3.0-3509215567jammy_amd64.deb
+Files:
+ 3ca8d6ec91f0b342b5c47b0d5b13438c 1163838 debug optional ros-rolling-generate-parameter-library-example-dbgsym_0.3.0-3509215567jammy_amd64.ddeb
+ c46bdc310a336b30b140b8d36296ccb2 17447 misc optional ros-rolling-generate-parameter-library-example_0.3.0-3509215567jammy_amd64.buildinfo
+ 6436c915a6d5333567685231c2bd084a 85436 misc optional ros-rolling-generate-parameter-library-example_0.3.0-3509215567jammy_amd64.deb

@@ -1,0 +1,28 @@
+Format: 1.8
+Date: Mon, 18 Jul 2022 00:00:00 -0000
+Source: ros-rolling-moveit-resources-fanuc-moveit-config
+Binary: ros-rolling-moveit-resources-fanuc-moveit-config
+Built-For-Profiles: noudeb
+Architecture: amd64
+Version: 2.0.6-3509215567jammy
+Distribution: jammy
+Urgency: high
+Maintainer: Dave Coleman <dave@dav.ee>
+Changed-By: Dave Coleman <dave@dav.ee>
+Description:
+ ros-rolling-moveit-resources-fanuc-moveit-config - MoveIt Resources for testing: Fanuc M-10iA.
+Changes:
+ ros-rolling-moveit-resources-fanuc-moveit-config (2.0.6-3509215567jammy) jammy; urgency=high
+ .
+   * fake_components -> mock_components (#147 <https://github.com/ros-planning/moveit_resources/issues/147>)
+   * Rename cartesian_limits.yaml (#146 <https://github.com/ros-planning/moveit_resources/issues/146>)
+   * Contributors: AndyZe, Tyler Weaver
+Checksums-Sha1:
+ edf4ec964bd0c857fe41f80fe47d082255cb6cbf 9206 ros-rolling-moveit-resources-fanuc-moveit-config_2.0.6-3509215567jammy_amd64.buildinfo
+ a2d69d95d5a436e82d775b4993ad8953b2a56010 14944 ros-rolling-moveit-resources-fanuc-moveit-config_2.0.6-3509215567jammy_amd64.deb
+Checksums-Sha256:
+ 3d2e8eb2be64f956bba644ffa37a3a338305903dd62052a9b975f71137b2d070 9206 ros-rolling-moveit-resources-fanuc-moveit-config_2.0.6-3509215567jammy_amd64.buildinfo
+ b5cfbe6b20ec5d2bd581da173789786e3b061ffd28a815ff6a3fc4b66f0c8d31 14944 ros-rolling-moveit-resources-fanuc-moveit-config_2.0.6-3509215567jammy_amd64.deb
+Files:
+ e3fa2ad9e263ecc8ac023e5630e9a533 9206 misc optional ros-rolling-moveit-resources-fanuc-moveit-config_2.0.6-3509215567jammy_amd64.buildinfo
+ 9698619ec6405f6a7eccfc3698bff22f 14944 misc optional ros-rolling-moveit-resources-fanuc-moveit-config_2.0.6-3509215567jammy_amd64.deb
