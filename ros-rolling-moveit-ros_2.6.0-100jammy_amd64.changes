@@ -1,0 +1,27 @@
+Format: 1.8
+Date: Thu, 10 Nov 2022 00:00:00 -0000
+Source: ros-rolling-moveit-ros
+Binary: ros-rolling-moveit-ros
+Built-For-Profiles: noudeb
+Architecture: amd64
+Version: 2.6.0-100jammy
+Distribution: jammy
+Urgency: high
+Maintainer: Michael Görner <me@v4hn.de>
+Changed-By: Michael Görner <me@v4hn.de>
+Description:
+ ros-rolling-moveit-ros - Components of MoveIt that use ROS
+Changes:
+ ros-rolling-moveit-ros (2.6.0-100jammy) jammy; urgency=high
+ .
+   * Improve CMake usage (#1550 <https://github.com/ros-planning/moveit2/issues/1550>)
+   * Contributors: Sebastian Jahr
+Checksums-Sha1:
+ 15a945df7cf02d2471230f19ba81821561d7ee5d 10715 ros-rolling-moveit-ros_2.6.0-100jammy_amd64.buildinfo
+ 2f31f645935a75ac1948cc7062fbde7be2cd3ba0 6850 ros-rolling-moveit-ros_2.6.0-100jammy_amd64.deb
+Checksums-Sha256:
+ a073ce587e2b9b54a4863fa34cd3e9ef41ab7d8179db19d6c42e57acd4499b85 10715 ros-rolling-moveit-ros_2.6.0-100jammy_amd64.buildinfo
+ e24c6b468ab986faec4110bc9c765dfc27aea92eb7f01eedc288e0ea022e7dc7 6850 ros-rolling-moveit-ros_2.6.0-100jammy_amd64.deb
+Files:
+ 38a0ea423b7cdb1fd00470cb5c8578d9 10715 misc optional ros-rolling-moveit-ros_2.6.0-100jammy_amd64.buildinfo
+ 3b424848c01f479678cc830336c7c4aa 6850 misc optional ros-rolling-moveit-ros_2.6.0-100jammy_amd64.deb

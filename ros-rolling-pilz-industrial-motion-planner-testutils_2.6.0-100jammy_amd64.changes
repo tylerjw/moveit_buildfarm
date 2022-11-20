@@ -1,0 +1,33 @@
+Format: 1.8
+Date: Thu, 10 Nov 2022 00:00:00 -0000
+Source: ros-rolling-pilz-industrial-motion-planner-testutils
+Binary: ros-rolling-pilz-industrial-motion-planner-testutils
+Built-For-Profiles: noudeb
+Architecture: amd64
+Version: 2.6.0-100jammy
+Distribution: jammy
+Urgency: high
+Maintainer: Christian Henkel <c.henkel@pilz.de>
+Changed-By: Christian Henkel <c.henkel@pilz.de>
+Description:
+ ros-rolling-pilz-industrial-motion-planner-testutils - Helper scripts and functionality to test industrial motion genera
+Changes:
+ ros-rolling-pilz-industrial-motion-planner-testutils (2.6.0-100jammy) jammy; urgency=high
+ .
+   * Merge PR #1553 <https://github.com/ros-planning/moveit2/issues/1553>: Improve cmake files
+   * Use standard exported targets: export_${PROJECT_NAME} -> ${PROJECT_NAME}Targets
+   * Improve CMake usage (#1550 <https://github.com/ros-planning/moveit2/issues/1550>)
+   * Remove __has_include statements (#1481 <https://github.com/ros-planning/moveit2/issues/1481>)
+   * Contributors: Robert Haschke, Sebastian Jahr, Vatan Aksoy Tezer
+Checksums-Sha1:
+ e3e106ae174231964fa26e9439ac3797a7499ada 5053454 ros-rolling-pilz-industrial-motion-planner-testutils-dbgsym_2.6.0-100jammy_amd64.ddeb
+ 1eb6e999c2bb42381f08d146737d9717e5ec6994 27113 ros-rolling-pilz-industrial-motion-planner-testutils_2.6.0-100jammy_amd64.buildinfo
+ 78b40799337943e912d8a9dfdea14e0cdb727849 104254 ros-rolling-pilz-industrial-motion-planner-testutils_2.6.0-100jammy_amd64.deb
+Checksums-Sha256:
+ ca6ba4cabc3d1e0cbbefdbb82dce09201abcd08ef0c8a6d77ecee4c6d8c3ebe9 5053454 ros-rolling-pilz-industrial-motion-planner-testutils-dbgsym_2.6.0-100jammy_amd64.ddeb
+ 837f0894c6e12a713253a80cd380031fa44ffe7d76321936b0e4ee7a536eec84 27113 ros-rolling-pilz-industrial-motion-planner-testutils_2.6.0-100jammy_amd64.buildinfo
+ dcc4efe5800d2ecfcf5e4e97a947cd0b8b269e217a94371d3b19d50031ee7e89 104254 ros-rolling-pilz-industrial-motion-planner-testutils_2.6.0-100jammy_amd64.deb
+Files:
+ 8f470cc7765c6d763eda0c442c49bb9f 5053454 debug optional ros-rolling-pilz-industrial-motion-planner-testutils-dbgsym_2.6.0-100jammy_amd64.ddeb
+ ab5c6a2059a5346c429eeac69e86a2ef 27113 misc optional ros-rolling-pilz-industrial-motion-planner-testutils_2.6.0-100jammy_amd64.buildinfo
+ eb7012ee6cce151f8cac1aa3b48fc109 104254 misc optional ros-rolling-pilz-industrial-motion-planner-testutils_2.6.0-100jammy_amd64.deb

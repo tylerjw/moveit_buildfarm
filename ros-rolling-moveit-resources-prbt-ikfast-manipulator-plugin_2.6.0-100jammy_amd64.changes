@@ -1,0 +1,36 @@
+Format: 1.8
+Date: Thu, 10 Nov 2022 00:00:00 -0000
+Source: ros-rolling-moveit-resources-prbt-ikfast-manipulator-plugin
+Binary: ros-rolling-moveit-resources-prbt-ikfast-manipulator-plugin
+Built-For-Profiles: noudeb
+Architecture: amd64
+Version: 2.6.0-100jammy
+Distribution: jammy
+Urgency: high
+Maintainer: Alexander Gutenkunst <a.gutenkunst@pilz.de>
+Changed-By: Alexander Gutenkunst <a.gutenkunst@pilz.de>
+Description:
+ ros-rolling-moveit-resources-prbt-ikfast-manipulator-plugin - The prbt_ikfast_manipulator_plugin package
+Changes:
+ ros-rolling-moveit-resources-prbt-ikfast-manipulator-plugin (2.6.0-100jammy) jammy; urgency=high
+ .
+   * Add missing depend (#1684 <https://github.com/ros-planning/moveit2/issues/1684>)
+   * Use generate_parameter_library to load prbt ikfast kinematics parameters (#1680 <https://github.com/ros-planning/moveit2/issues/1680>)
+   * Merge PR #1553 <https://github.com/ros-planning/moveit2/issues/1553>: Improve cmake files
+   * Use standard exported targets: export_${PROJECT_NAME} -> ${PROJECT_NAME}Targets
+   * Improve CMake usage (#1550 <https://github.com/ros-planning/moveit2/issues/1550>)
+   * Use pragma once as header include guard (#1525 <https://github.com/ros-planning/moveit2/issues/1525>)
+   * Remove __has_include statements (#1481 <https://github.com/ros-planning/moveit2/issues/1481>)
+   * Contributors: Abishalini Sivaraman, J. Javan, Robert Haschke, Sebastian Jahr, Vatan Aksoy Tezer
+Checksums-Sha1:
+ 0c17b9aa5a210ca88b072757d2327806383019f1 2696206 ros-rolling-moveit-resources-prbt-ikfast-manipulator-plugin-dbgsym_2.6.0-100jammy_amd64.ddeb
+ e96d55a7f63fe5115b3c3966c31e4ded0bcc9611 26217 ros-rolling-moveit-resources-prbt-ikfast-manipulator-plugin_2.6.0-100jammy_amd64.buildinfo
+ 4b53e940d122c822f963d11ab2a9202b9f6fe7b5 127890 ros-rolling-moveit-resources-prbt-ikfast-manipulator-plugin_2.6.0-100jammy_amd64.deb
+Checksums-Sha256:
+ 79ff79d07c7ba365ce0a7bb025d92872953c41cf5a136fdf62b7b489a5a9531e 2696206 ros-rolling-moveit-resources-prbt-ikfast-manipulator-plugin-dbgsym_2.6.0-100jammy_amd64.ddeb
+ 30f3f192530b3e564952c2c18263ad93f73845938af6f6956ac469c0c8312853 26217 ros-rolling-moveit-resources-prbt-ikfast-manipulator-plugin_2.6.0-100jammy_amd64.buildinfo
+ d86d16c6c622059f29b88fb45bb12bcb7a25830b9f33e0a5a347621ea8c5748b 127890 ros-rolling-moveit-resources-prbt-ikfast-manipulator-plugin_2.6.0-100jammy_amd64.deb
+Files:
+ 0e818be1034092dc8d540fc46e87d43f 2696206 debug optional ros-rolling-moveit-resources-prbt-ikfast-manipulator-plugin-dbgsym_2.6.0-100jammy_amd64.ddeb
+ 7578f92814324bb3b65d4ccd1d7622f9 26217 misc optional ros-rolling-moveit-resources-prbt-ikfast-manipulator-plugin_2.6.0-100jammy_amd64.buildinfo
+ 3931b655cebe92eca7194d823de65cff 127890 misc optional ros-rolling-moveit-resources-prbt-ikfast-manipulator-plugin_2.6.0-100jammy_amd64.deb

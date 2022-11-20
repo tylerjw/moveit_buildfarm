@@ -1,0 +1,30 @@
+Format: 1.8
+Date: Thu, 10 Nov 2022 00:00:00 -0000
+Source: ros-rolling-moveit-setup-assistant
+Binary: ros-rolling-moveit-setup-assistant
+Built-For-Profiles: noudeb
+Architecture: amd64
+Version: 2.6.0-100jammy
+Distribution: jammy
+Urgency: high
+Maintainer: Henning Kayser <henningkayser@picknik.ai>
+Changed-By: Henning Kayser <henningkayser@picknik.ai>
+Description:
+ ros-rolling-moveit-setup-assistant - Generates a configuration package that makes it easy to use MoveI
+Changes:
+ ros-rolling-moveit-setup-assistant (2.6.0-100jammy) jammy; urgency=high
+ .
+   * Improve CMake usage (#1550 <https://github.com/ros-planning/moveit2/issues/1550>)
+   * Contributors: Sebastian Jahr
+Checksums-Sha1:
+ 3e53b07c141c6dbb13409577d5f4d20f8b7e2e9f 7319198 ros-rolling-moveit-setup-assistant-dbgsym_2.6.0-100jammy_amd64.ddeb
+ 7866fb2416ae9d60a609c100eeada5cbf555a1b5 33997 ros-rolling-moveit-setup-assistant_2.6.0-100jammy_amd64.buildinfo
+ 18a456148ad69e476761d8b6fde4c3b6499c2731 291642 ros-rolling-moveit-setup-assistant_2.6.0-100jammy_amd64.deb
+Checksums-Sha256:
+ b20f1f2b4ddaf648dc1879e70315b67defdc0fd64ab6035923f5425b4b10333d 7319198 ros-rolling-moveit-setup-assistant-dbgsym_2.6.0-100jammy_amd64.ddeb
+ 619213036574aca79e3983abe07bda00131540f394b834af20c651fc62f836ce 33997 ros-rolling-moveit-setup-assistant_2.6.0-100jammy_amd64.buildinfo
+ d48835424739a053a990acc2cea93a287a9252b6203e726b3d2840f57e04b433 291642 ros-rolling-moveit-setup-assistant_2.6.0-100jammy_amd64.deb
+Files:
+ 18baf9d447666298646120eb6795ada9 7319198 debug optional ros-rolling-moveit-setup-assistant-dbgsym_2.6.0-100jammy_amd64.ddeb
+ 51a421c9da1af338ac36e5cc2036992b 33997 misc optional ros-rolling-moveit-setup-assistant_2.6.0-100jammy_amd64.buildinfo
+ 975827a31c3cbd49f759e9b8a8c7c37c 291642 misc optional ros-rolling-moveit-setup-assistant_2.6.0-100jammy_amd64.deb

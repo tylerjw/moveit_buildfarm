@@ -1,0 +1,54 @@
+Format: 1.8
+Date: Thu, 10 Nov 2022 00:00:00 -0000
+Source: ros-rolling-moveit-planners-ompl
+Binary: ros-rolling-moveit-planners-ompl
+Built-For-Profiles: noudeb
+Architecture: amd64
+Version: 2.6.0-100jammy
+Distribution: jammy
+Urgency: high
+Maintainer: Henning Kayser <henningkayser@picknik.ai>
+Changed-By: Henning Kayser <henningkayser@picknik.ai>
+Description:
+ ros-rolling-moveit-planners-ompl - MoveIt interface to OMPL
+Changes:
+ ros-rolling-moveit-planners-ompl (2.6.0-100jammy) jammy; urgency=high
+ .
+   * Fix logic with enforcing constrained planning state space in OMPL (#1589 <https://github.com/ros-planning/moveit2/issues/1589>)
+   * Convert OMPL status to MoveItErrorCode in the OMPL interface (#1606 <https://github.com/ros-planning/moveit2/issues/1606>)
+   * Factor of 2 in OMPL orientation constraints, to match kinematic_constraints (#1592 <https://github.com/ros-planning/moveit2/issues/1592>)
+   * Merge PR #1553 <https://github.com/ros-planning/moveit2/issues/1553>: Improve cmake files
+   * Use standard exported targets: export_${PROJECT_NAME} -> ${PROJECT_NAME}Targets
+   * Improve CMake usage (#1550 <https://github.com/ros-planning/moveit2/issues/1550>)
+   * size_t bijection index type (#1544 <https://github.com/ros-planning/moveit2/issues/1544>)
+   * Fixes for using generate_state_database (#1412 <https://github.com/ros-planning/moveit2/issues/1412>)
+   * simplify_solution per planning context (#1437 <https://github.com/ros-planning/moveit2/issues/1437>)
+     * Allowing to dynamically change the parameter simplify_solutions
+     * Delete this configuration because it overrides the configuration loaded
+     The parameters simplify_solutions is passed to the context trough the configuration of each planner but this function overrides it and seems to be contradictory to rest of the implementation. simplify_solutions shouldn't be considered as the rest of the other parameters, like interpolate or hybridize ?
+     * Remove simplify_solutions_ from OMPL interface and all its setter/getter
+     * Clean-up code without ConfigureContext and unneeded code related to simplify_solution
+   * correctly initialize rmw_serialized_message_t
+   * automatically declare parameters from overrides
+   * Remove __has_include statements (#1481 <https://github.com/ros-planning/moveit2/issues/1481>)
+   * Merge https://github.com/ros-planning/moveit/commit/a63580edd05b01d9480c333645036e5b2b222da9
+   * Remove ConstraintSampler::project() (#3170 <https://github.com/ros-planning/moveit2/issues/3170>)
+     * Remove unused ompl_interface::ValidConstrainedSampler
+     Last usage was removed in f2f6097ab7e272568d6ab258a53be3c7ca67cf3b.
+     * Remove ConstraintSampler::project()
+     sample() and project() only differ in whether they perform random sampling
+     of the reference joint pose or not. Both of them are sampling.
+     This was highly confusing, as from project() one wouldn't expect sampling.
+   * Contributors: Alaa, AndyZe, Antoine Duplex, Henning Kayser, Robert Haschke, Sebastian Jahr, Stephanie Eng, Tyler Weaver, Vatan Aksoy Tezer, abishalini
+Checksums-Sha1:
+ e5af1acb54a991ab73e8f6b2a1515a5ee87816da 22718460 ros-rolling-moveit-planners-ompl-dbgsym_2.6.0-100jammy_amd64.ddeb
+ 671281502c790753e087cee6275922517f32a851 32943 ros-rolling-moveit-planners-ompl_2.6.0-100jammy_amd64.buildinfo
+ 9ad57e8f9aecc02899c18ff5ea284b8dcd34b5e2 320922 ros-rolling-moveit-planners-ompl_2.6.0-100jammy_amd64.deb
+Checksums-Sha256:
+ 92eb2435f5e8bc245dbfdc1dae71533df418e33b7790c7ee5024e468f49feeb1 22718460 ros-rolling-moveit-planners-ompl-dbgsym_2.6.0-100jammy_amd64.ddeb
+ 6c38fc140134fcb4c7bc7437bae7cf41677371b655b4d12d645609b379aeda1a 32943 ros-rolling-moveit-planners-ompl_2.6.0-100jammy_amd64.buildinfo
+ 75f5b29853acda01fe243bff17f84e36c6e9fe5d7889ff27cfbce32fceb0da1a 320922 ros-rolling-moveit-planners-ompl_2.6.0-100jammy_amd64.deb
+Files:
+ 84284317775b009de92c4cf57df0fd5d 22718460 debug optional ros-rolling-moveit-planners-ompl-dbgsym_2.6.0-100jammy_amd64.ddeb
+ 301b256b08ab28df066d16a8d6cc5417 32943 misc optional ros-rolling-moveit-planners-ompl_2.6.0-100jammy_amd64.buildinfo
+ ec7d14d37994dc55a83e0ee4382823d2 320922 misc optional ros-rolling-moveit-planners-ompl_2.6.0-100jammy_amd64.deb

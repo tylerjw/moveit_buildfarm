@@ -1,0 +1,28 @@
+Format: 1.8
+Date: Tue, 15 Nov 2022 00:00:00 -0000
+Source: ros-rolling-generate-parameter-library-py
+Binary: ros-rolling-generate-parameter-library-py
+Built-For-Profiles: noudeb
+Architecture: amd64
+Version: 0.3.0-100jammy
+Distribution: jammy
+Urgency: high
+Maintainer: Paul Gesel <paul.gesel@picknik.ai>
+Changed-By: Paul Gesel <paul.gesel@picknik.ai>
+Description:
+ ros-rolling-generate-parameter-library-py - Python to generate ROS parameter library.
+Changes:
+ ros-rolling-generate-parameter-library-py (0.3.0-100jammy) jammy; urgency=high
+ .
+   * Migrate from parameter_traits to RSL (take 2) (#91 <https://github.com/PickNikRobotics/generate_parameter_library/issues/91>)
+   * Add missing dependency on PyYAML (#89 <https://github.com/PickNikRobotics/generate_parameter_library/issues/89>)
+   * Contributors: Scott K Logan, Tyler Weaver
+Checksums-Sha1:
+ ff4f0523d3c42c7b22cea8f190dd8c9de7201e56 7811 ros-rolling-generate-parameter-library-py_0.3.0-100jammy_amd64.buildinfo
+ c390bcc627e0a600a945d175107d218dcec39b96 23752 ros-rolling-generate-parameter-library-py_0.3.0-100jammy_amd64.deb
+Checksums-Sha256:
+ 9561117ac8b1db48bc361441d4636915c713e12dd867eed20ff7e166cc4ae7d8 7811 ros-rolling-generate-parameter-library-py_0.3.0-100jammy_amd64.buildinfo
+ 5fc52e677002556ebde949e7fa01f26a2f26b8a9c6a0e7108422e5d72bb447db 23752 ros-rolling-generate-parameter-library-py_0.3.0-100jammy_amd64.deb
+Files:
+ caf9494093d39fe41e6ed8f6cfdc2594 7811 misc optional ros-rolling-generate-parameter-library-py_0.3.0-100jammy_amd64.buildinfo
+ 19e16e6fb802b514a99140a67d1fcf32 23752 misc optional ros-rolling-generate-parameter-library-py_0.3.0-100jammy_amd64.deb

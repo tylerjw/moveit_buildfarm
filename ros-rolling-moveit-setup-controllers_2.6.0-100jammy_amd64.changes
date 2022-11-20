@@ -1,0 +1,40 @@
+Format: 1.8
+Date: Thu, 10 Nov 2022 00:00:00 -0000
+Source: ros-rolling-moveit-setup-controllers
+Binary: ros-rolling-moveit-setup-controllers
+Built-For-Profiles: noudeb
+Architecture: amd64
+Version: 2.6.0-100jammy
+Distribution: jammy
+Urgency: high
+Maintainer: David V. Lu!! <davidvlu@gmail.com>
+Changed-By: David V. Lu!! <davidvlu@gmail.com>
+Description:
+ ros-rolling-moveit-setup-controllers - MoveIt Setup Steps for ROS 2 Control
+Changes:
+ ros-rolling-moveit-setup-controllers (2.6.0-100jammy) jammy; urgency=high
+ .
+   * Merge PR #1553 <https://github.com/ros-planning/moveit2/issues/1553>: Improve cmake files
+   * Cleanup cmake files
+     - Replace ament_export_libraries() -> ament_export_targets(HAS_LIBRARY_TARGET)
+     - Replace ament_export_include_directories() -> INCLUDES DESTINATION include
+     See https://docs.ros.org/en/foxy/How-To-Guides/Ament-CMake-Documentation.html#building-a-library
+   * Use standard exported targets: export_${PROJECT_NAME} -> ${PROJECT_NAME}Targets
+   * Improve CMake usage (#1550 <https://github.com/ros-planning/moveit2/issues/1550>)
+   * MSA: write the default controller namespace (#1515 <https://github.com/ros-planning/moveit2/issues/1515>)
+     * Write the default controller namespace
+     * Check for a sane controller type
+     * Revert the check for FollowJointTrajectory type
+   * Contributors: AndyZe, Robert Haschke, Sebastian Jahr
+Checksums-Sha1:
+ 7f1fbb3f9b6b1d1174dbf26a018266a07320fa4d 11123864 ros-rolling-moveit-setup-controllers-dbgsym_2.6.0-100jammy_amd64.ddeb
+ 383c59b24f455ee11491c8f57c7e48d3d3a26370 34101 ros-rolling-moveit-setup-controllers_2.6.0-100jammy_amd64.buildinfo
+ ea94f98900c85a1cec78d85040f3911432bac137 161156 ros-rolling-moveit-setup-controllers_2.6.0-100jammy_amd64.deb
+Checksums-Sha256:
+ 79d74a371d98c5448aaf85e28b18c6cda1cd5939bc8b0a8caa427b5a9e89c531 11123864 ros-rolling-moveit-setup-controllers-dbgsym_2.6.0-100jammy_amd64.ddeb
+ 355587bbb787b30aa46e65bf104357c896b8e3d1539e80af00e72010ecd71e35 34101 ros-rolling-moveit-setup-controllers_2.6.0-100jammy_amd64.buildinfo
+ 23b0f1765c1eb311e4dfb5a5867b14307324d3c517603ad6d4437c0b81ddeb17 161156 ros-rolling-moveit-setup-controllers_2.6.0-100jammy_amd64.deb
+Files:
+ b7094fd6b23316cb29e7b53be17fd539 11123864 debug optional ros-rolling-moveit-setup-controllers-dbgsym_2.6.0-100jammy_amd64.ddeb
+ cfd60561844450cf2a19cb7f5702ea2a 34101 misc optional ros-rolling-moveit-setup-controllers_2.6.0-100jammy_amd64.buildinfo
+ 93d2efde2c882239a67f7e2b2066e210 161156 misc optional ros-rolling-moveit-setup-controllers_2.6.0-100jammy_amd64.deb

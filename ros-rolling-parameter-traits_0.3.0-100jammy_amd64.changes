@@ -1,0 +1,27 @@
+Format: 1.8
+Date: Tue, 15 Nov 2022 00:00:00 -0000
+Source: ros-rolling-parameter-traits
+Binary: ros-rolling-parameter-traits
+Built-For-Profiles: noudeb
+Architecture: amd64
+Version: 0.3.0-100jammy
+Distribution: jammy
+Urgency: high
+Maintainer: Tyler Weaver <maybe@tylerjw.dev>
+Changed-By: Tyler Weaver <maybe@tylerjw.dev>
+Description:
+ ros-rolling-parameter-traits - Functions and types for rclcpp::Parameter
+Changes:
+ ros-rolling-parameter-traits (0.3.0-100jammy) jammy; urgency=high
+ .
+   * Migrate from parameter_traits to RSL (take 2) (#91 <https://github.com/PickNikRobotics/generate_parameter_library/issues/91>)
+   * Contributors: Tyler Weaver
+Checksums-Sha1:
+ ae718bae72daa9f0c83b7a6baffdf64e853bbac6 15830 ros-rolling-parameter-traits_0.3.0-100jammy_amd64.buildinfo
+ 519562fe793b70484cb6fb000cdfcc485f9fa8f7 9480 ros-rolling-parameter-traits_0.3.0-100jammy_amd64.deb
+Checksums-Sha256:
+ 279c11feb744ee2e368bb665bc5b61787c0937c7afd93242a012bd6d1b20f97f 15830 ros-rolling-parameter-traits_0.3.0-100jammy_amd64.buildinfo
+ c7bff6529d04ba1b503fb61a83a68f75290f2e92aa7f6acaa65ad3970ad5cb1a 9480 ros-rolling-parameter-traits_0.3.0-100jammy_amd64.deb
+Files:
+ 5b7177c20ca7f1e5527952b5af5a8718 15830 misc optional ros-rolling-parameter-traits_0.3.0-100jammy_amd64.buildinfo
+ c44253ada7bb47a361396b0aa2c35b3c 9480 misc optional ros-rolling-parameter-traits_0.3.0-100jammy_amd64.deb

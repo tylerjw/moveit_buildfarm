@@ -1,0 +1,36 @@
+Format: 1.8
+Date: Thu, 10 Nov 2022 00:00:00 -0000
+Source: ros-rolling-moveit-setup-framework
+Binary: ros-rolling-moveit-setup-framework
+Built-For-Profiles: noudeb
+Architecture: amd64
+Version: 2.6.0-100jammy
+Distribution: jammy
+Urgency: high
+Maintainer: David V. Lu!! <davidvlu@gmail.com>
+Changed-By: David V. Lu!! <davidvlu@gmail.com>
+Description:
+ ros-rolling-moveit-setup-framework - C++ Interface for defining setup steps for MoveIt Setup Assistant
+Changes:
+ ros-rolling-moveit-setup-framework (2.6.0-100jammy) jammy; urgency=high
+ .
+   * Merge PR #1553 <https://github.com/ros-planning/moveit2/issues/1553>: Improve cmake files
+   * Cleanup cmake files
+     - Replace ament_export_libraries() -> ament_export_targets(HAS_LIBRARY_TARGET)
+     - Replace ament_export_include_directories() -> INCLUDES DESTINATION include
+     See https://docs.ros.org/en/foxy/How-To-Guides/Ament-CMake-Documentation.html#building-a-library
+   * Use standard exported targets: export_${PROJECT_NAME} -> ${PROJECT_NAME}Targets
+   * Improve CMake usage (#1550 <https://github.com/ros-planning/moveit2/issues/1550>)
+   * Contributors: Robert Haschke, Sebastian Jahr
+Checksums-Sha1:
+ c9854ce057e51e4143b5308551b1c15fd1ca7f85 6847808 ros-rolling-moveit-setup-framework-dbgsym_2.6.0-100jammy_amd64.ddeb
+ b4df91cc5e7c8fd363c107a514ea9c3cadcba364 32616 ros-rolling-moveit-setup-framework_2.6.0-100jammy_amd64.buildinfo
+ 2cb2eacd9f4abf6a0f5940cf71cdcb39a4dfaf7c 186504 ros-rolling-moveit-setup-framework_2.6.0-100jammy_amd64.deb
+Checksums-Sha256:
+ cdb21efa16f9cba588c7b1c2480b93bac4d67dccf74955389ae0738c92f599a2 6847808 ros-rolling-moveit-setup-framework-dbgsym_2.6.0-100jammy_amd64.ddeb
+ a094c6669c3329cd4f2a655e858dcbf1f8996c347f9f0d92dac80c279861bdbc 32616 ros-rolling-moveit-setup-framework_2.6.0-100jammy_amd64.buildinfo
+ e3cd3adfdac251cd7b19aa39909847727a0b289267e4bab160d11afb39031f94 186504 ros-rolling-moveit-setup-framework_2.6.0-100jammy_amd64.deb
+Files:
+ 31403c7a9793e97fe5d7d890d61bc6e1 6847808 debug optional ros-rolling-moveit-setup-framework-dbgsym_2.6.0-100jammy_amd64.ddeb
+ 2bc2b76ad7bbe06970d34da2afc3c1f3 32616 misc optional ros-rolling-moveit-setup-framework_2.6.0-100jammy_amd64.buildinfo
+ 2ed56f0d74a8bd83219739fd411e250b 186504 misc optional ros-rolling-moveit-setup-framework_2.6.0-100jammy_amd64.deb

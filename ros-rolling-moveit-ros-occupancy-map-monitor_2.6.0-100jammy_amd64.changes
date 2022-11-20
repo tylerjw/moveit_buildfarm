@@ -1,0 +1,32 @@
+Format: 1.8
+Date: Thu, 10 Nov 2022 00:00:00 -0000
+Source: ros-rolling-moveit-ros-occupancy-map-monitor
+Binary: ros-rolling-moveit-ros-occupancy-map-monitor
+Built-For-Profiles: noudeb
+Architecture: amd64
+Version: 2.6.0-100jammy
+Distribution: jammy
+Urgency: high
+Maintainer: Henning Kayser <henningkayser@picknik.ai>
+Changed-By: Henning Kayser <henningkayser@picknik.ai>
+Description:
+ ros-rolling-moveit-ros-occupancy-map-monitor - Components of MoveIt connecting to occupancy map
+Changes:
+ ros-rolling-moveit-ros-occupancy-map-monitor (2.6.0-100jammy) jammy; urgency=high
+ .
+   * Merge PR #1553 <https://github.com/ros-planning/moveit2/issues/1553>: Improve cmake files
+   * Use standard exported targets: export_${PROJECT_NAME} -> ${PROJECT_NAME}Targets
+   * Improve CMake usage (#1550 <https://github.com/ros-planning/moveit2/issues/1550>)
+   * Contributors: Robert Haschke, Sebastian Jahr
+Checksums-Sha1:
+ 7cde3bade0fe6362b75470cc453a666e0f677e30 4647580 ros-rolling-moveit-ros-occupancy-map-monitor-dbgsym_2.6.0-100jammy_amd64.ddeb
+ 57f4e68123be26363b0ca0b8a4e5a4f32fb706e4 27025 ros-rolling-moveit-ros-occupancy-map-monitor_2.6.0-100jammy_amd64.buildinfo
+ d5558c5063149507e8f907cded5df4346d63347d 242142 ros-rolling-moveit-ros-occupancy-map-monitor_2.6.0-100jammy_amd64.deb
+Checksums-Sha256:
+ 8aba9d6203c3bef8c78dd66a66c47d2dfd6d62c4c97db8308a76860fd6ff56ac 4647580 ros-rolling-moveit-ros-occupancy-map-monitor-dbgsym_2.6.0-100jammy_amd64.ddeb
+ 974789f7b182640021bbbbedd17491263492da95ec3fdffb28fd228e08b49f05 27025 ros-rolling-moveit-ros-occupancy-map-monitor_2.6.0-100jammy_amd64.buildinfo
+ f2101a01b51673d80c64cdb622c579e572d5ecd0918fc868ad8c5dd909153c96 242142 ros-rolling-moveit-ros-occupancy-map-monitor_2.6.0-100jammy_amd64.deb
+Files:
+ 07d1414119f769c100f7c82785fed0fa 4647580 debug optional ros-rolling-moveit-ros-occupancy-map-monitor-dbgsym_2.6.0-100jammy_amd64.ddeb
+ b443ecabfa4f8a40828b1ad73f55156e 27025 misc optional ros-rolling-moveit-ros-occupancy-map-monitor_2.6.0-100jammy_amd64.buildinfo
+ 48dce6899d0e805f6bfcee1db66c3592 242142 misc optional ros-rolling-moveit-ros-occupancy-map-monitor_2.6.0-100jammy_amd64.deb

@@ -1,0 +1,35 @@
+Format: 1.8
+Date: Thu, 10 Nov 2022 00:00:00 -0000
+Source: ros-rolling-moveit-ros-visualization
+Binary: ros-rolling-moveit-ros-visualization
+Built-For-Profiles: noudeb
+Architecture: amd64
+Version: 2.6.0-100jammy
+Distribution: jammy
+Urgency: high
+Maintainer: Henning Kayser <henningkayser@picknik.ai>
+Changed-By: Henning Kayser <henningkayser@picknik.ai>
+Description:
+ ros-rolling-moveit-ros-visualization - Components of MoveIt that offer visualization
+Changes:
+ ros-rolling-moveit-ros-visualization (2.6.0-100jammy) jammy; urgency=high
+ .
+   * Check valid interactive marker pointer before trying to update pose (#1581 <https://github.com/ros-planning/moveit2/issues/1581>)
+   * Merge PR #1553 <https://github.com/ros-planning/moveit2/issues/1553>: Improve cmake files
+   * Use standard exported targets: export_${PROJECT_NAME} -> ${PROJECT_NAME}Targets
+   * Improve CMake usage (#1550 <https://github.com/ros-planning/moveit2/issues/1550>)
+   * Use pragma once as header include guard (#1525 <https://github.com/ros-planning/moveit2/issues/1525>)
+   * Remove __has_include statements (#1481 <https://github.com/ros-planning/moveit2/issues/1481>)
+   * Contributors: J. Javan, Robert Haschke, Sebastian Castro, Sebastian Jahr, Vatan Aksoy Tezer
+Checksums-Sha1:
+ 641748b74f984f8bb97b102a46eee4c35e80acc0 41491600 ros-rolling-moveit-ros-visualization-dbgsym_2.6.0-100jammy_amd64.ddeb
+ 3401679c52bca00b677dc69a02593f2b8be215b1 33673 ros-rolling-moveit-ros-visualization_2.6.0-100jammy_amd64.buildinfo
+ 6259bf6174a05067282339571a9613a0515be4c0 717902 ros-rolling-moveit-ros-visualization_2.6.0-100jammy_amd64.deb
+Checksums-Sha256:
+ a360ba7cde276d0c1b56827ab3cffd8e66972d6dcfb07a82862748bd3404ef3d 41491600 ros-rolling-moveit-ros-visualization-dbgsym_2.6.0-100jammy_amd64.ddeb
+ be8317fc8f26fd49e18ed3a542220f3392d5c7dda27cfada6c8d5f9d1a49a02c 33673 ros-rolling-moveit-ros-visualization_2.6.0-100jammy_amd64.buildinfo
+ 9a1c4b0939f144f71f48fdb2f27b12698196be37f8a6eed6a29b9aeb6a6ddc29 717902 ros-rolling-moveit-ros-visualization_2.6.0-100jammy_amd64.deb
+Files:
+ f7b3bae7c9decefb78a3336aeb573af9 41491600 debug optional ros-rolling-moveit-ros-visualization-dbgsym_2.6.0-100jammy_amd64.ddeb
+ d96e064806f3bd587489f43fb11a4530 33673 misc optional ros-rolling-moveit-ros-visualization_2.6.0-100jammy_amd64.buildinfo
+ 7bf7f2515138728564e614c6c1345280 717902 misc optional ros-rolling-moveit-ros-visualization_2.6.0-100jammy_amd64.deb
