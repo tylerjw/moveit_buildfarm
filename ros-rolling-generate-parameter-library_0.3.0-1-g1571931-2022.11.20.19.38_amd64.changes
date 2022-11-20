@@ -1,0 +1,27 @@
+Format: 1.8
+Date: Tue, 15 Nov 2022 00:00:00 -0000
+Source: ros-rolling-generate-parameter-library
+Binary: ros-rolling-generate-parameter-library
+Built-For-Profiles: noudeb
+Architecture: amd64
+Version: 0.3.0-1-g1571931-2022.11.20.19.38
+Distribution: jammy
+Urgency: high
+Maintainer: Paul Gesel <paul.gesel@picknik.ai>
+Changed-By: Paul Gesel <paul.gesel@picknik.ai>
+Description:
+ ros-rolling-generate-parameter-library - CMake to generate ROS parameter library.
+Changes:
+ ros-rolling-generate-parameter-library (0.3.0-1-g1571931-2022.11.20.19.38) jammy; urgency=high
+ .
+   * Migrate from parameter_traits to RSL (take 2) (#91 <https://github.com/PickNikRobotics/generate_parameter_library/issues/91>)
+   * Contributors: Tyler Weaver
+Checksums-Sha1:
+ 239f801a6fe1fb1cb3a5b749addae540a69ec7e6 16263 ros-rolling-generate-parameter-library_0.3.0-1-g1571931-2022.11.20.19.38_amd64.buildinfo
+ c8d5a4f76563e1d1afbbd99f84cd9af09bb9a69b 7706 ros-rolling-generate-parameter-library_0.3.0-1-g1571931-2022.11.20.19.38_amd64.deb
+Checksums-Sha256:
+ bc318649124658177c816d3b34e8311dafa9b0e6400610b44c0023219d1083f0 16263 ros-rolling-generate-parameter-library_0.3.0-1-g1571931-2022.11.20.19.38_amd64.buildinfo
+ 7d81841195cf1588ba843bdb7c56ac02aacabbd283cdfda168bfdee5d3395c30 7706 ros-rolling-generate-parameter-library_0.3.0-1-g1571931-2022.11.20.19.38_amd64.deb
+Files:
+ de9752f1aacc6f479e7409e1edc6abe5 16263 misc optional ros-rolling-generate-parameter-library_0.3.0-1-g1571931-2022.11.20.19.38_amd64.buildinfo
+ 6154024a8708feb0902d3fe25126b29e 7706 misc optional ros-rolling-generate-parameter-library_0.3.0-1-g1571931-2022.11.20.19.38_amd64.deb

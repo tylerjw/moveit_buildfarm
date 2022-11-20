@@ -1,0 +1,30 @@
+Format: 1.8
+Date: Tue, 15 Nov 2022 00:00:00 -0000
+Source: ros-rolling-generate-parameter-library-example
+Binary: ros-rolling-generate-parameter-library-example
+Built-For-Profiles: noudeb
+Architecture: amd64
+Version: 0.3.0-1-g1571931-2022.11.20.19.52
+Distribution: jammy
+Urgency: high
+Maintainer: Paul Gesel <paul.gesel@picknik.ai>
+Changed-By: Paul Gesel <paul.gesel@picknik.ai>
+Description:
+ ros-rolling-generate-parameter-library-example - Example usage of generate_parameter_library.
+Changes:
+ ros-rolling-generate-parameter-library-example (0.3.0-1-g1571931-2022.11.20.19.52) jammy; urgency=high
+ .
+   * Migrate from parameter_traits to RSL (take 2) (#91 <https://github.com/PickNikRobotics/generate_parameter_library/issues/91>)
+   * Contributors: Tyler Weaver
+Checksums-Sha1:
+ 032fc59c498278a78834b3dbe9f671e654e50b59 1163284 ros-rolling-generate-parameter-library-example-dbgsym_0.3.0-1-g1571931-2022.11.20.19.52_amd64.ddeb
+ 39b1accc90122c02a87cf312412590c50f91a651 17590 ros-rolling-generate-parameter-library-example_0.3.0-1-g1571931-2022.11.20.19.52_amd64.buildinfo
+ 7a44a264d2285b70a0e15fd08a389f4c8e9c4eb0 85464 ros-rolling-generate-parameter-library-example_0.3.0-1-g1571931-2022.11.20.19.52_amd64.deb
+Checksums-Sha256:
+ d4a59ace7d43aa636e4ecc251f65284786030fe71d00b23439f275252521827f 1163284 ros-rolling-generate-parameter-library-example-dbgsym_0.3.0-1-g1571931-2022.11.20.19.52_amd64.ddeb
+ 1316e9bb0fa4ddc8d4054228589e62a2af0d1d2c1d1654f67050c2b7498b83de 17590 ros-rolling-generate-parameter-library-example_0.3.0-1-g1571931-2022.11.20.19.52_amd64.buildinfo
+ a33e7cd08ecd55f8b7c8f7764fb4d82a5eb74c281c1e4daa0d987929fe226154 85464 ros-rolling-generate-parameter-library-example_0.3.0-1-g1571931-2022.11.20.19.52_amd64.deb
+Files:
+ 2d0888341dfc79070162e82cc6fc054a 1163284 debug optional ros-rolling-generate-parameter-library-example-dbgsym_0.3.0-1-g1571931-2022.11.20.19.52_amd64.ddeb
+ d6304e838370aa2ab18bc716262df660 17590 misc optional ros-rolling-generate-parameter-library-example_0.3.0-1-g1571931-2022.11.20.19.52_amd64.buildinfo
+ 7bcfde8e750c23a3ecb17f4ff2f4dfb1 85464 misc optional ros-rolling-generate-parameter-library-example_0.3.0-1-g1571931-2022.11.20.19.52_amd64.deb

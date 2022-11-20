@@ -1,0 +1,52 @@
+Format: 1.8
+Date: Thu, 10 Nov 2022 00:00:00 -0000
+Source: ros-rolling-moveit-kinematics
+Binary: ros-rolling-moveit-kinematics
+Built-For-Profiles: noudeb
+Architecture: amd64
+Version: 2.6.0-12-g6e0fce31c-2022.11.20.20.17
+Distribution: jammy
+Urgency: high
+Maintainer: Henning Kayser <henningkayser@picknik.ai>
+Changed-By: Henning Kayser <henningkayser@picknik.ai>
+Description:
+ ros-rolling-moveit-kinematics - Package for all inverse kinematics solvers in MoveIt
+Changes:
+ ros-rolling-moveit-kinematics (2.6.0-12-g6e0fce31c-2022.11.20.20.17) jammy; urgency=high
+ .
+   * Use generate_parameter_library to load KDL kinematics parameters (#1671 <https://github.com/ros-planning/moveit2/issues/1671>)
+   * Use generate_parameter_library to load ikfast kinematics parameters (#1675 <https://github.com/ros-planning/moveit2/issues/1675>)
+   * Use generate_parameter_library to load cached IK kinematics parameters (#1677 <https://github.com/ros-planning/moveit2/issues/1677>)
+   * Use generate_parameter_library to load srv kinematics parameters (#1674 <https://github.com/ros-planning/moveit2/issues/1674>)
+   * Use generate_parameter_library to load LMA kinematics parameters (#1673 <https://github.com/ros-planning/moveit2/issues/1673>)
+   * Merge PR #1553 <https://github.com/ros-planning/moveit2/issues/1553>: Improve cmake files
+   * Use standard exported targets: export_${PROJECT_NAME} -> ${PROJECT_NAME}Targets
+   * Improve CMake usage (#1550 <https://github.com/ros-planning/moveit2/issues/1550>)
+   * Use pragma once as header include guard (#1525 <https://github.com/ros-planning/moveit2/issues/1525>)
+   * Unified code comment style (#1053 <https://github.com/ros-planning/moveit2/issues/1053>)
+     * Changes the comment style from /**/ to //
+     Co-authored-by: JafarAbdi <mailto:cafer.abdi@gmail.com>
+     Co-authored-by: Henning Kayser <mailto:henningkayser@picknik.ai>
+   * Remove __has_include statements (#1481 <https://github.com/ros-planning/moveit2/issues/1481>)
+   * Merge https://github.com/ros-planning/moveit/commit/a63580edd05b01d9480c333645036e5b2b222da9
+   * Merge PR #3172 <https://github.com/ros-planning/moveit2/issues/3172>: Fix CI
+   * Fix test_ikfast_plugins.sh
+     - Create panda.urdf using catkin build panda_description
+     - Improve debug output
+   * Fix run_quiet()
+     - Show output on error
+     - Restore both stdout and stderr
+   * auto_create_ikfast_moveit_plugin.sh: allow xacro input
+   * Contributors: Abishalini Sivaraman, J. Javan, Michael Marron, Robert Haschke, Sebastian Jahr, Vatan Aksoy Tezer, abishalini
+Checksums-Sha1:
+ 2f8ec93b15731ff63efde3acc50627ae3ab35f93 10825506 ros-rolling-moveit-kinematics-dbgsym_2.6.0-12-g6e0fce31c-2022.11.20.20.17_amd64.ddeb
+ b7be4f3ea958ce375b61b8cff4a3a34f7d040a5d 33262 ros-rolling-moveit-kinematics_2.6.0-12-g6e0fce31c-2022.11.20.20.17_amd64.buildinfo
+ e3767d89c0bd3d9ff41fcff39644a009c305ecd7 241214 ros-rolling-moveit-kinematics_2.6.0-12-g6e0fce31c-2022.11.20.20.17_amd64.deb
+Checksums-Sha256:
+ 2bfddbf17cce4dace5fa3d7cda837d1c1791c6d58740976605b672ff309c1fc0 10825506 ros-rolling-moveit-kinematics-dbgsym_2.6.0-12-g6e0fce31c-2022.11.20.20.17_amd64.ddeb
+ bbbc65b15f37710415c49c072c025c901bacd07987fb178c96a41bff69f74cce 33262 ros-rolling-moveit-kinematics_2.6.0-12-g6e0fce31c-2022.11.20.20.17_amd64.buildinfo
+ 5657c3e9b74c5ad079773a8c4e9178c179a1250c231f5051339bbce0847ba2b2 241214 ros-rolling-moveit-kinematics_2.6.0-12-g6e0fce31c-2022.11.20.20.17_amd64.deb
+Files:
+ c622f9af3e790bbf7a4752373f2ab928 10825506 debug optional ros-rolling-moveit-kinematics-dbgsym_2.6.0-12-g6e0fce31c-2022.11.20.20.17_amd64.ddeb
+ f9c331f1f9451052ec3d38827a32b072 33262 misc optional ros-rolling-moveit-kinematics_2.6.0-12-g6e0fce31c-2022.11.20.20.17_amd64.buildinfo
+ 64c0afcbc3c16578c7ff3099e9dd2a20 241214 misc optional ros-rolling-moveit-kinematics_2.6.0-12-g6e0fce31c-2022.11.20.20.17_amd64.deb

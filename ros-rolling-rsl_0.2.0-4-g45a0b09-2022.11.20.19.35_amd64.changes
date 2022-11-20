@@ -1,0 +1,55 @@
+Format: 1.8
+Date: Tue, 15 Nov 2022 00:00:00 -0000
+Source: ros-rolling-rsl
+Binary: ros-rolling-rsl
+Built-For-Profiles: noudeb
+Architecture: amd64
+Version: 0.2.0-4-g45a0b09-2022.11.20.19.35
+Distribution: jammy
+Urgency: high
+Maintainer: Tyler Weaver <maybe@tylerjw.dev>
+Changed-By: Tyler Weaver <maybe@tylerjw.dev>
+Description:
+ ros-rolling-rsl - ROS Support Library
+Changes:
+ ros-rolling-rsl (0.2.0-4-g45a0b09-2022.11.20.19.35) jammy; urgency=high
+ .
+   * New features
+     * rclcpp::Parameter validator functions
+     * Algorithms from parameter_traits
+     * rsl::StaticVector and rsl::StaticString
+   * Doxygen site: https://picknikrobotics.github.io/RSL/files.html
+     * Link to the docs from the README
+     * Use doxygen-awesome documentation style
+     * Deploy documentation website from CI
+     * Add Doxygen comments for rsl::Overload
+     * Add Doxygen comments for TRY
+   * Cleanups
+     * Prevent unnecessary string copy
+     * Ensure global constants do not violate the ODR
+     * Hide rsl::NoDiscard implementation details
+     * Use more [[nodiscard]]
+     * Fix to_vector for vector<bool>
+     * Ensure static container iterators are used
+     * Default to building a shared library
+     * Use generator-agnostic CMake commands
+     * Remove C compiler settings
+     * Don't require compiler extensions
+     * Use more expressive path variable
+     * Add clang-tidy integration and fix errors
+     * Address clang-tidy findings
+     * Update FindCatch2 module
+     * Update Catch2
+   * Contributors: Chris Thrasher, Tyler Weaver
+Checksums-Sha1:
+ 37b3ff9b98713f606aba5a33014445330c4fa0b6 144038 ros-rolling-rsl-dbgsym_0.2.0-4-g45a0b09-2022.11.20.19.35_amd64.ddeb
+ 5a4a30016dba6c6dca17e46f63502599b7e690ec 15403 ros-rolling-rsl_0.2.0-4-g45a0b09-2022.11.20.19.35_amd64.buildinfo
+ a56decdc6b310b1cada66a62ade12defad2cc74d 20136 ros-rolling-rsl_0.2.0-4-g45a0b09-2022.11.20.19.35_amd64.deb
+Checksums-Sha256:
+ 78d56518c965e3c2e26f42ff85cddfdca86e870ee6c4c1b86b8d24d22089af0d 144038 ros-rolling-rsl-dbgsym_0.2.0-4-g45a0b09-2022.11.20.19.35_amd64.ddeb
+ 435af97fcd8da7fb324a5f2cc68ca80cadf2c482b52400b0eb0825ad88491df9 15403 ros-rolling-rsl_0.2.0-4-g45a0b09-2022.11.20.19.35_amd64.buildinfo
+ a559c2ddb222aafb77f509ed25b51889d4fa7f90170fdadfb6b851be264685f7 20136 ros-rolling-rsl_0.2.0-4-g45a0b09-2022.11.20.19.35_amd64.deb
+Files:
+ d3e8d5cf2802de448e97f703ea085893 144038 debug optional ros-rolling-rsl-dbgsym_0.2.0-4-g45a0b09-2022.11.20.19.35_amd64.ddeb
+ b6cfb05ba1af95a0f9acfdad2f8a2b5c 15403 misc optional ros-rolling-rsl_0.2.0-4-g45a0b09-2022.11.20.19.35_amd64.buildinfo
+ affeeb22fbae851d6f8d2e9f8d340fd7 20136 misc optional ros-rolling-rsl_0.2.0-4-g45a0b09-2022.11.20.19.35_amd64.deb

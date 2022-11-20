@@ -1,0 +1,33 @@
+Format: 1.8
+Date: Tue, 25 Oct 2022 00:00:00 -0000
+Source: ros-rolling-moveit-msgs
+Binary: ros-rolling-moveit-msgs
+Built-For-Profiles: noudeb
+Architecture: amd64
+Version: 2.2.1-2022.11.20.19.28
+Distribution: jammy
+Urgency: high
+Maintainer: Dave Coleman <dave@dav.ee>
+Changed-By: Dave Coleman <dave@dav.ee>
+Description:
+ ros-rolling-moveit-msgs - Messages, services and actions used by MoveIt
+Changes:
+ ros-rolling-moveit-msgs (2.2.1-2022.11.20.19.28) jammy; urgency=high
+ .
+   * Add more MoveItErrorCodes to match all OMPL codes (#146 <https://github.com/ros-planning/moveit_msgs/issues/146>)
+   * Factor of 2 in OMPL orientation constraints, to match kinematic_constraints (#145 <https://github.com/ros-planning/moveit_msgs/issues/145>)
+   * Note on constraint tolerances (#141 <https://github.com/ros-planning/moveit_msgs/issues/141>)
+   * Humble CI and prerelease (#139 <https://github.com/ros-planning/moveit_msgs/issues/139>)
+   * Contributors: AndyZe, Vatan Aksoy Tezer
+Checksums-Sha1:
+ 8adece5c26e9ed3e4939fabd7c0d58b384dda25c 12148726 ros-rolling-moveit-msgs-dbgsym_2.2.1-2022.11.20.19.28_amd64.ddeb
+ 9e38fdeded12f7d52b749cc08c9324fe154942b7 13470 ros-rolling-moveit-msgs_2.2.1-2022.11.20.19.28_amd64.buildinfo
+ d01313fb29347eb387db000849788a0f30ec3112 1038426 ros-rolling-moveit-msgs_2.2.1-2022.11.20.19.28_amd64.deb
+Checksums-Sha256:
+ b3f3246c9092d12e643e34c05c5bcea9c9d75b658edb74aa1b089a1b774e6963 12148726 ros-rolling-moveit-msgs-dbgsym_2.2.1-2022.11.20.19.28_amd64.ddeb
+ 82e7086f178d81d29367548ec95f38798cd388621e924159835a68d400edb179 13470 ros-rolling-moveit-msgs_2.2.1-2022.11.20.19.28_amd64.buildinfo
+ 7752d098645c0f6cfb870beb2eb1998ce0c1f0e81cff9cd1c2fbcb2d6bb4ba75 1038426 ros-rolling-moveit-msgs_2.2.1-2022.11.20.19.28_amd64.deb
+Files:
+ aa5f2245d8bdf381941f17e8df7d0595 12148726 debug optional ros-rolling-moveit-msgs-dbgsym_2.2.1-2022.11.20.19.28_amd64.ddeb
+ b33d9fc31bfd6e6ee799992a15dcdd51 13470 misc optional ros-rolling-moveit-msgs_2.2.1-2022.11.20.19.28_amd64.buildinfo
+ cb17cbd10044777f8c8c6bed7adeea2e 1038426 misc optional ros-rolling-moveit-msgs_2.2.1-2022.11.20.19.28_amd64.deb

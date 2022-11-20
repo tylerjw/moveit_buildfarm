@@ -1,0 +1,36 @@
+Format: 1.8
+Date: Thu, 10 Nov 2022 00:00:00 -0000
+Source: ros-rolling-moveit-setup-framework
+Binary: ros-rolling-moveit-setup-framework
+Built-For-Profiles: noudeb
+Architecture: amd64
+Version: 2.6.0-12-g6e0fce31c-2022.11.20.21.08
+Distribution: jammy
+Urgency: high
+Maintainer: David V. Lu!! <davidvlu@gmail.com>
+Changed-By: David V. Lu!! <davidvlu@gmail.com>
+Description:
+ ros-rolling-moveit-setup-framework - C++ Interface for defining setup steps for MoveIt Setup Assistant
+Changes:
+ ros-rolling-moveit-setup-framework (2.6.0-12-g6e0fce31c-2022.11.20.21.08) jammy; urgency=high
+ .
+   * Merge PR #1553 <https://github.com/ros-planning/moveit2/issues/1553>: Improve cmake files
+   * Cleanup cmake files
+     - Replace ament_export_libraries() -> ament_export_targets(HAS_LIBRARY_TARGET)
+     - Replace ament_export_include_directories() -> INCLUDES DESTINATION include
+     See https://docs.ros.org/en/foxy/How-To-Guides/Ament-CMake-Documentation.html#building-a-library
+   * Use standard exported targets: export_${PROJECT_NAME} -> ${PROJECT_NAME}Targets
+   * Improve CMake usage (#1550 <https://github.com/ros-planning/moveit2/issues/1550>)
+   * Contributors: Robert Haschke, Sebastian Jahr
+Checksums-Sha1:
+ 5045f15cecd3c04e43f40d820d16fe4c52546fbe 6847828 ros-rolling-moveit-setup-framework-dbgsym_2.6.0-12-g6e0fce31c-2022.11.20.21.08_amd64.ddeb
+ 1f865c1339733de8b17495e607e5657143a11da4 33088 ros-rolling-moveit-setup-framework_2.6.0-12-g6e0fce31c-2022.11.20.21.08_amd64.buildinfo
+ 9ee0d9b5b9f7d5488ea69596278a433e8b3ac02d 186532 ros-rolling-moveit-setup-framework_2.6.0-12-g6e0fce31c-2022.11.20.21.08_amd64.deb
+Checksums-Sha256:
+ 3f27aa2836285443a4f6bd6e7986ff6d65451a525cbc056db32fabc82bdf1417 6847828 ros-rolling-moveit-setup-framework-dbgsym_2.6.0-12-g6e0fce31c-2022.11.20.21.08_amd64.ddeb
+ d9fa9fbbfe59d2f4950db2a89fd7d970103ba97af557bc0590c66f670faf65ca 33088 ros-rolling-moveit-setup-framework_2.6.0-12-g6e0fce31c-2022.11.20.21.08_amd64.buildinfo
+ d14cfe02a02a7f6184d144cdde3e663f51e3d0d1a704d123c223690d22b409a8 186532 ros-rolling-moveit-setup-framework_2.6.0-12-g6e0fce31c-2022.11.20.21.08_amd64.deb
+Files:
+ 405d4a4c700196316dccf40bbbdf9b5f 6847828 debug optional ros-rolling-moveit-setup-framework-dbgsym_2.6.0-12-g6e0fce31c-2022.11.20.21.08_amd64.ddeb
+ 3a69884f8082678cd29ed2921ab8b9b9 33088 misc optional ros-rolling-moveit-setup-framework_2.6.0-12-g6e0fce31c-2022.11.20.21.08_amd64.buildinfo
+ c5729dfd18eaf5c7568cc16ed4601570 186532 misc optional ros-rolling-moveit-setup-framework_2.6.0-12-g6e0fce31c-2022.11.20.21.08_amd64.deb

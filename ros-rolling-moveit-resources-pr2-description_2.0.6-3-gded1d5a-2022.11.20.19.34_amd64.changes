@@ -1,0 +1,24 @@
+Format: 1.8
+Date: Mon, 18 Jul 2022 00:00:00 -0000
+Source: ros-rolling-moveit-resources-pr2-description
+Binary: ros-rolling-moveit-resources-pr2-description
+Built-For-Profiles: noudeb
+Architecture: amd64
+Version: 2.0.6-3-gded1d5a-2022.11.20.19.34
+Distribution: jammy
+Urgency: high
+Maintainer: Dave Coleman <dave@dav.ee>
+Changed-By: Dave Coleman <dave@dav.ee>
+Description:
+ ros-rolling-moveit-resources-pr2-description - PR2 Resources used for MoveIt! testing
+Changes:
+ ros-rolling-moveit-resources-pr2-description (2.0.6-3-gded1d5a-2022.11.20.19.34) jammy; urgency=high
+Checksums-Sha1:
+ 2c0e14555d498b594a4fb3f9ed8208465a5d4e17 9246 ros-rolling-moveit-resources-pr2-description_2.0.6-3-gded1d5a-2022.11.20.19.34_amd64.buildinfo
+ 2eed468917873c9aa8535a4725cc4bd4bcaa2b82 24387134 ros-rolling-moveit-resources-pr2-description_2.0.6-3-gded1d5a-2022.11.20.19.34_amd64.deb
+Checksums-Sha256:
+ f8f9e41bdb296f5cc7b08178f92534eec275db17c692c3bbff19fd6a5644314e 9246 ros-rolling-moveit-resources-pr2-description_2.0.6-3-gded1d5a-2022.11.20.19.34_amd64.buildinfo
+ 32e66697a0613a0773a3fc93071a7cdbb359b298af65cb626f0f72e54597333e 24387134 ros-rolling-moveit-resources-pr2-description_2.0.6-3-gded1d5a-2022.11.20.19.34_amd64.deb
+Files:
+ 464176fbfeaa948325238585c90974b2 9246 misc optional ros-rolling-moveit-resources-pr2-description_2.0.6-3-gded1d5a-2022.11.20.19.34_amd64.buildinfo
+ e6b3fb3e2f253f590bc51772e3dd96c2 24387134 misc optional ros-rolling-moveit-resources-pr2-description_2.0.6-3-gded1d5a-2022.11.20.19.34_amd64.deb

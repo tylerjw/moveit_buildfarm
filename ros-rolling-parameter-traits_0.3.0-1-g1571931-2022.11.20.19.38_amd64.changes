@@ -1,0 +1,27 @@
+Format: 1.8
+Date: Tue, 15 Nov 2022 00:00:00 -0000
+Source: ros-rolling-parameter-traits
+Binary: ros-rolling-parameter-traits
+Built-For-Profiles: noudeb
+Architecture: amd64
+Version: 0.3.0-1-g1571931-2022.11.20.19.38
+Distribution: jammy
+Urgency: high
+Maintainer: Tyler Weaver <maybe@tylerjw.dev>
+Changed-By: Tyler Weaver <maybe@tylerjw.dev>
+Description:
+ ros-rolling-parameter-traits - Functions and types for rclcpp::Parameter
+Changes:
+ ros-rolling-parameter-traits (0.3.0-1-g1571931-2022.11.20.19.38) jammy; urgency=high
+ .
+   * Migrate from parameter_traits to RSL (take 2) (#91 <https://github.com/PickNikRobotics/generate_parameter_library/issues/91>)
+   * Contributors: Tyler Weaver
+Checksums-Sha1:
+ aa2b547760faaec968a288e6dc5ad843fc3fb094 15936 ros-rolling-parameter-traits_0.3.0-1-g1571931-2022.11.20.19.38_amd64.buildinfo
+ 8a8569e178c5559ee1d455e1909aa9c54a42accd 9514 ros-rolling-parameter-traits_0.3.0-1-g1571931-2022.11.20.19.38_amd64.deb
+Checksums-Sha256:
+ c388b05c4fa3b5fd66dca8d4875c9f5a064a39ae65a2b8f222914948e667a8a9 15936 ros-rolling-parameter-traits_0.3.0-1-g1571931-2022.11.20.19.38_amd64.buildinfo
+ 2480e2c499e3711dc2ac298d89a820f3840af58dfcd848f81f1edc8acc53c90c 9514 ros-rolling-parameter-traits_0.3.0-1-g1571931-2022.11.20.19.38_amd64.deb
+Files:
+ b52734fa0c3c009aa432a0a1245a2db2 15936 misc optional ros-rolling-parameter-traits_0.3.0-1-g1571931-2022.11.20.19.38_amd64.buildinfo
+ 950ca0a0a246e9ebffbb253a13df8809 9514 misc optional ros-rolling-parameter-traits_0.3.0-1-g1571931-2022.11.20.19.38_amd64.deb

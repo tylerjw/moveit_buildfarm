@@ -1,0 +1,30 @@
+Format: 1.8
+Date: Thu, 10 Nov 2022 00:00:00 -0000
+Source: ros-rolling-moveit-configs-utils
+Binary: ros-rolling-moveit-configs-utils
+Built-For-Profiles: noudeb
+Architecture: amd64
+Version: 2.6.0-12-g6e0fce31c-2022.11.20.19.27
+Distribution: jammy
+Urgency: high
+Maintainer: MoveIt Release Team <moveit_releasers@googlegroups.com>
+Changed-By: MoveIt Release Team <moveit_releasers@googlegroups.com>
+Description:
+ ros-rolling-moveit-configs-utils - Python library for loading moveit config parameters in launch fil
+Changes:
+ ros-rolling-moveit-configs-utils (2.6.0-12-g6e0fce31c-2022.11.20.19.27) jammy; urgency=high
+ .
+   * Do not add Pilz parameters to MoveIt Configs Utils if Pilz is not used (#1583 <https://github.com/ros-planning/moveit2/issues/1583>)
+   * Use MoveItConfigsBuilder in Pilz test launch file (#1571 <https://github.com/ros-planning/moveit2/issues/1571>)
+   * Only require Cartesian limits if Pilz is used (#1519 <https://github.com/ros-planning/moveit2/issues/1519>)
+   * Typo fix (#1518 <https://github.com/ros-planning/moveit2/issues/1518>)
+   * Contributors: Abishalini Sivaraman, Stephanie Eng
+Checksums-Sha1:
+ d2b96dfa03a91abefcaa13df5cffdd775f9efc7d 9911 ros-rolling-moveit-configs-utils_2.6.0-12-g6e0fce31c-2022.11.20.19.27_amd64.buildinfo
+ a7a159721bac3be8ed30954471d0962131af3452 20334 ros-rolling-moveit-configs-utils_2.6.0-12-g6e0fce31c-2022.11.20.19.27_amd64.deb
+Checksums-Sha256:
+ 7c833b410b1f57415bb86787dcc45a28f43299a40ceea5c215057a6e5f718931 9911 ros-rolling-moveit-configs-utils_2.6.0-12-g6e0fce31c-2022.11.20.19.27_amd64.buildinfo
+ 0a5aeb061e578de1d8c31d5bd676d0931089935b7ccbe45533da71ab6c0aeff1 20334 ros-rolling-moveit-configs-utils_2.6.0-12-g6e0fce31c-2022.11.20.19.27_amd64.deb
+Files:
+ 397ec3b2ee7dcb9f9dd35eb9374ee988 9911 misc optional ros-rolling-moveit-configs-utils_2.6.0-12-g6e0fce31c-2022.11.20.19.27_amd64.buildinfo
+ b6df1142d2595e11eb2e9317edb20022 20334 misc optional ros-rolling-moveit-configs-utils_2.6.0-12-g6e0fce31c-2022.11.20.19.27_amd64.deb

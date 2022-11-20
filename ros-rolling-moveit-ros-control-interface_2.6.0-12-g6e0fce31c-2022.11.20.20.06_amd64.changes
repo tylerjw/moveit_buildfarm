@@ -1,0 +1,80 @@
+Format: 1.8
+Date: Thu, 10 Nov 2022 00:00:00 -0000
+Source: ros-rolling-moveit-ros-control-interface
+Binary: ros-rolling-moveit-ros-control-interface
+Built-For-Profiles: noudeb
+Architecture: amd64
+Version: 2.6.0-12-g6e0fce31c-2022.11.20.20.06
+Distribution: jammy
+Urgency: high
+Maintainer: Henning Kayser <henningkayser@picknik.ai>
+Changed-By: Henning Kayser <henningkayser@picknik.ai>
+Description:
+ ros-rolling-moveit-ros-control-interface - ros_control controller manager interface for MoveIt
+Changes:
+ ros-rolling-moveit-ros-control-interface (2.6.0-12-g6e0fce31c-2022.11.20.20.06) jammy; urgency=high
+ .
+   * Rename MoveItControllerManager. Add deprecation warning (#1601 <https://github.com/ros-planning/moveit2/issues/1601>)
+     * Rename MoveItControllerManager->Ros2ControlManager. Add deprecation warning.
+     * Do not rename base class
+     * Still allow users to load plugins by the old names
+     Co-authored-by: Jafar <mailto:jafar.uruc@gmail.com>
+   * Merge PR #1553 <https://github.com/ros-planning/moveit2/issues/1553>: Improve cmake files
+   * Use standard exported targets: export_${PROJECT_NAME} -> ${PROJECT_NAME}Targets
+   * Improve CMake usage (#1550 <https://github.com/ros-planning/moveit2/issues/1550>)
+   * Support chained controllers (#1482 <https://github.com/ros-planning/moveit2/issues/1482>)
+     * fix controller list if chained controllers exist
+     * add comments and clean code
+     * added additional comments
+     * fix formatting
+     * fix white space
+     * add const reference and chhnage variable name
+     * simplify logic to only  work with one layer chain
+     * Don't return false when not finding optional parameter
+     * Update moveit_ros/perception/pointcloud_octomap_updater/src/pointcloud_octomap_updater.cpp
+     Co-authored-by: AndyZe <mailto:andyz@utexas.edu>
+     * add debug information
+     * print controller names
+     * print controllers with not known type
+     * load controller dependencies
+     * start chained controllers in switch
+     * reverse order of activate controllers
+     * prevent stoppping controller twice
+     * revert all debug changes
+     * add ROS error if a controller chains to more than one
+     * use loop to index chained connections
+     * update ros_control
+     * add empty controller allocator for admittance controller
+     * fix plugin xml
+     * Update moveit_plugins/moveit_ros_control_interface/src/controller_manager_plugin.cpp
+     Co-authored-by: AndyZe <mailto:andyz@utexas.edu>
+     * Update moveit_plugins/moveit_ros_control_interface/src/controller_manager_plugin.cpp
+     Co-authored-by: AndyZe <mailto:andyz@utexas.edu>
+     * Update moveit_plugins/moveit_ros_control_interface/src/controller_manager_plugin.cpp
+     Co-authored-by: AndyZe <mailto:andyz@utexas.edu>
+     * Update moveit_plugins/moveit_ros_control_interface/src/controller_manager_plugin.cpp
+     Co-authored-by: AndyZe <mailto:andyz@utexas.edu>
+     * fix map indexing
+     * add comment
+     * Update moveit_plugins/moveit_ros_control_interface/src/controller_manager_plugin.cpp
+     Co-authored-by: Tyler Weaver <mailto:squirrel428@protonmail.com>
+     * Typos
+     Co-authored-by: JafarAbdi <mailto:cafer.abdi@gmail.com>
+     Co-authored-by: Jafar <mailto:jafar.uruc@gmail.com>
+     Co-authored-by: AndyZe <mailto:andyz@utexas.edu>
+     Co-authored-by: Vatan Aksoy Tezer <mailto:vatan@picknik.ai>
+     Co-authored-by: Tyler Weaver <mailto:squirrel428@protonmail.com>
+     Co-authored-by: AndyZe <mailto:zelenak@picknik.ai>
+   * Contributors: AndyZe, Paul Gesel, Robert Haschke, Sebastian Jahr
+Checksums-Sha1:
+ 427fdf6fe43a7348b99c6d2728828c25e04cef04 3746498 ros-rolling-moveit-ros-control-interface-dbgsym_2.6.0-12-g6e0fce31c-2022.11.20.20.06_amd64.ddeb
+ 67563d6cdde78adf240b8de76f2e304b3db8775f 27420 ros-rolling-moveit-ros-control-interface_2.6.0-12-g6e0fce31c-2022.11.20.20.06_amd64.buildinfo
+ e93f74a2def499dc4fd04e69480c84494871ae31 197624 ros-rolling-moveit-ros-control-interface_2.6.0-12-g6e0fce31c-2022.11.20.20.06_amd64.deb
+Checksums-Sha256:
+ dcd2d7032a72544bef22926cdd379f5bcf85327eed9617421a2552ea40c684a0 3746498 ros-rolling-moveit-ros-control-interface-dbgsym_2.6.0-12-g6e0fce31c-2022.11.20.20.06_amd64.ddeb
+ 81852a065ecd59050dad5b4a50b01639e3cb574c816416f3ec7517665c7dac43 27420 ros-rolling-moveit-ros-control-interface_2.6.0-12-g6e0fce31c-2022.11.20.20.06_amd64.buildinfo
+ 6e3cdf65d69ed43f8bb59b14420ddc7c2d08dd42c8132272081e80aed352fcaa 197624 ros-rolling-moveit-ros-control-interface_2.6.0-12-g6e0fce31c-2022.11.20.20.06_amd64.deb
+Files:
+ bb16418348c14f8827adf566207cc6d0 3746498 debug optional ros-rolling-moveit-ros-control-interface-dbgsym_2.6.0-12-g6e0fce31c-2022.11.20.20.06_amd64.ddeb
+ c885d137a1cf4c30a3e05f74696f1e24 27420 misc optional ros-rolling-moveit-ros-control-interface_2.6.0-12-g6e0fce31c-2022.11.20.20.06_amd64.buildinfo
+ 4f7e85e44ab7b0a044a2b70620e36b45 197624 misc optional ros-rolling-moveit-ros-control-interface_2.6.0-12-g6e0fce31c-2022.11.20.20.06_amd64.deb

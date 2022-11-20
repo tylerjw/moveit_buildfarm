@@ -1,1 +1,1 @@
-deb [trusted=yes] https://raw.githubusercontent.com/tylerjw/actions_buildfarm/jammy-rolling/ ./
+deb [trusted=yes] https://raw.githubusercontent.com/tylerjw/moveit_buildfarm/jammy-rolling/ ./
