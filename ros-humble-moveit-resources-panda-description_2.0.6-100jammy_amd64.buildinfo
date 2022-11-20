@@ -11,8 +11,8 @@ Checksums-Sha256:
  798eab87728b6ac23219b164a9f71a89416a85a1fd193f4e9ba2a8c281c15feb 3135476 ros-humble-moveit-resources-panda-description_2.0.6-100jammy_amd64.deb
 Build-Origin: Ubuntu
 Build-Architecture: amd64
-Build-Date: Sun, 20 Nov 2022 06:22:00 +0000
-Build-Path: /build/ros-humble-moveit-resources-panda-description-q2FF4v/ros-humble-moveit-resources-panda-description-2.0.6
+Build-Date: Sun, 20 Nov 2022 08:08:23 +0000
+Build-Path: /build/ros-humble-moveit-resources-panda-description-HzPUPO/ros-humble-moveit-resources-panda-description-2.0.6
 Build-Tainted-By:
  merged-usr-via-aliased-dirs
 Installed-Build-Depends:

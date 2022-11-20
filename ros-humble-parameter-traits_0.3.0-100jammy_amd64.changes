@@ -17,11 +17,11 @@ Changes:
    * Migrate from parameter_traits to RSL (take 2) (#91 <https://github.com/PickNikRobotics/generate_parameter_library/issues/91>)
    * Contributors: Tyler Weaver
 Checksums-Sha1:
- 0f1a1d248ca6d2928ce15ac42bbbd4f4316b6287 15584 ros-humble-parameter-traits_0.3.0-100jammy_amd64.buildinfo
+ e0bab12844014dc64e7f67c3abdadd035bb5a5de 15584 ros-humble-parameter-traits_0.3.0-100jammy_amd64.buildinfo
  d0b4bfd3a26544f1db0e0a2fb47b48da39bcb552 9446 ros-humble-parameter-traits_0.3.0-100jammy_amd64.deb
 Checksums-Sha256:
- fcf587d3c4f9ea8af3f4cb14349c0edbcba13ed678739c6e82123d3f7ffa1e86 15584 ros-humble-parameter-traits_0.3.0-100jammy_amd64.buildinfo
+ f99f8e1094f27385d7fb0ec40cfffae3db7640f49acedb010627397e09a876d7 15584 ros-humble-parameter-traits_0.3.0-100jammy_amd64.buildinfo
  0a04b479a445131c4acf37301ff2e0aa0bd584c9f6e8eba1fb9ebbb85ad29ef2 9446 ros-humble-parameter-traits_0.3.0-100jammy_amd64.deb
 Files:
- e14e9832b23bab08c0c92995afab662d 15584 misc optional ros-humble-parameter-traits_0.3.0-100jammy_amd64.buildinfo
+ 37cd33ab83c5833332bb76d2ad0d95a0 15584 misc optional ros-humble-parameter-traits_0.3.0-100jammy_amd64.buildinfo
  29734cec3ef25412963307b9cf8bb71b 9446 misc optional ros-humble-parameter-traits_0.3.0-100jammy_amd64.deb

@@ -17,11 +17,11 @@ Changes:
    * Improve CMake usage (#1550 <https://github.com/ros-planning/moveit2/issues/1550>)
    * Contributors: Sebastian Jahr
 Checksums-Sha1:
- 50c1e0910bc5c7de078a620314564eaf4506282b 9142 ros-humble-moveit-resources-prbt-pg70-support_2.6.0-100jammy_amd64.buildinfo
+ 4d15bd5ef44ba08781a1fd8d39730535aa19800a 9142 ros-humble-moveit-resources-prbt-pg70-support_2.6.0-100jammy_amd64.buildinfo
  8309360acef889aa3203eaf1ec91562779decfc4 161896 ros-humble-moveit-resources-prbt-pg70-support_2.6.0-100jammy_amd64.deb
 Checksums-Sha256:
- 590364f47c7f2d9a62a01d9225ea796f7d936e90a250978198e0d364791c3806 9142 ros-humble-moveit-resources-prbt-pg70-support_2.6.0-100jammy_amd64.buildinfo
+ 15cd29045a8ed11936665b0004ff274d324a88e374f54c3aecd2770a49449946 9142 ros-humble-moveit-resources-prbt-pg70-support_2.6.0-100jammy_amd64.buildinfo
  502f9d1dd8c9b6579feb3beb5d59635866179d43aef8efa01454d26ee8c01014 161896 ros-humble-moveit-resources-prbt-pg70-support_2.6.0-100jammy_amd64.deb
 Files:
- 8919536ed70fa78f1ec7b9681144158e 9142 misc optional ros-humble-moveit-resources-prbt-pg70-support_2.6.0-100jammy_amd64.buildinfo
+ e4a5496329e367917d2ff3005b475209 9142 misc optional ros-humble-moveit-resources-prbt-pg70-support_2.6.0-100jammy_amd64.buildinfo
  b0e70555f8484b2e8c8d7fcefeecc6ab 161896 misc optional ros-humble-moveit-resources-prbt-pg70-support_2.6.0-100jammy_amd64.deb

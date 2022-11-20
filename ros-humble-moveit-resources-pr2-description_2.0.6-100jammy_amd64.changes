@@ -14,11 +14,11 @@ Description:
 Changes:
  ros-humble-moveit-resources-pr2-description (2.0.6-100jammy) jammy; urgency=high
 Checksums-Sha1:
- fb0780745486c5131a2131877302ea4ef6f5a9f6 9134 ros-humble-moveit-resources-pr2-description_2.0.6-100jammy_amd64.buildinfo
+ b324f7ed2a45adc28b9620d0960102c542f2d065 9134 ros-humble-moveit-resources-pr2-description_2.0.6-100jammy_amd64.buildinfo
  1f349728809d9713b264d8ef21a1a819fb56e66d 24384250 ros-humble-moveit-resources-pr2-description_2.0.6-100jammy_amd64.deb
 Checksums-Sha256:
- 8cd1c0455f8a97f1eb3d0c13507580a0fdbc8848ce141c42d418f25fa2709fb1 9134 ros-humble-moveit-resources-pr2-description_2.0.6-100jammy_amd64.buildinfo
+ e3fd7ebde81a1b203aff65fadeb42cabcf1b084b0717536bc5c3dc8aa4fd69a4 9134 ros-humble-moveit-resources-pr2-description_2.0.6-100jammy_amd64.buildinfo
  5173fa380181cfdcbf9a079680736198035b2f3724f190c419eb0c1c5ef824c7 24384250 ros-humble-moveit-resources-pr2-description_2.0.6-100jammy_amd64.deb
 Files:
- 377a1491069bfc536c3937cb99964bea 9134 misc optional ros-humble-moveit-resources-pr2-description_2.0.6-100jammy_amd64.buildinfo
+ bc15646e120d2020a73b608c0e07cde8 9134 misc optional ros-humble-moveit-resources-pr2-description_2.0.6-100jammy_amd64.buildinfo
  0d1d56287d5257b84b6f63925ee63d3a 24384250 misc optional ros-humble-moveit-resources-pr2-description_2.0.6-100jammy_amd64.deb

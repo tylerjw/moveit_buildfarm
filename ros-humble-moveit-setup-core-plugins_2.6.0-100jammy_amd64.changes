@@ -23,14 +23,14 @@ Changes:
    * Improve CMake usage (#1550 <https://github.com/ros-planning/moveit2/issues/1550>)
    * Contributors: Robert Haschke, Sebastian Jahr
 Checksums-Sha1:
- cbde6e69782ea145c18367e11a37d19efbdc686d 5241130 ros-humble-moveit-setup-core-plugins-dbgsym_2.6.0-100jammy_amd64.ddeb
- 2f6b155486e016638532bdaa5a16e7999f2fb95a 32452 ros-humble-moveit-setup-core-plugins_2.6.0-100jammy_amd64.buildinfo
- 5ce9f43713f55f0d9ae514c23666b7a584ee013c 59800 ros-humble-moveit-setup-core-plugins_2.6.0-100jammy_amd64.deb
+ 79b87be1aa9787b6bcbf134e407bcc4b368f08e1 5241144 ros-humble-moveit-setup-core-plugins-dbgsym_2.6.0-100jammy_amd64.ddeb
+ a67ac7b77759b1bd552e3e4b743a1642c85a59c4 32452 ros-humble-moveit-setup-core-plugins_2.6.0-100jammy_amd64.buildinfo
+ 688ad5a6a92eb9c2188274e82e1bf42cec2c393a 59800 ros-humble-moveit-setup-core-plugins_2.6.0-100jammy_amd64.deb
 Checksums-Sha256:
- 3659ee711ef34b200b332875a1fa8aa49a0da3de62663f8ef70921ccc844325f 5241130 ros-humble-moveit-setup-core-plugins-dbgsym_2.6.0-100jammy_amd64.ddeb
- aa848036197562d4f177b969331ec47a766f18c0436c876613115c00850e60ad 32452 ros-humble-moveit-setup-core-plugins_2.6.0-100jammy_amd64.buildinfo
- cf95116311fc0c923ceb0cc7a483ba7e921d39482b4863ccd08335016a8542a6 59800 ros-humble-moveit-setup-core-plugins_2.6.0-100jammy_amd64.deb
+ 46530c58e4fa1fcccbeeb3febd0565d3bddb64c240bcddf0ba2c2a448e2352c8 5241144 ros-humble-moveit-setup-core-plugins-dbgsym_2.6.0-100jammy_amd64.ddeb
+ b25d20e1c46835089a83f450ba6018e232c4ef1e3d933d600babe1f0ad53b597 32452 ros-humble-moveit-setup-core-plugins_2.6.0-100jammy_amd64.buildinfo
+ 345de96d65fac942d4b6dd39fce5fa59e96297ff0ea72a6d68c09573b7c1af2c 59800 ros-humble-moveit-setup-core-plugins_2.6.0-100jammy_amd64.deb
 Files:
- ee39a3d1eb229f651a5cada84a877267 5241130 debug optional ros-humble-moveit-setup-core-plugins-dbgsym_2.6.0-100jammy_amd64.ddeb
- f060777aa9bf24683c5bcd846faf92c1 32452 misc optional ros-humble-moveit-setup-core-plugins_2.6.0-100jammy_amd64.buildinfo
- dadc90a8e468867d17f1c7d52bda31f7 59800 misc optional ros-humble-moveit-setup-core-plugins_2.6.0-100jammy_amd64.deb
+ 832262261a058e2d725b23f0e5812e9d 5241144 debug optional ros-humble-moveit-setup-core-plugins-dbgsym_2.6.0-100jammy_amd64.ddeb
+ a6061e771b173ab50553ccb743f5aba0 32452 misc optional ros-humble-moveit-setup-core-plugins_2.6.0-100jammy_amd64.buildinfo
+ 45fb5c441411d42f3d36ffb2e510fc77 59800 misc optional ros-humble-moveit-setup-core-plugins_2.6.0-100jammy_amd64.deb
