@@ -16,16 +16,6 @@ jobs:
     steps:
       - name: Check out the repo
         uses: actions/checkout@v3
-      
-      - name: "Free up disk space"
-        run: |
-          sudo apt-get -qq purge build-essential "ghc*"
-          sudo apt-get clean
-          # cleanup docker images not used by us
-          docker system prune -af
-          # free up a lot of stuff from /usr/local
-          sudo rm -rf /usr/local
-          df -h
 
       - name: Cache ccache
         uses: pat-s/always-upload-cache@v3
