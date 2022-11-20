@@ -92,8 +92,10 @@ jobs:
             [ $TOTAL -ne 1 ] && echo "::group::Building $COUNT/$TOTAL: $PKG_PATH"
             (
             cd "$PKG_PATH"
-            # debian-inc=100 in case there are packages published from the build farm already
-            bloom-generate rosdebian --os-version=${{ env.ubuntu_distro }} --ros-distro=${{ matrix.ros_distro }} --debian-inc=100
+            bloom-generate rosdebian \
+              --os-version=${{ env.ubuntu_distro }} \
+              --ros-distro=${{ matrix.ros_distro }} \
+              --debian-inc=${{ github.run_id }}
 
             # https://github.com/ros-infrastructure/bloom/pull/643
             echo 11 > debian/compat
