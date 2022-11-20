@@ -17,14 +17,14 @@ Changes:
    * Improve CMake usage (#1550 <https://github.com/ros-planning/moveit2/issues/1550>)
    * Contributors: Sebastian Jahr
 Checksums-Sha1:
- 218619d0f19c0e1d79c1057b71a155c8f985860c 7372608 ros-humble-moveit-setup-assistant-dbgsym_2.6.0-100jammy_amd64.ddeb
- 7b27e42df7cdd7ba768f4ad721edada12a2d729a 33739 ros-humble-moveit-setup-assistant_2.6.0-100jammy_amd64.buildinfo
- a7bffbd1a436894f62a848b6f9e23e961f028c85 291552 ros-humble-moveit-setup-assistant_2.6.0-100jammy_amd64.deb
+ bba8f2a1fd88e4d34499dfc2bc25fc39e2ebcb5b 7372604 ros-humble-moveit-setup-assistant-dbgsym_2.6.0-100jammy_amd64.ddeb
+ b96b6f56d0df6ce871adb7d5fbb9c13666da6151 33739 ros-humble-moveit-setup-assistant_2.6.0-100jammy_amd64.buildinfo
+ 6ab844dadf1baa2a81488a7b1129867955f663c8 291552 ros-humble-moveit-setup-assistant_2.6.0-100jammy_amd64.deb
 Checksums-Sha256:
- 2d019a7cc1286f64bde836d7a6a6b54e5773dbe3c15e671d25ba465bc9dc7083 7372608 ros-humble-moveit-setup-assistant-dbgsym_2.6.0-100jammy_amd64.ddeb
- 97d8b9f949ddc903e15c4bd80d6047ee8b8dae1e4b77654abdfdda858a9a521e 33739 ros-humble-moveit-setup-assistant_2.6.0-100jammy_amd64.buildinfo
- da0f104485086285c45f9159c72d681990704b4fb4ca83d0d9f07c44b3723bd8 291552 ros-humble-moveit-setup-assistant_2.6.0-100jammy_amd64.deb
+ 01f63fa70a33bce3b186de6999f2f0d3c324c923d233f7dfbd8e273f969f0491 7372604 ros-humble-moveit-setup-assistant-dbgsym_2.6.0-100jammy_amd64.ddeb
+ 860fe8f9a3318ec20f8c069b12277d96a9ca8e4435335d764c647c3081fe59e3 33739 ros-humble-moveit-setup-assistant_2.6.0-100jammy_amd64.buildinfo
+ c4938b7afafa696e697628bdba584e5526a7a3e85c218f9d9b655a0ccf076d98 291552 ros-humble-moveit-setup-assistant_2.6.0-100jammy_amd64.deb
 Files:
- 896a4bfdd34e328a3ae6cbce8df743b3 7372608 debug optional ros-humble-moveit-setup-assistant-dbgsym_2.6.0-100jammy_amd64.ddeb
- c8b3102d88880bfbd47dcb3d1f3fbaea 33739 misc optional ros-humble-moveit-setup-assistant_2.6.0-100jammy_amd64.buildinfo
- 9a32043dc761aaa0bd5eeeb6faccfdf3 291552 misc optional ros-humble-moveit-setup-assistant_2.6.0-100jammy_amd64.deb
+ 3459d6a4ab913e9c46354292ba86740c 7372604 debug optional ros-humble-moveit-setup-assistant-dbgsym_2.6.0-100jammy_amd64.ddeb
+ 719a99d5644a241fe4b3ae98d5f601a6 33739 misc optional ros-humble-moveit-setup-assistant_2.6.0-100jammy_amd64.buildinfo
+ c004c997e0648408585efabf56323822 291552 misc optional ros-humble-moveit-setup-assistant_2.6.0-100jammy_amd64.deb

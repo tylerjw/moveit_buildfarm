@@ -23,14 +23,14 @@ Changes:
    * Improve CMake usage (#1550 <https://github.com/ros-planning/moveit2/issues/1550>)
    * Contributors: Robert Haschke, Sebastian Jahr
 Checksums-Sha1:
- 70cdf1e547b988d19998e645141ea149f16c09e6 19786306 ros-humble-moveit-setup-srdf-plugins-dbgsym_2.6.0-100jammy_amd64.ddeb
- 5c2c6b02029cdb607f75b61781c91cf8fcdc7cce 32525 ros-humble-moveit-setup-srdf-plugins_2.6.0-100jammy_amd64.buildinfo
- 5a9d54a9c3cc24215df552e13cada82cad261d28 308932 ros-humble-moveit-setup-srdf-plugins_2.6.0-100jammy_amd64.deb
+ 4b54eb94741f16c1ef40fd28da855e624957ded9 19786398 ros-humble-moveit-setup-srdf-plugins-dbgsym_2.6.0-100jammy_amd64.ddeb
+ 0e0568aa790b78ecf26fd87252d41e102d10c6c5 32525 ros-humble-moveit-setup-srdf-plugins_2.6.0-100jammy_amd64.buildinfo
+ dda28112614ebb89ad6900634d618316c43539ca 308936 ros-humble-moveit-setup-srdf-plugins_2.6.0-100jammy_amd64.deb
 Checksums-Sha256:
- 4d3978e927ae4935992915975161e0b71635d4f27a451f86d31c351edc400842 19786306 ros-humble-moveit-setup-srdf-plugins-dbgsym_2.6.0-100jammy_amd64.ddeb
- 3336526356792aa2f0ba3da42dbbdae2306f0dc9343f1e1743843b9af46910d1 32525 ros-humble-moveit-setup-srdf-plugins_2.6.0-100jammy_amd64.buildinfo
- abb5dddb0e19d5404bd37921a3728c5438ef0384cc239956cc9f039be686a605 308932 ros-humble-moveit-setup-srdf-plugins_2.6.0-100jammy_amd64.deb
+ 822344bbeeba4e8407a345e8ddf62d56d95320b872461c07f73286b0f5a649b4 19786398 ros-humble-moveit-setup-srdf-plugins-dbgsym_2.6.0-100jammy_amd64.ddeb
+ 2f9452f26553c927405887d4610271a8619093d050e77c4eda5028fe25225698 32525 ros-humble-moveit-setup-srdf-plugins_2.6.0-100jammy_amd64.buildinfo
+ 998416dcf07b33db51739815f7d0df1a86d0420552a2a1e2545a428ee0e0250a 308936 ros-humble-moveit-setup-srdf-plugins_2.6.0-100jammy_amd64.deb
 Files:
- 0c263c8f1cc2286c67fa14e391551b07 19786306 debug optional ros-humble-moveit-setup-srdf-plugins-dbgsym_2.6.0-100jammy_amd64.ddeb
- 74857ccfbacf5638a1f3545ac00de21a 32525 misc optional ros-humble-moveit-setup-srdf-plugins_2.6.0-100jammy_amd64.buildinfo
- 5c319554a448f3ad56ff09fe85a6b190 308932 misc optional ros-humble-moveit-setup-srdf-plugins_2.6.0-100jammy_amd64.deb
+ d75c3fd91d2d8eacf77e6914a071a72a 19786398 debug optional ros-humble-moveit-setup-srdf-plugins-dbgsym_2.6.0-100jammy_amd64.ddeb
+ f07cf27ace1937f69719b648bf526f08 32525 misc optional ros-humble-moveit-setup-srdf-plugins_2.6.0-100jammy_amd64.buildinfo
+ cad85c6c308dbb0ebaf33aa89703d9fb 308936 misc optional ros-humble-moveit-setup-srdf-plugins_2.6.0-100jammy_amd64.deb

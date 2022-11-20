@@ -14,11 +14,11 @@ Description:
 Changes:
  ros-humble-moveit-resources-panda-description (2.0.6-100jammy) jammy; urgency=high
 Checksums-Sha1:
- a39c38d50a92047cf8a41adc56942d8ad38c7d9e 9145 ros-humble-moveit-resources-panda-description_2.0.6-100jammy_amd64.buildinfo
+ d25b60c89a1a5d0f9bcc0dfbf1b2872aeb441a3d 9145 ros-humble-moveit-resources-panda-description_2.0.6-100jammy_amd64.buildinfo
  9d191e08b0ed4f53df00b2a98422ef791e1ff638 3135476 ros-humble-moveit-resources-panda-description_2.0.6-100jammy_amd64.deb
 Checksums-Sha256:
- b853bf218be00eeda672fa2f4d9a683ebd381fefc928e376eb2d83cadbd6211f 9145 ros-humble-moveit-resources-panda-description_2.0.6-100jammy_amd64.buildinfo
+ b091073435abfbdc4a438a6ead70378c88d969d9bb7bf7ff9136889850ce3fb3 9145 ros-humble-moveit-resources-panda-description_2.0.6-100jammy_amd64.buildinfo
  798eab87728b6ac23219b164a9f71a89416a85a1fd193f4e9ba2a8c281c15feb 3135476 ros-humble-moveit-resources-panda-description_2.0.6-100jammy_amd64.deb
 Files:
- 327b1a7e5286f5daf858f7c48702347c 9145 misc optional ros-humble-moveit-resources-panda-description_2.0.6-100jammy_amd64.buildinfo
+ 1b6699c8aaeed48ff8577596288200e7 9145 misc optional ros-humble-moveit-resources-panda-description_2.0.6-100jammy_amd64.buildinfo
  85c62ba1b9ee42c4c401a15c38f49000 3135476 misc optional ros-humble-moveit-resources-panda-description_2.0.6-100jammy_amd64.deb

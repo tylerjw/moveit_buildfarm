@@ -20,11 +20,11 @@ Changes:
    * Typo fix (#1518 <https://github.com/ros-planning/moveit2/issues/1518>)
    * Contributors: Abishalini Sivaraman, Stephanie Eng
 Checksums-Sha1:
- fd42d131a30d5eadc74785003b4794f82f1c3871 9778 ros-humble-moveit-configs-utils_2.6.0-100jammy_amd64.buildinfo
+ 3f9964a494c5eed5132bf0f4e03d2f7bcd6a843c 9778 ros-humble-moveit-configs-utils_2.6.0-100jammy_amd64.buildinfo
  e6295ee3bf937a5c1c8e3b8f5eb9da7f04f5eaee 20300 ros-humble-moveit-configs-utils_2.6.0-100jammy_amd64.deb
 Checksums-Sha256:
- 5ab81d42e5ce88ec6fcc8fca45021594a753711ae1c491d1295671018b4ccbce 9778 ros-humble-moveit-configs-utils_2.6.0-100jammy_amd64.buildinfo
+ a5dd6c720ee37333ad7f29a86994c9204ade3a4e9d0437f14d82c8c22f72b5b8 9778 ros-humble-moveit-configs-utils_2.6.0-100jammy_amd64.buildinfo
  d5cce80397c031c8c67229018c5d96d9ce8d4d6dbad170be03ba69875ae50c62 20300 ros-humble-moveit-configs-utils_2.6.0-100jammy_amd64.deb
 Files:
- ccec659349df8223a4ea2eece4f5d257 9778 misc optional ros-humble-moveit-configs-utils_2.6.0-100jammy_amd64.buildinfo
+ cb2e959656e10996af1e272d1a5050e3 9778 misc optional ros-humble-moveit-configs-utils_2.6.0-100jammy_amd64.buildinfo
  06676be2a4b838f09314e2677fbe8d2f 20300 misc optional ros-humble-moveit-configs-utils_2.6.0-100jammy_amd64.deb
