@@ -99,7 +99,7 @@ jobs:
             echo 11 > debian/compat
 
             # dpkg-source-opts: no need for upstream.tar.gz
-            sbuild --chroot-mode=unshare --verbose --no-clean-source --no-run-lintian \
+            sbuild --chroot-mode=unshare --no-clean-source --no-run-lintian \
               --dpkg-source-opts="-Zgzip -z1 --format=1.0 -sn" \
               --build-dir=/home/runner/apt_repo --extra-package=/home/runner/apt_repo \
               --extra-repository="deb http://packages.ros.org/ros2/ubuntu ${{ env.ubuntu_distro }} main" \
